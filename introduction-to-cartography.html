@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Introduction to Cartography | Fish Migration Roadmap</title>
+  <meta name="description" content="Introduction to Cartography | Fish Migration Roadmap" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Introduction to Cartography | Fish Migration Roadmap" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Introduction to Cartography | Fish Migration Roadmap" />
+  
+  
+  
+
+<meta name="author" content="Thames Estuary Partnership" />
+
+
+<meta name="date" content="2021-02-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="introduction-to-gis.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
+<link href="libs/colourpicker-lib-1.4/css/colourpicker.min.css" rel="stylesheet" />
+<script src="libs/colourpicker-lib-1.4/js/colourpicker.min.js"></script>
+<script src="libs/colourWidget-binding-1.1.0/colourWidget.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html"><i class="fa fa-check"></i>Introduction to Cartography</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#history"><i class="fa fa-check"></i>History</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#map-types"><i class="fa fa-check"></i>Map types</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#general-or-reference-maps"><i class="fa fa-check"></i>General or reference maps</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#thematic-maps"><i class="fa fa-check"></i>Thematic maps</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#topographic-maps"><i class="fa fa-check"></i>Topographic maps</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#topological-maps"><i class="fa fa-check"></i>Topological maps</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#cartometric-maps"><i class="fa fa-check"></i>Cartometric maps</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#map-design"><i class="fa fa-check"></i>Map design</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#projection"><i class="fa fa-check"></i>Projection</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#symbology"><i class="fa fa-check"></i>Symbology</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#scale"><i class="fa fa-check"></i>Scale</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#labelling"><i class="fa fa-check"></i>Labelling</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#layout"><i class="fa fa-check"></i>Layout</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#summary"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#resources"><i class="fa fa-check"></i>Resources</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#books-inc-online-books"><i class="fa fa-check"></i>Books (inc online books)</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#useful-sites"><i class="fa fa-check"></i>Useful sites</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#free-courses-and-tutorials"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html"><i class="fa fa-check"></i>Introduction to GIS</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fish Migration Roadmap</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduction-to-cartography" class="section level1 unnumbered">
+<h1>Introduction to Cartography</h1>
+<p>Cartography is the study and practice of creating charts and maps based on geographical layout.</p>
+<p>It combines science and art to represent reality (or an imagined reality) so that spatial information can be communicated effectively.</p>
+<div id="history" class="section level2 unnumbered">
+<h2>History</h2>
+<p>Before jumping into the art of map making, let’s explore the history of cartography through some notable maps.</p>
+<p><strong>Babylonian Map of the World</strong></p>
+<p>The Babylonian Map of the World or <em>Imago Mundi</em> is a Babylonian clay tablet containing a labelled illustration of the known world dated to roughly the 6th century BC.</p>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/The_Babylonian_map_of_the_world%2C_from_Sippar%2C_Mesopotamia..JPG" width = "600" height = "auto">
+</center>
+<center>
+Imago Mundi (Source: Wikipedia)
+</center>
+<p><br></p>
+<p><strong>Anaximander map</strong></p>
+<p>This map was one of the first maps of the world which was circular in form and showed the known lands grouped around the Aegean Sea at the center, surrounded by the ocean.</p>
+<center>
+<img src="https://digitalmapsoftheancientworld.files.wordpress.com/2019/06/800px-anaximander_world_map-en.svg_.png" width = "600" height = "auto">
+</center>
+<center>
+Reconstruction of Anaximander’s Map (Source: Digital Maps of the Ancient World)
+</center>
+<p><br></p>
+<p><strong>Ptolemy map</strong></p>
+<p>The Ptolemy world map represents how the world was known to the Hellenistic society in the 2nd century. His book <em>Geographica</em> was written around the year 150 AD and contains the first reference to the latitude and longitude system which had a significant impact on the work of later cartographers.</p>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/23/PtolemyWorldMap.jpg" width = "600" height = "auto">
+</center>
+<center>
+Ptolemy map of the world (Source: Wikipedia)
+</center>
+<p><br></p>
+<p><strong>Tabula Rogeriana</strong></p>
+<p><em>Tabula Rogeriana</em> is a world map created by the Arab geographer Muhammad al-Idrisi in 1154. The map was later used by Christopher Columbus and Vasco Da Gama for their voyages in America and India.</p>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/TabulaRogeriana_upside-down.jpg" width = "600" height = "auto">
+</center>
+<center>
+Tabula Rogeriana (Source: Wikipedia)
+</center>
+<p><br></p>
+<p><strong>Mappa mundi</strong></p>
+<p><em>Mappa mundi</em> is the largest and most elaborately drawn and coloured medieval map. It is displayed at Hereford Cathedral in England.</p>
+<center>
+<img src="https://cdn.shortpixel.ai/client/to_avif,q_lossy,ret_img,w_530/https://www.gislounge.com/wp-content/uploads/2011/01/Hereford-Mappa-Mundi.png" width = "600" height = "auto">
+</center>
+<center>
+Mappa mundi (Source: GIS Lounge)
+</center>
+<p><br></p>
+<p><strong>Cantino planisphere</strong></p>
+<p>Made by an anonymous cartographer, this map depicts the world as it became known to the Europeans after the great exploration voyages at the end of the 15th and beginning of the 16th century.</p>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Cantino_planisphere_%281502%29.jpg" width = "600" height = "auto">
+</center>
+<center>
+Cantino world map (Source: Wikipedia)
+</center>
+<p><br></p>
+<p><strong>Mercator map</strong></p>
+<p>The Mercator map was created by Flemish geographer and cartographer Gerardus Mercator in 1569. This was the first attempt to project earth on a flat surface.</p>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Mercator_1569.png" width = "600" height = "auto">
+</center>
+<center>
+Mercator map (Source: Wikipedia)
+</center>
+<p><br></p>
+<p><strong>John Snow’s map</strong></p>
+<p>In 1854 Doctor John Snow mapped the cases of the deadly cholera epidemic in London’s Broad Street region and was able to trace the cholera outbreak to a single infected water pump. Snow’s research was a major event in the history of public health and geography.</p>
+<center>
+<img src="https://media.nationalgeographic.org/assets/photos/000/276/27636.jpg" width = "600" height = "auto">
+</center>
+<center>
+John Snow’s map (Source: NG)
+</center>
+<p><br></p>
+<p>Moving away from these historic maps, let’s now think about the process of making maps and some of the things that should be considered.</p>
+<ul>
+<li><p>Purpose of the map: Why am I making this map? What is the story that I want to tell?</p></li>
+<li><p>Audience: Who is it for? Novice? Experts? Why are they interested?</p></li>
+<li><p>Map type: What do I want to show with the map? What kind of data am I using?</p></li>
+<li><p>Map design: Is my map easy to read and interpret? Am I using visual variables and hierarchy in a right way? Is my map the right scale?</p></li>
+</ul>
+<p>Also, keep in mind that maps act as communication tool so it is very important to remain truthful and impartial during the map making process.</p>
+<div class="note">
+<p><strong>Mapping</strong>: Mapping refers to all of the processes of producing a map: collecting data, designing and preparing for distribution in hardcopy or for the Internet.</p>
+</div>
+<div class="note">
+<p><strong>Cartography</strong>: Cartography is a broader discipline than mapping as it also includes the study of the philosophical and theoretical bases of the rules for mapmaking.</p>
+</div>
+<p><br></p>
+</div>
+<div id="map-types" class="section level2 unnumbered">
+<h2>Map types</h2>
+<p>There are many different types of maps, which are usually classified according to what kind of information they want to show.</p>
+<div id="general-or-reference-maps" class="section level3 unnumbered">
+<h3>General or reference maps</h3>
+<p>Reference maps are those that are constructed for a general audience and contain a variety of natural and man-made features.</p>
+<div id="htmlwidget-a478c1e5c1847d566c79" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a478c1e5c1847d566c79">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.52,-0.1],14,[]]},"evals":[],"jsHooks":[]}</script>
+<center>
+Reference map
+</center>
+<p><br></p>
+</div>
+<div id="thematic-maps" class="section level3 unnumbered">
+<h3>Thematic maps</h3>
+<p>Thematic maps highlight features, data (qualitative, quantitative or both) or concepts.</p>
+<ul>
+<li><p>Qualitative maps show the spatial distribution or location of single theme of nominal data.</p></li>
+<li><p>Quantitative maps display the spatial aspects of numerical data. These can be choropleth, dot and proportional symbol maps.</p></li>
+</ul>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-2-1.png" width="100%" />
+<center>
+Choropleth map
+</center>
+<p><br></p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-3-1.png" width="100%" />
+<center>
+Dot map
+</center>
+<p><br></p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-4-1.png" width="100%" />
+<center>
+Proportional symbol map
+</center>
+<p><br></p>
+<ul>
+<li>Cartogram is a type of thematic map where data is mapped by altering the map’s shape or size.</li>
+</ul>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-5-1.png" width="100%" />
+<center>
+Cartogram
+</center>
+<p><br></p>
+<p>Other cartogram types include <strong>hexmaps</strong> and <strong>gridmaps</strong>.</p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-6-1.png" width="100%" />
+<center>
+Hexmap and gridmap of London boroughs
+</center>
+<p><br></p>
+</div>
+<div id="topographic-maps" class="section level3 unnumbered">
+<h3>Topographic maps</h3>
+<p>Maps that show a topographic description of an area with the use of contour lines or shades to show elevation.</p>
+<div id="htmlwidget-b3a4c8369aa5ced5d368" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b3a4c8369aa5ced5d368">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[30,0.1],2,[]],"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["OpenTopoMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}]},"evals":[],"jsHooks":[]}</script>
+<center>
+Topographic map
+</center>
+<p><br></p>
+</div>
+<div id="topological-maps" class="section level3 unnumbered">
+<h3>Topological maps</h3>
+<p>Maps that are only concerned with relative locations of features on the map e.g. subway maps.</p>
+<center>
+<img src="https://www.tokyometro.jp/en/subwaymap/img/img_01.png" width = "700" height = "auto">
+</center>
+<center>
+Tokyo subway map
+</center>
+<p><br></p>
+</div>
+<div id="cartometric-maps" class="section level3 unnumbered">
+<h3>Cartometric maps</h3>
+<p>Maps that focus on specific measurements such as area or distance e.g. nautical and aeronautical charts.</p>
+<center>
+<img src="https://seahistory.org/wp-content/uploads/nautical-chart.jpg" width = "700" height = "auto">
+</center>
+<center>
+Nautical map near Provincetown, Massachusetts
+</center>
+<p><br></p>
+</div>
+</div>
+<div id="map-design" class="section level2 unnumbered">
+<h2>Map design</h2>
+<p>When it comes to designing a map there is no one formula for a good design, however, key things needs to be considered. These are projection, symbology, scale, labelling and layout.</p>
+<div id="projection" class="section level3 unnumbered">
+<h3>Projection</h3>
+<p>Before we talk about how map projections work, let’s imagine a globe made out paper with an evenly spaced network of lines that run on the surface. These lines are called graticules and they represent the latitudes and longitudes.</p>
+<center>
+<img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure6.jpg" width = "250" height = "auto">
+</center>
+<center>
+Graticule map
+</center>
+<p><br>
+Now imagine unwrapping the globe. You will notice that the shape of the graticules will be different.</p>
+<p><strong>Distortion</strong> occurs because the curved surface becomes flat subsequently affecting shape, area and distance. The different types of projections will preserve and/or distort different attributes.</p>
+<p><strong>Map projection</strong> is the process of converting the spherical earth to a flat surface.</p>
+<p>The classification of projection can be based on the projection <em>surface</em> and the <em>properties</em> that the projection preserves.</p>
+<p><strong>Projections by surface</strong></p>
+<p>1, Planar/Azumithal: A plane is placed over the globe.</p>
+<p>Depending on the position of the plane this can be either a) polar, b) equatorial or c) oblique.</p>
+<center>
+<img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure7.jpg" width = "700" height = "auto">
+</center>
+<center>
+Planar projection types
+</center>
+<p><br>
+The polar projection has three different perspectives.</p>
+<ul>
+<li><p>Gnomonic: Projection point from the centre of the globe.</p></li>
+<li><p>Stereographic: Projection point from the opposite side of the globe.</p></li>
+<li><p>Orthographic: Projection from an infinite point.</p></li>
+</ul>
+<center>
+<img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure8.jpg" width = "700" height = "auto">
+</center>
+<center>
+Polar projection types
+</center>
+<p><br>
+2, Conical: A cone is placed over the globe. Conic projection can be either: a) tangent or b) secant.</p>
+<p>During <em>conic tangent</em> projection the cone is only touching the surface along a latitude line, while during <em>conic secant</em> projection the cone is cutting into the surface along two latitude lines, which will produce a more accurate projection.</p>
+<center>
+<img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure9.jpg" width = "600" height = "auto">
+</center>
+<center>
+Conical projection types
+</center>
+<p><br>
+3, Cylindrical: A cylinder is placed over the globe that can touch either along a) a latitude line (normal), b) a longitude line (transverse) or c) another line (oblique).</p>
+<center>
+<img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure10.jpg" width = "700" height = "auto">
+</center>
+<center>
+Cylindrical projection types
+</center>
+<p><br></p>
+<p><strong>Projections by preservation of metric property</strong></p>
+<ul>
+<li><p>Equal-area projections preserve areal relationships.</p></li>
+<li><p>Conformal projections preserve local angles.</p></li>
+<li><p>Azimuthal projections are planar projections on which correct directions from the center of the map to any other point location are maintained.</p></li>
+<li><p>Equidistant projections displays the true distance from one or two points on the map to any other point on the map or along specific lines.</p></li>
+<li><p>Compromise projections do not entirely preserve any property but instead provide a balance of distortion between the various properties.</p></li>
+</ul>
+<div id="projection-examples-in-r-studio" class="section level4 unnumbered">
+<h4>Projection examples in R Studio</h4>
+<p>Here are few more examples of map projection types with R codes below them using maptools, rgeos, maps and ggplot packages:</p>
+<p><strong>Equal Area Cylindrical</strong></p>
+<p>This type of projection is undistorted along the Equator but distortion occurs towards the Poles.</p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-8-1.png" width="100%" />
+<center>
+Equal Area Cylindrical projection
+</center>
+<p><br></p>
+<p><strong>Lambert Equal Area Conic</strong></p>
+<p>Scale and shape are not preserved in this type of projection but distortion is minimal between the two standard parallels 20°N and 50°N.</p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-9-1.png" width="100%" />
+<center>
+Lambert Equal Area Conic projection
+</center>
+<p><br></p>
+<p><strong>Lambert Azimuthal Equal Area</strong></p>
+<p>This type of projection shows all areas but angles aren’t represented accurately.</p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-10-1.png" width="100%" />
+<center>
+Lambert Azimuthal Equal Area projection
+</center>
+<p><br></p>
+<p><strong>Mercator</strong></p>
+<p>Created by Gerardus Mercator in 1569, it was a standard map used for nautical purposes. It preserves angles and shapes, but distorts the size of the objects from the Equator to the Poles.</p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-11-1.png" width="100%" />
+<center>
+Mercator projection
+</center>
+<p><br></p>
+<p><strong>Universal Transverse Mercator</strong></p>
+<p>With this type of projection distortion becomes worse as you move away from the central meridian.</p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-12-1.png" width="100%" />
+<center>
+Universal Transverse Mercator projection
+</center>
+<p><br></p>
+<p><strong>Robinson</strong></p>
+<p>The Robinson projection was created to show the whole globe on a flat image.</p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-13-1.png" width="100%" />
+<center>
+Robinson projection
+</center>
+<p><br></p>
+<p><strong>Van der Grinten</strong></p>
+<p>This projection is neither equal area (preserves the area of displayed features) nor conformal (preserves the local shape of small areas); it shows the globe on a circle with distorted polar regions.</p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-14-1.png" width="100%" />
+<center>
+Van der Grinten projection
+</center>
+<p><br></p>
+<p><strong>Spilhaus</strong></p>
+<p>The Spilhaus projection was authored by Athelstan F. Spilhaus, a South African-American geophysicist and oceanographer, in 1942. It centers around Antarctica presenting the ocean as one body of water.</p>
+<center>
+<img src="https://www.esri.com/arcgis-blog/wp-content/uploads/2020/02/SpilhausLayoutPreview.jpg" width = "700" height = "auto">
+</center>
+<center>
+Spilhaus projection (Source: Esri)
+</center>
+<p><br></p>
+<p>When making a map, projection should be considered based on the data type and how the final map will be used.</p>
+<div class="note">
+<p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
+<p>External links to visit:</p>
+<ul>
+<li><p><a href="https://www.antipodesmap.com/" target="_blank">Antipodes map</a></p></li>
+<li><p><a href="https://projectionwizard.org/" target="_blank">Projection wizard</a></p></li>
+<li><p><a href="https://thetruesize.com/" target="_blank">The true size of</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="symbology" class="section level3 unnumbered">
+<h3>Symbology</h3>
+<p>Location and properties are represented by symbols with different size, shape, colour, and pattern. Map symbol design relies heavily on the proper use of the visual variables shown below.</p>
+<center>
+<img src="https://uploads-ssl.webflow.com/5f6a4786fa53db61032919f9/5fa44835ab735150a7e18135_visual_variables.png" width = "700" height = "auto">
+</center>
+<center>
+Bertin’s visual variables (Source: Axis Maps)
+</center>
+<div id="colours" class="section level4 unnumbered">
+<h4>Colours</h4>
+<p>Colours have an important role in emphasising qualitative and quantitative data presented on a map. Map colours are specified by mixing additive or subtractive colours.</p>
+<p><strong>Additive colours</strong></p>
+<p>RGB: Red, green and blue produce the colour white when added together.</p>
+<center>
+<img src="https://static.photocdn.pt/images/articles/2016-3/color_theory/AdditiveColor.png" width = "300" height = "auto">
+</center>
+<center>
+Additive colours (Source: Photography talk)
+</center>
+<p><br></p>
+<p>Modern computers can display over 16 million different colours using 255 shades of each red, green and blue. The possibilities for mixing these three colours together can be represented as a three dimensional coordinate plane with the values for red, green and blue on each axis. This coordinate plane yields the RGB colour space.</p>
+<center>
+<img src="https://www.baslerweb.com/fp-1485687434/media/editorial/content_images/faqs/faq_RGB_1.gif" width = "400" height = "auto">
+</center>
+<center>
+RGB colour space (Source: Basler)
+</center>
+<p><br></p>
+<p>If all three colours are zero, it means that no light is emitted and the resulting colour is black (0, 0, 0). If all three colours are set to their maximum values, the resulting colour is white (255, 255, 255).</p>
+<p>Two alternative representations of the RGB colour space were developed for computers to allow map makers (and designers) to mix colours more intuitively and work directly with visual variables such as hue, saturation, value/light.</p>
+<p>HSY/HSL models are based on cylindrical coordinate systems:</p>
+<ul>
+<li><p>Hue: Angle around the central vertical axis.</p></li>
+<li><p>Saturation: Distance from the central axis.</p></li>
+<li><p>Lightness: Distance along the central axis.</p></li>
+</ul>
+<center>
+<img src="https://www.researchgate.net/profile/Bogdan_Haifa/publication/50600592/figure/fig2/AS:305740741922817@1449905681103/HSV-left-and-HSL-right-representations_W640.jpg" width = "600" height = "auto">
+</center>
+<center>
+HSV and HSL representations (Source: Haifa et al. 2011)
+</center>
+<p><br></p>
+<p>Hue is used to identify map features. For example blue hues are used to illustrate ocean depth.</p>
+<p>Saturation refers to the intensity of colour. As the saturation increases, the colours appear to be more pure, while as the saturation decreases, the colours appear to be more pale.</p>
+<p>Value/light is used to represent numerical difference on a quantitative scale. For example a choropleth map that shows population difference across countries.</p>
+<center>
+<img src="https://purple11.com/static/fed42130c194b0c240a4ec10408adf97/8282f/hsl-cover-2.png" width = "600" height = "auto">
+</center>
+<center>
+Hue, saturation and light (Source: Purple 11)
+</center>
+<p><br></p>
+<p><strong>Subtractive colours</strong></p>
+<p>CMYK: Cyan, magenta, yellow and black (key) are the subtractive colours. Each one absorbs one of additive colours: cyan absorbs red, magenta absorbs green and yellow absorbs blue. Adding two subtractive colours together will transmit one of the primary colours. This kind of colour model is used in printing.</p>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/SubtractiveColor.svg/800px-SubtractiveColor.svg.png" width = "300" height = "auto">
+</center>
+<center>
+Subtractive colours (Source: Wikipedia)
+</center>
+<p><br></p>
+</div>
+<div id="selecting-colours" class="section level4 unnumbered">
+<h4>Selecting colours</h4>
+<p>All GIS software will allow the user to select colours using the HSV and RGB colour space.</p>
+<center>
+<img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/colours.gif" width = "700" height = "auto">
+</center>
+<center>
+Selecting colours in QGIS
+</center>
+<p><br></p>
+<p><strong>Html notation</strong></p>
+<p>Other then the RGB and HSL values used to pick a colour, web pages also use Html notations in hexadecimal format to display a colour.</p>
+<p>Hexadecimal is a numbering system containing 16 sequential numbers as base units, including 0. It is a convenient way to express binary numbers in modern computers as one hexadecimal digit can represent the arrangement of four binary digits, while two hexadecimal digits can represent eight binary digits and so on.</p>
+<center>
+<img src="https://miro.medium.com/max/390/1*JAQcgtokGhMxVUDQ_GfyiA.gif" width = "300" height = "auto">
+</center>
+<center>
+Decimal binary and hexadecimal (Source: Medium)
+</center>
+<p><br></p>
+<p>A HEX colour is expressed as a six-digit combination of numbers and letters defined by its mix of red, green and blue (RGB). For example: red = <code>#FF0000</code>, black = <code>#000000</code>, white = <code>#FFFFFF</code>.</p>
+<p>See the interactive colour picker widget below for more HEX colour options.
+<style>.colourpicker-input-container{ display:inline-block; }</style>
+<input id="htmlwidget-e14a17cbb784f2defae6" class="colourWidget html-widget form-control" style="width:500px;height:50px;" type="text"/>
+<script type="application/json" data-for="htmlwidget-e14a17cbb784f2defae6">{"x":{"value":"#FF0000","showColour":"both","palette":"square","returnName":true,"allowAlpha":true,"closeOnClick":true},"evals":[],"jsHooks":[]}</script></p>
+<center>
+Colour picker widget (Source: <a href="https://cran.rstudio.com/web/packages/colourpicker/vignettes/colourpicker.html#colourinput">Dean Attali</a>)
+</center>
+<p><br></p>
+<p>When selecting colours, it is important to consider combining colours to make the map aesthetically pleasing.</p>
+<ul>
+<li><p>Complementary colors are opposite from each other on the color wheel.</p></li>
+<li><p>Analogous colors are directly adjacent to the base color.</p></li>
+<li><p>Triadic colors are three, equidistant colors.</p></li>
+<li><p>Split complementary colors use two adjacent colors from the base complementary.</p></li>
+</ul>
+<center>
+<img src="https://user-images.githubusercontent.com/1566273/37525139-94c46934-28f1-11e8-9286-c97ff878bf68.png" width = "600" height = "auto">
+</center>
+<center>
+Colour harmonies (Source: Carto)
+</center>
+<p><br></p>
+<div class="note">
+<p><strong><i class="fa fa-exclamation"></i> Note</strong>: The website <a href="https://www.color-hex.com/" target="_blank">color-hex</a> is an excellent resource to find the right colours for a map.</p>
+</div>
+<p><strong>Colour schemes</strong></p>
+<p>When a map is made, the colours used can be structured in different ways to reflect the quantitative and qualitative character of the data.</p>
+<ul>
+<li>Sequential: Vary lightness to show ordered or numeric data.</li>
+</ul>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<ul>
+<li>Diverging: Used when the data have different extremes with a mid-point.</li>
+</ul>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<ul>
+<li>Qualitative: Used to represent differences between map features.</li>
+</ul>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><br></p>
+<div class="note">
+<p><strong><i class="fa fa-exclamation"></i> Note</strong>: Maps designed for screen use the RGB colours while maps designed for printing use CMYK.</p>
+</div>
+</div>
+</div>
+<div id="scale" class="section level3 unnumbered">
+<h3>Scale</h3>
+<p>When choosing a symbology, map scale (how distance is shown) should also be considered. Scale is expressed as a ratio of the map distance to the ground distance. For example, a scale of 1:10 means that one map unit represents 10 of the same units on the ground. So if two points located 10km apart are shown 1 cm apart on a map, then the scale of the map is 1 cm to 10 km.</p>
+<p>Scale is presented either as a word statement, ratio, fraction or scale bar.</p>
+<p>In terms of scale, there is also a distinction of small scale and large scale maps.</p>
+<ul>
+<li><p>Large scale maps show an area with large amount of detail.</p></li>
+<li><p>Small scale maps show an area with a small amount of detail.</p></li>
+</ul>
+<center>
+<img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure14.jpg" height = "auto">
+</center>
+<center>
+Large and small scale map
+</center>
+</div>
+<div id="labelling" class="section level3 unnumbered">
+<h3>Labelling</h3>
+<p>Labelling helps recognise map features so it should be designed and positioned well to be effective. Good labelling considers order, placement, colours, font styles, type effect (mask, callout, halo and pop-up) and sizing.</p>
+</div>
+<div id="layout" class="section level3 unnumbered">
+<h3>Layout</h3>
+<p>When considering the placement of elements (map, title, subtitle, legend, scale, north arrow, additional text and so on), it is important to take into account visual balance (vertical and horizontal alignment) and visual hierarchy (arrangement of elements) so that it is aesthetically pleasing and also signifies their order.</p>
+</div>
+</div>
+<div id="summary" class="section level2 unnumbered">
+<h2>Summary</h2>
+<ul>
+<li><p>Cartography is the study and practice of creating charts and maps based on geographical layout.</p></li>
+<li><p>Mapping refers to all of the processes of producing a map: collecting data, designing and preparing for distribution in hardcopy or for the Internet.</p></li>
+<li><p>Map types are: reference, thematic, topographic, topological and cartometric.</p></li>
+<li><p>Map projection is the process of converting the spherical earth to a flat surface. The classification of projection can be by surface and by preservation of property.</p></li>
+<li><p>Map symbol design relies heavily on the proper use of visual variables.</p></li>
+<li><p>Colours have an important role in emphasising qualitative and quantitative data presented on a map.</p></li>
+<li><p>Scale refers to the spatial extent of the area on a map.</p></li>
+<li><p>Labelling helps recognise map features.</p></li>
+<li><p>The final map output should be balanced, clear, logical, with the map elements aligned (title, subtitle, legend, scale, north arrow, additional text, credit, copyright) in the right order.</p></li>
+</ul>
+<hr>
+</div>
+<div id="resources" class="section level2 unnumbered">
+<h2>Resources</h2>
+<div id="books-inc-online-books" class="section level3 unnumbered">
+<h3>Books (inc online books)</h3>
+<ul>
+<li><a href="https://esripress.esri.com/display/index.cfm?fuseaction=display&amp;websiteID=342&amp;moduleID=0" target="_blank">Cartography</a></li>
+<li><a href="https://www.axismaps.com/guide" target="_blank">Cartography Guide</a></li>
+<li><a href="https://esripress.esri.com/display/index.cfm?fuseaction=display&amp;websiteID=293&amp;moduleID=0" target="_blank">Designing Better Maps: A Guide for GIS Users</a></li>
+<li><a href="https://press.uchicago.edu/books/HOC/index.html" target="_blank">The History of Cartography</a></li>
+</ul>
+</div>
+<div id="useful-sites" class="section level3 unnumbered">
+<h3>Useful sites</h3>
+<ul>
+<li><a href="https://colorbrewer2.org/#" target="_blank">Colorbrewer 2.0</a></li>
+<li><a href="http://colorizer.org/" target="_blank">Colorizer</a></li>
+</ul>
+</div>
+<div id="free-courses-and-tutorials" class="section level3 unnumbered">
+<h3>Free courses and tutorials</h3>
+<ul>
+<li><a href="https://www.esri.com/training/catalog/596e584bb826875993ba4ebf/cartography./" target="_blank">Cartography</a></li>
+<li><a href="https://www.esri.com/training/catalog/592480f42a01eb14e793d0e7/cartographic-creations-in-arcgis-pro/" target="_blank">Cartographic Creations in ArcGIS Pro</a></li>
+<li><a href="https://www.e-education.psu.edu/geog486/" target="_blank">Cartography and Visualization</a></li>
+<li><a href="https://www.w3schools.com/colors/default.asp" target="_blank">Colors Tutorial</a></li>
+<li><a href="https://carto.com/help/tutorials/map-styling/#intro-to-cartography" target="_blank">Intro to Cartography</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introduction-to-gis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": true,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"info": false
+});
+});
+</script>
+
+</body>
+
+</html>

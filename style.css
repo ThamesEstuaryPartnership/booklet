@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.book.font-family-1 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.summary{
+  font-family: 'Fira Sans', sans-serif;
+  color: #3ea2aad9 !important;
+}
+
+.summary a:hover {
+  color: #3ea2aad9 !important;
+}
+
+div.note {
+  border: 3px #aed6d963;
+  border-style: dashed solid;
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 30px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  min-height: 30px;
+  color: #2ea8b3;
+  background-color: #fcfcfc;
+}
