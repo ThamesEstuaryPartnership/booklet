@@ -1,4 +1,4 @@
-# [Fish Migration Roadmap](https://fishroadmap.london/){target="_blank"}
+# [Fish Migration Roadmap](https://fishroadmap.london/)
 
 ## Educational package
 
