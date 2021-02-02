@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Introduction to GIS | Fish Migration Roadmap</title>
-  <meta name="description" content="Introduction to GIS | Fish Migration Roadmap" />
+  <title>Introduction to Geographic Coordinate Systems | Fish Migration Roadmap</title>
+  <meta name="description" content="Introduction to Geographic Coordinate Systems | Fish Migration Roadmap" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction to GIS | Fish Migration Roadmap" />
+  <meta property="og:title" content="Introduction to Geographic Coordinate Systems | Fish Migration Roadmap" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction to GIS | Fish Migration Roadmap" />
+  <meta name="twitter:title" content="Introduction to Geographic Coordinate Systems | Fish Migration Roadmap" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction-to-cartography.html"/>
-<link rel="next" href="introduction-to-geographic-coordinate-systems.html"/>
+<link rel="prev" href="introduction-to-gis.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -151,139 +151,17 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introduction-to-gis" class="section level1 unnumbered">
-<h1>Introduction to GIS</h1>
-<p>GIS is the abbreviation for geographic information systems. It is a computer system used to create, manage, visualise, analyse and interpret spatially referenced data.</p>
-<p>GIS helps answer questions such as <em>What is on top of what?</em>, <em>What is next to what?</em>, <em>What is connected to what?</em>, <em>How has it changed over time and space?</em> and make decisions.</p>
-<div id="geographic-information" class="section level2 unnumbered">
-<h2>Geographic information</h2>
-<p>Geographic information is made up of spatial location data and attribute data.</p>
-<ul>
-<li><p>Spatial location data answers the question <em>where something is</em>.</p></li>
-<li><p>Attribute data answers the question <em>what something is</em>.</p></li>
-</ul>
-<p>The examples below show the world map of Internet users (per 100 people) in 2016 and its associated attribute table.</p>
-<center>
-<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure1.jpg" width = "800" height = "auto">
-</center>
-<center>
-World map of Internet users (per 100 people) in 2016
-</center>
-<p><br></p>
-<center>
-<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure2.jpg" width = "800" height = "auto">
-</center>
-<center>
-Screenshot of the associated attribute table
-</center>
-<p><br></p>
-</div>
-<div id="gis-capabilities" class="section level2 unnumbered">
-<h2>GIS capabilities</h2>
-<p>GIS has many capabilities. These are:</p>
-<ul>
-<li><p>Spatial analysis: different tools are used to identify trends, patterns and relationships in data.</p></li>
-<li><p>Map making: to spatially represent data from multiple sources (e.g. spreadsheets). This is the most common use of GIS.</p></li>
-<li><p>Imagery and remote sensing: to extract information from imagery and remotely sensed data (e.g. satellites).</p></li>
-<li><p>Data collection and management: to access, use, integrate and store data in a GIS.</p></li>
-</ul>
-</div>
-<div id="gis-data" class="section level2 unnumbered">
-<h2>GIS data</h2>
-<div id="types" class="section level3 unnumbered">
-<h3>Types</h3>
-<p><strong>Vector data</strong></p>
-<p>Spatial data that are stored as geometrical shapes such as:</p>
-<ul>
-<li><p>Points: Points are single x,y coordinate locations.</p></li>
-<li><p>Lines: Lines are defined by two or more points that are connected with lines.</p></li>
-<li><p>Polygons: Polygons are defined by multiple points that are connected with lines and are closed.</p></li>
-</ul>
-<p>Vector data represents discrete data such as buildings, rivers or ponds.</p>
-<center>
-<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure3.jpg" width = "350" height = "auto"><img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure3a.jpg" width = "350" height = "auto">
-</center>
-<center>
-Vector types and vector data drawn on a map
-</center>
-<p><br></p>
-<p><strong>Raster data</strong></p>
-<p>Raster data is made up of a matrix of pixels, called cells, with each containing a value that represents the conditions for the area covered by that cell. Raster data represents continuous data (integer or real values) such as temperature or elevation.</p>
-<center>
-<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure4.jpg" width = "700" height = "auto">
-</center>
-<center>
-Raster data
-</center>
-<p><br></p>
-<p>The example map below shows the average sea surface temperature on the 1st April in 2008.</p>
-<center>
-<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure5.jpg" width = "800" height = "auto">
-</center>
-<center>
-Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
-</center>
-<p><br></p>
-<p><strong>Metadata</strong></p>
-<p>Here, it also worth mentioning metadata which is essentially data about data. It provides additional information about the data, who created it, its usage constraints and so on.</p>
-</div>
-<div id="capture" class="section level3 unnumbered">
-<h3>Capture</h3>
-</div>
-<div id="format" class="section level3 unnumbered">
-<h3>Format</h3>
-</div>
-<div id="quality" class="section level3 unnumbered">
-<h3>Quality</h3>
-</div>
-<div id="finding-data" class="section level3 unnumbered">
-<h3>Finding data</h3>
-</div>
-</div>
-<div id="gis-software" class="section level2 unnumbered">
-<h2>GIS software</h2>
-<hr>
-</div>
-<div id="resources-1" class="section level2 unnumbered">
-<h2>Resources</h2>
-<div id="books-1" class="section level3 unnumbered">
-<h3>Books</h3>
-<ul>
-<li><a href="https://resources.saylor.org/wwwresources/archived/site/textbooks/Essentials%20of%20Geographic%20Information%20Systems.pdf" target="_blank">Essentials of Geographic Information Systems</a></li>
-<li><a href="https://webapps.itc.utwente.nl/librarywww/papers_2009/general/principlesgis.pdf" target="_blank">Principles of Geographic Information Systems</a></li>
-</ul>
-</div>
-<div id="free-courses-and-tutorials-1" class="section level3 unnumbered">
-<h3>Free courses and tutorials</h3>
-<ul>
-<li><a href="https://www.esri.com/training/catalog/57630434851d31e02a43ef28/getting-started-with-gis/" target="_blank">Getting started with GIS</a></li>
-<li><a href="https://www.esri.com/training/catalog/5d9cd7de5edc347a71611ccc/gis-basics/" target="_blank">GIS Basics</a></li>
-</ul>
-</div>
-<div id="paid-courses-and-tutorials" class="section level3 unnumbered">
-<h3>Paid courses and tutorials</h3>
-<ul>
-<li><a href="https://www.coursera.org/specializations/gis" target="_blank">Geographic Information Systems (GIS) Specialization</a></li>
-<li><a href="https://www.coursera.org/specializations/gis-mapping-spatial-analysis" target="_blank">GIS, Mapping, and Spatial Analysis Specialization</a></li>
-<li><a href="https://www.conted.ox.ac.uk/courses/introducing-mapping-spatial-data-and-gis-online/" target="_blank">Introducing Mapping, Spatial Data and GIS</a></li>
-</ul>
-</div>
-<div id="other" class="section level3 unnumbered">
-<h3>Other</h3>
-<ul>
-<li><a href="https://support.esri.com/en/other-resources/gis-dictionary" target="_blank">GIS Dictionary</a></li>
-</ul>
+<div id="introduction-to-geographic-coordinate-systems" class="section level1 unnumbered">
+<h1>Introduction to Geographic Coordinate Systems</h1>
 
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="introduction-to-cartography.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="introduction-to-geographic-coordinate-systems.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction-to-gis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
