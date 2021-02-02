@@ -24,7 +24,7 @@
 <meta name="author" content="Thames Estuary Partnership" />
 
 
-<meta name="date" content="2021-02-01" />
+<meta name="date" content="2021-02-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -106,7 +106,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#summary"><i class="fa fa-check"></i>Summary</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#resources"><i class="fa fa-check"></i>Resources</a><ul>
-<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#books-inc-online-books"><i class="fa fa-check"></i>Books (inc online books)</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#books"><i class="fa fa-check"></i>Books</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#useful-sites"><i class="fa fa-check"></i>Useful sites</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#free-courses-and-tutorials"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
 </ul></li>
@@ -159,7 +159,7 @@ Reconstruction of Anaximander’s Map (Source: Digital Maps of the Ancient World
 </center>
 <p><br></p>
 <p><strong>Ptolemy map</strong></p>
-<p>The Ptolemy world map represents how the world was known to the Hellenistic society in the 2nd century. His book <em>Geographica</em> was written around the year 150 AD and contains the first reference to the latitude and longitude system which had a significant impact on the work of later cartographers.</p>
+<p>Ptolemy’s world map represents how the world was known to the Hellenistic society in the 2nd century. His book <em>Geographica</em> was written around the year 150 AD and contains the first reference to the latitude and longitude system which had a significant impact on the work of later cartographers.</p>
 <center>
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/PtolemyWorldMap.jpg" width = "600" height = "auto">
 </center>
@@ -210,6 +210,15 @@ Mercator map (Source: Wikipedia)
 </center>
 <center>
 John Snow’s map (Source: NG)
+</center>
+<p><br></p>
+<p><strong>Hurricane map</strong></p>
+Thanks to the advance of technology, maps nowadays are predominantly made with computer software.
+<center>
+<img src="https://adventuresinmapping.files.wordpress.com/2016/05/hurricanes1.png" width = "600" height = "auto">
+</center>
+<center>
+Hurricane map (Source: Esri/John Nelson)
 </center>
 <p><br></p>
 <p>Moving away from these historic maps, let’s now think about the process of making maps and some of the things that should be considered.</p>
@@ -306,14 +315,14 @@ Tokyo subway map
 <img src="https://seahistory.org/wp-content/uploads/nautical-chart.jpg" width = "700" height = "auto">
 </center>
 <center>
-Nautical map near Provincetown, Massachusetts
+Nautical map of Provincetown, Massachusetts
 </center>
 <p><br></p>
 </div>
 </div>
 <div id="map-design" class="section level2 unnumbered">
 <h2>Map design</h2>
-<p>When it comes to designing a map there is no one formula for a good design, however, key things needs to be considered. These are projection, symbology, scale, labelling and layout.</p>
+<p>When it comes to designing a map there is no one formula for a good design, however, key things needs to be considered. These include projection, symbology, scale, labelling and layout.</p>
 <div id="projection" class="section level3 unnumbered">
 <h3>Projection</h3>
 <p>Before we talk about how map projections work, let’s imagine a globe made out paper with an evenly spaced network of lines that run on the surface. These lines are called graticules and they represent the latitudes and longitudes.</p>
@@ -321,16 +330,16 @@ Nautical map near Provincetown, Massachusetts
 <img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure6.jpg" width = "250" height = "auto">
 </center>
 <center>
-Graticule map
+Graticule globe
 </center>
 <p><br>
-Now imagine unwrapping the globe. You will notice that the shape of the graticules will be different.</p>
+Now imagine unwrapping the globe. You will notice that the shape of the graticules will be different when the globe is flattened out.</p>
 <p><strong>Distortion</strong> occurs because the curved surface becomes flat subsequently affecting shape, area and distance. The different types of projections will preserve and/or distort different attributes.</p>
 <p><strong>Map projection</strong> is the process of converting the spherical earth to a flat surface.</p>
 <p>The classification of projection can be based on the projection <em>surface</em> and the <em>properties</em> that the projection preserves.</p>
 <p><strong>Projections by surface</strong></p>
 <p>1, Planar/Azumithal: A plane is placed over the globe.</p>
-<p>Depending on the position of the plane this can be either a) polar, b) equatorial or c) oblique.</p>
+<p>Depending on the position of the plane this can be either polar, equatorial or oblique.</p>
 <center>
 <img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure7.jpg" width = "700" height = "auto">
 </center>
@@ -342,7 +351,7 @@ The polar projection has three different perspectives.</p>
 <ul>
 <li><p>Gnomonic: Projection point from the centre of the globe.</p></li>
 <li><p>Stereographic: Projection point from the opposite side of the globe.</p></li>
-<li><p>Orthographic: Projection from an infinite point.</p></li>
+<li><p>Orthographic: It shows a hemisphere of the globe as it appears from outer space.</p></li>
 </ul>
 <center>
 <img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure8.jpg" width = "700" height = "auto">
@@ -351,7 +360,7 @@ The polar projection has three different perspectives.</p>
 Polar projection types
 </center>
 <p><br>
-2, Conical: A cone is placed over the globe. Conic projection can be either: a) tangent or b) secant.</p>
+2, Conical: A cone is placed over the globe. Conic projection can be either tangent or secant.</p>
 <p>During <em>conic tangent</em> projection the cone is only touching the surface along a latitude line, while during <em>conic secant</em> projection the cone is cutting into the surface along two latitude lines, which will produce a more accurate projection.</p>
 <center>
 <img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure9.jpg" width = "600" height = "auto">
@@ -359,13 +368,23 @@ Polar projection types
 <center>
 Conical projection types
 </center>
-<p><br>
-3, Cylindrical: A cylinder is placed over the globe that can touch either along a) a latitude line (normal), b) a longitude line (transverse) or c) another line (oblique).</p>
+<p><br></p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-8-1.png" width="100%" />
+<center>
+Conical projection of the US
+</center>
+<p><br></p>
+<p>3, Cylindrical: A cylinder is placed over the globe that can touch either along a latitude line (normal), a longitude line (transverse) or another line (oblique).</p>
 <center>
 <img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure10.jpg" width = "700" height = "auto">
 </center>
 <center>
 Cylindrical projection types
+</center>
+<p><br></p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-9-1.png" width="100%" />
+<center>
+Cylindrical projection of the world
 </center>
 <p><br></p>
 <p><strong>Projections by preservation of metric property</strong></p>
@@ -376,54 +395,53 @@ Cylindrical projection types
 <li><p>Equidistant projections displays the true distance from one or two points on the map to any other point on the map or along specific lines.</p></li>
 <li><p>Compromise projections do not entirely preserve any property but instead provide a balance of distortion between the various properties.</p></li>
 </ul>
-<div id="projection-examples-in-r-studio" class="section level4 unnumbered">
-<h4>Projection examples in R Studio</h4>
-<p>Here are few more examples of map projection types with R codes below them using maptools, rgeos, maps and ggplot packages:</p>
+<div id="some-projection-examples" class="section level4 unnumbered">
+<h4>Some projection examples:</h4>
 <p><strong>Equal Area Cylindrical</strong></p>
 <p>This type of projection is undistorted along the Equator but distortion occurs towards the Poles.</p>
-<img src="bookdown-demo_files/figure-html/unnamed-chunk-8-1.png" width="100%" />
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-10-1.png" width="100%" />
 <center>
 Equal Area Cylindrical projection
 </center>
 <p><br></p>
 <p><strong>Lambert Equal Area Conic</strong></p>
 <p>Scale and shape are not preserved in this type of projection but distortion is minimal between the two standard parallels 20°N and 50°N.</p>
-<img src="bookdown-demo_files/figure-html/unnamed-chunk-9-1.png" width="100%" />
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-11-1.png" width="100%" />
 <center>
 Lambert Equal Area Conic projection
 </center>
 <p><br></p>
 <p><strong>Lambert Azimuthal Equal Area</strong></p>
 <p>This type of projection shows all areas but angles aren’t represented accurately.</p>
-<img src="bookdown-demo_files/figure-html/unnamed-chunk-10-1.png" width="100%" />
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-12-1.png" width="100%" />
 <center>
 Lambert Azimuthal Equal Area projection
 </center>
 <p><br></p>
 <p><strong>Mercator</strong></p>
-<p>Created by Gerardus Mercator in 1569, it was a standard map used for nautical purposes. It preserves angles and shapes, but distorts the size of the objects from the Equator to the Poles.</p>
-<img src="bookdown-demo_files/figure-html/unnamed-chunk-11-1.png" width="100%" />
+<p>The Mercator projection has been widely used for nautical purposes. It preserves angles and shapes, but distorts the size of the objects from the Equator to the Poles.</p>
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-13-1.png" width="100%" />
 <center>
 Mercator projection
 </center>
 <p><br></p>
 <p><strong>Universal Transverse Mercator</strong></p>
 <p>With this type of projection distortion becomes worse as you move away from the central meridian.</p>
-<img src="bookdown-demo_files/figure-html/unnamed-chunk-12-1.png" width="100%" />
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-14-1.png" width="100%" />
 <center>
 Universal Transverse Mercator projection
 </center>
 <p><br></p>
 <p><strong>Robinson</strong></p>
 <p>The Robinson projection was created to show the whole globe on a flat image.</p>
-<img src="bookdown-demo_files/figure-html/unnamed-chunk-13-1.png" width="100%" />
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-15-1.png" width="100%" />
 <center>
 Robinson projection
 </center>
 <p><br></p>
 <p><strong>Van der Grinten</strong></p>
 <p>This projection is neither equal area (preserves the area of displayed features) nor conformal (preserves the local shape of small areas); it shows the globe on a circle with distorted polar regions.</p>
-<img src="bookdown-demo_files/figure-html/unnamed-chunk-14-1.png" width="100%" />
+<img src="bookdown-demo_files/figure-html/unnamed-chunk-16-1.png" width="100%" />
 <center>
 Van der Grinten projection
 </center>
@@ -443,6 +461,7 @@ Spilhaus projection (Source: Esri)
 <p>External links to visit:</p>
 <ul>
 <li><p><a href="https://www.antipodesmap.com/" target="_blank">Antipodes map</a></p></li>
+<li><p><a href="http://andywoodruff.com/blog/beyond-the-sea/" target="_blank">Beyond the Sea</a></p></li>
 <li><p><a href="https://projectionwizard.org/" target="_blank">Projection wizard</a></p></li>
 <li><p><a href="https://thetruesize.com/" target="_blank">The true size of</a></p></li>
 </ul>
@@ -460,7 +479,7 @@ Bertin’s visual variables (Source: Axis Maps)
 </center>
 <div id="colours" class="section level4 unnumbered">
 <h4>Colours</h4>
-<p>Colours have an important role in emphasising qualitative and quantitative data presented on a map. Map colours are specified by mixing additive or subtractive colours.</p>
+<p>Colours have an important role in emphasising qualitative and quantitative data presented on a map. Colours are specified by mixing additive or subtractive colours.</p>
 <p><strong>Additive colours</strong></p>
 <p>RGB: Red, green and blue produce the colour white when added together.</p>
 <center>
@@ -493,7 +512,7 @@ RGB colour space (Source: Basler)
 HSV and HSL representations (Source: Haifa et al. 2011)
 </center>
 <p><br></p>
-<p>Hue is used to identify map features. For example blue hues are used to illustrate ocean depth.</p>
+<p>Hue is the shade or tint of a colour and it is used to identify map features. For example blue hues are used to illustrate ocean depth.</p>
 <p>Saturation refers to the intensity of colour. As the saturation increases, the colours appear to be more pure, while as the saturation decreases, the colours appear to be more pale.</p>
 <p>Value/light is used to represent numerical difference on a quantitative scale. For example a choropleth map that shows population difference across countries.</p>
 <center>
@@ -525,7 +544,7 @@ Selecting colours in QGIS
 <p><br></p>
 <p><strong>Html notation</strong></p>
 <p>Other then the RGB and HSL values used to pick a colour, web pages also use Html notations in hexadecimal format to display a colour.</p>
-<p>Hexadecimal is a numbering system containing 16 sequential numbers as base units, including 0. It is a convenient way to express binary numbers in modern computers as one hexadecimal digit can represent the arrangement of four binary digits, while two hexadecimal digits can represent eight binary digits and so on.</p>
+<p>Hexadecimal is a numbering system containing 16 sequential numbers as base units, including 0. It is a convenient way to express binary numbers in modern computers as one hexadecimal digit can represent the arrangement of four binary digits, while two hexadecimal digits can represent eight binary digits.</p>
 <center>
 <img src="https://miro.medium.com/max/390/1*JAQcgtokGhMxVUDQ_GfyiA.gif" width = "300" height = "auto">
 </center>
@@ -542,12 +561,12 @@ Decimal binary and hexadecimal (Source: Medium)
 Colour picker widget (Source: <a href="https://cran.rstudio.com/web/packages/colourpicker/vignettes/colourpicker.html#colourinput">Dean Attali</a>)
 </center>
 <p><br></p>
-<p>When selecting colours, it is important to consider combining colours to make the map aesthetically pleasing.</p>
+<p>When selecting colours, it is also important to consider colour combinations so that the final map is aesthetically pleasing.</p>
 <ul>
-<li><p>Complementary colors are opposite from each other on the color wheel.</p></li>
-<li><p>Analogous colors are directly adjacent to the base color.</p></li>
-<li><p>Triadic colors are three, equidistant colors.</p></li>
-<li><p>Split complementary colors use two adjacent colors from the base complementary.</p></li>
+<li><p>Complementary colors are opposite from each other on the colour wheel.</p></li>
+<li><p>Analogous colors are directly adjacent to the base colour.</p></li>
+<li><p>Triadic colors are three, equidistant colours.</p></li>
+<li><p>Split complementary colors use two adjacent colours from the base complementary.</p></li>
 </ul>
 <center>
 <img src="https://user-images.githubusercontent.com/1566273/37525139-94c46934-28f1-11e8-9286-c97ff878bf68.png" width = "600" height = "auto">
@@ -564,26 +583,26 @@ Colour harmonies (Source: Carto)
 <ul>
 <li>Sequential: Vary lightness to show ordered or numeric data.</li>
 </ul>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 <ul>
 <li>Diverging: Used when the data have different extremes with a mid-point.</li>
 </ul>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <ul>
 <li>Qualitative: Used to represent differences between map features.</li>
 </ul>
-<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 <p><br></p>
 <div class="note">
-<p><strong><i class="fa fa-exclamation"></i> Note</strong>: Maps designed for screen use the RGB colours while maps designed for printing use CMYK.</p>
+<p><strong><i class="fa fa-exclamation"></i> Note</strong>: Maps designed for screen use the RGB/HSL colours while maps designed for printing use CMYK.</p>
 </div>
 </div>
 </div>
 <div id="scale" class="section level3 unnumbered">
 <h3>Scale</h3>
-<p>When choosing a symbology, map scale (how distance is shown) should also be considered. Scale is expressed as a ratio of the map distance to the ground distance. For example, a scale of 1:10 means that one map unit represents 10 of the same units on the ground. So if two points located 10km apart are shown 1 cm apart on a map, then the scale of the map is 1 cm to 10 km.</p>
+<p>When choosing a symbology, map scale (how distance is shown) should also be considered. Scale is expressed as a ratio of the map distance to the ground distance. For example, a scale of 1:10 means that one map unit represents 10 of the same units on the ground. So if two points located 10 km apart are shown 1 cm apart on a map, then the scale of the map is 1 cm to 10 km.</p>
 <p>Scale is presented either as a word statement, ratio, fraction or scale bar.</p>
-<p>In terms of scale, there is also a distinction of small scale and large scale maps.</p>
+<p>In terms of scale, there are also a distinctions between a small scale and a large scale map.</p>
 <ul>
 <li><p>Large scale maps show an area with large amount of detail.</p></li>
 <li><p>Small scale maps show an area with a small amount of detail.</p></li>
@@ -597,11 +616,11 @@ Large and small scale map
 </div>
 <div id="labelling" class="section level3 unnumbered">
 <h3>Labelling</h3>
-<p>Labelling helps recognise map features so it should be designed and positioned well to be effective. Good labelling considers order, placement, colours, font styles, type effect (mask, callout, halo and pop-up) and sizing.</p>
+<p>Labelling helps recognise map features so it should be designed and positioned well to be effective. Good labelling considers order, placement, colours, font styles, type effect and sizing.</p>
 </div>
 <div id="layout" class="section level3 unnumbered">
 <h3>Layout</h3>
-<p>When considering the placement of elements (map, title, subtitle, legend, scale, north arrow, additional text and so on), it is important to take into account visual balance (vertical and horizontal alignment) and visual hierarchy (arrangement of elements) so that it is aesthetically pleasing and also signifies their order.</p>
+<p>When considering the placement of elements (map, title, subtitle, legend, scale, north arrow, additional text and so on), it is important to take into account visual balance (vertical and horizontal alignment of the elements) and visual hierarchy (arrangement of elements) so that it is aesthetically pleasing and also signifies their order.</p>
 </div>
 </div>
 <div id="summary" class="section level2 unnumbered">
@@ -609,24 +628,25 @@ Large and small scale map
 <ul>
 <li><p>Cartography is the study and practice of creating charts and maps based on geographical layout.</p></li>
 <li><p>Mapping refers to all of the processes of producing a map: collecting data, designing and preparing for distribution in hardcopy or for the Internet.</p></li>
-<li><p>Map types are: reference, thematic, topographic, topological and cartometric.</p></li>
-<li><p>Map projection is the process of converting the spherical earth to a flat surface. The classification of projection can be by surface and by preservation of property.</p></li>
-<li><p>Map symbol design relies heavily on the proper use of visual variables.</p></li>
+<li><p>Map types are reference, thematic, topographic, topological and cartometric.</p></li>
+<li><p>Map projection is the process of converting the spherical earth to a flat surface. The classification of projection can be either by surface and by preservation of property.</p></li>
+<li><p>Map symbololgy relies heavily on the proper use of visual variables.</p></li>
 <li><p>Colours have an important role in emphasising qualitative and quantitative data presented on a map.</p></li>
 <li><p>Scale refers to the spatial extent of the area on a map.</p></li>
-<li><p>Labelling helps recognise map features.</p></li>
+<li><p>Labelling helps recognise map features and provides clarity.</p></li>
 <li><p>The final map output should be balanced, clear, logical, with the map elements aligned (title, subtitle, legend, scale, north arrow, additional text, credit, copyright) in the right order.</p></li>
 </ul>
 <hr>
 </div>
 <div id="resources" class="section level2 unnumbered">
 <h2>Resources</h2>
-<div id="books-inc-online-books" class="section level3 unnumbered">
-<h3>Books (inc online books)</h3>
+<div id="books" class="section level3 unnumbered">
+<h3>Books</h3>
 <ul>
 <li><a href="https://esripress.esri.com/display/index.cfm?fuseaction=display&amp;websiteID=342&amp;moduleID=0" target="_blank">Cartography</a></li>
 <li><a href="https://www.axismaps.com/guide" target="_blank">Cartography Guide</a></li>
 <li><a href="https://esripress.esri.com/display/index.cfm?fuseaction=display&amp;websiteID=293&amp;moduleID=0" target="_blank">Designing Better Maps: A Guide for GIS Users</a></li>
+<li><a href="https://fac.ksu.edu.sa/sites/default/files/gis_cartography.pdf" target="_blank">GIS Cartography</a></li>
 <li><a href="https://press.uchicago.edu/books/HOC/index.html" target="_blank">The History of Cartography</a></li>
 </ul>
 </div>
