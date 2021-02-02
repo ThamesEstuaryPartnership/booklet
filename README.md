@@ -3,3 +3,5 @@
 ## Educational package
 
 - Introduction to Cartography
+
+- Introduction to GIS
