@@ -53,24 +53,6 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
-<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
-<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
-<link href="libs/colourpicker-lib-1.4/css/colourpicker.min.css" rel="stylesheet" />
-<script src="libs/colourpicker-lib-1.4/js/colourpicker.min.js"></script>
-<script src="libs/colourWidget-binding-1.1.0/colourWidget.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 
 
 
@@ -164,6 +146,7 @@
 <li><p>Spatial location data answers the question <em>where something is</em>.</p></li>
 <li><p>Attribute data answers the question <em>what something is</em>.</p></li>
 </ul>
+<p>The database that contains these geographic information is called an <strong>attribute table</strong> and it can be used to symbolise features, make queries and to analyse.</p>
 <p>The examples below show the world map of Internet users (per 100 people) in 2016 and its associated attribute table.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure1.jpg" width = "800" height = "auto">
@@ -184,24 +167,25 @@ Screenshot of the associated attribute table
 <h2>GIS capabilities</h2>
 <p>GIS has many capabilities. These are:</p>
 <ul>
-<li><p>Spatial analysis: different tools are used to identify trends, patterns and relationships in data.</p></li>
-<li><p>Map making: to spatially represent data from multiple sources (e.g. spreadsheets). This is the most common use of GIS.</p></li>
-<li><p>Imagery and remote sensing: to extract information from imagery and remotely sensed data (e.g. satellites).</p></li>
-<li><p>Data collection and management: to access, use, integrate and store data in a GIS.</p></li>
+<li><p>Spatial analysis: Different tools are used to identify trends, patterns and relationships in data. For example spatial analysis can be creating buffers, clipping features, network analysis, performing spatial statistics and so on.</p></li>
+<li><p>Map making: To spatially represent data from multiple sources (e.g. spreadsheets). This is the most common use of GIS.</p></li>
+<li><p>Imagery and remote sensing: To extract information from imagery and remotely sensed data (e.g. satellites).</p></li>
+<li><p>Data collection and management: To access, use, integrate and store data in a GIS.</p></li>
 </ul>
 </div>
 <div id="gis-data" class="section level2 unnumbered">
 <h2>GIS data</h2>
 <div id="types" class="section level3 unnumbered">
 <h3>Types</h3>
+<p>Geographic information can be stored either as a vector data or a raster data.</p>
 <p><strong>Vector data</strong></p>
-<p>Spatial data that are stored as geometrical shapes such as:</p>
+<p>Spatial data that are stored as geometrical shapes:</p>
 <ul>
 <li><p>Points: Points are single x,y coordinate locations.</p></li>
 <li><p>Lines: Lines are defined by two or more points that are connected with lines.</p></li>
 <li><p>Polygons: Polygons are defined by multiple points that are connected with lines and are closed.</p></li>
 </ul>
-<p>Vector data represents discrete data such as buildings, rivers or ponds.</p>
+<p>Vector data represents discrete data for example buildings, rivers or ponds.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure3.jpg" width = "350" height = "auto"><img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure3a.jpg" width = "350" height = "auto">
 </center>
@@ -210,7 +194,7 @@ Vector types and vector data drawn on a map
 </center>
 <p><br></p>
 <p><strong>Raster data</strong></p>
-<p>Raster data is made up of a matrix of pixels, called cells, with each containing a value that represents the conditions for the area covered by that cell. Raster data represents continuous data (integer or real values) such as temperature or elevation.</p>
+<p>Raster data is made up of a matrix of pixels, called cells, with each being the same size and containing a value that represents the conditions for the area covered by that cell.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure4.jpg" width = "700" height = "auto">
 </center>
@@ -218,6 +202,7 @@ Vector types and vector data drawn on a map
 Raster data
 </center>
 <p><br></p>
+<p>Raster data represents continuous data (integer or real values) like temperature or elevation.</p>
 <p>The example map below shows the average sea surface temperature on the 1st April in 2008.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure5.jpg" width = "800" height = "auto">
@@ -227,19 +212,54 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 </center>
 <p><br></p>
 <p><strong>Metadata</strong></p>
-<p>Here, it also worth mentioning metadata which is essentially data about data. It provides additional information about the data, who created it, its usage constraints and so on.</p>
+<p>Here, it also worth mentioning metadata which is essentially data about data. It provides additional information about the data, who created it, its usage constraints and so on. The more detailed the metadata is, the easier for the user to interpret it.</p>
 </div>
 <div id="capture" class="section level3 unnumbered">
 <h3>Capture</h3>
 </div>
 <div id="format" class="section level3 unnumbered">
 <h3>Format</h3>
+<p><strong>Shapefile</strong></p>
+<ul>
+<li><p>.shp: Contains the geometry of each feature.</p></li>
+<li><p>.dbf: Contains the attribute data for all of the features in the dataset.</p></li>
+<li><p>.shx: Spatial index, it allows GIS systems to find features within the .shp file.</p></li>
+<li><p>.prj: Contains information about the “projection” and “coordinate system” the data uses.</p></li>
+</ul>
+<p><strong>GeoJson</strong></p>
+<p><strong>csv</strong></p>
+<p><strong>File GeoDatabase</strong></p>
+<p><strong>KML/KMZ</strong></p>
+<p><strong>GeoTiff</strong></p>
 </div>
 <div id="quality" class="section level3 unnumbered">
 <h3>Quality</h3>
+<p>There is no such thing as perfect geospatial data so When data is collected and used, errors are inevitable.</p>
+<p>Precision refers to the fineness and exactness of the measurements, whilst accuracy the difference is between the recorded value and the true value.</p>
+<p>To understand the difference between precision and accuracy, consider the illustration below.</p>
+<center>
+<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure6.jpg" width = "500" height = "auto">
+</center>
+<p><br></p>
+<p>When it comes to data quality, here are some of the things look out for:</p>
+<ul>
+<li><p>The completeness of the attribute table (is there any data missing?).</p></li>
+<li><p>Temporal consistency (is it up-to-date?).</p></li>
+<li><p>Spatial accuracy (is the position of the feature correct?)</p></li>
+</ul>
+<p>Unfortunately, the more accurate and precise the data is, the higher cost to obtain it and store it. This is because of the time and equipment used to collect the data. Larger data will also always require constant maintenance.</p>
 </div>
 <div id="finding-data" class="section level3 unnumbered">
 <h3>Finding data</h3>
+<p>In the age of information, the world wide web has vast amount of data available. A quick Google search can normally help find geospatial data. However, it is best to acquire data from trusted sources.</p>
+<ul>
+<li><p><a href="https://scihub.copernicus.eu/dhus/#/home" target="_blank">Copernicus</a>: Copernicus is the European Union’s Earth observation programme.</p></li>
+<li><p><a href="https://emodnet.eu/en" target="_blank">EmodNet</a>: EmodNet is the gateway to marine data in Europe.</p></li>
+<li><p><a href="https://hub.arcgis.com/search" target="_blank">Esri Data Hub</a>: Esri houses over 250,000 open data sets from 5,000 organisations worldwide.</p></li>
+<li><p><a href="http://www.naturalearthdata.com/downloads/" target="_blank">Natural Earth Data</a>: This site houses key cultural and physical vector GIS datasets.</p></li>
+<li><p><a href="https://terra.ipums.org/" target="_blank">Terra Populus</a>: Terra Populus holds population and environmental data.</p></li>
+<li><p><a href="https://www.openstreetmap.org/#map=5/54.910/-3.432" target="_blank">OpenStreetMap</a>: OSM has some of the most detailed information on our planet.</p></li>
+</ul>
 </div>
 </div>
 <div id="gis-mapping-software" class="section level2 unnumbered">
@@ -269,8 +289,10 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 <div id="free-courses-and-tutorials-1" class="section level3 unnumbered">
 <h3>Free courses and tutorials</h3>
 <ul>
+<li><a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/index.html" target="_blank">A Gentle Introduction to GIS</a></li>
 <li><a href="https://www.esri.com/training/catalog/57630434851d31e02a43ef28/getting-started-with-gis/" target="_blank">Getting started with GIS</a></li>
 <li><a href="https://www.esri.com/training/catalog/5d9cd7de5edc347a71611ccc/gis-basics/" target="_blank">GIS Basics</a></li>
+<li><a href="https://ocw.mit.edu/resources/res-str-001-geographic-information-system-gis-tutorial-january-iap-2016/introduction-to-gis/" target="_blank">Introduction to GIS</a></li>
 </ul>
 </div>
 <div id="paid-courses-and-tutorials" class="section level3 unnumbered">
