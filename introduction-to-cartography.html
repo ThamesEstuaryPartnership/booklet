@@ -254,7 +254,7 @@ How the Virus Got Out (Source: The New York Times)
 <p>Let’s now think about the process of making maps and some of the things that should be considered.</p>
 <ul>
 <li><p>Purpose of the map: Why am I making this map? What is the story that I want to tell?</p></li>
-<li><p>Audience: Who is it for? Novice? Experts? Why are they interested?</p></li>
+<li><p>Audience: Who is it for? Novices? Experts? Why are they interested?</p></li>
 <li><p>Map type: What do I want to show with the map? What kind of data am I using?</p></li>
 <li><p>Map design: Is my map easy to read and interpret? Am I using visual variables and hierarchy in a right way? Is my map the right scale?</p></li>
 </ul>
@@ -273,8 +273,8 @@ How the Virus Got Out (Source: The New York Times)
 <div id="general-or-reference-maps" class="section level3 unnumbered">
 <h3>General or reference maps</h3>
 <p>Reference maps are those that are constructed for a general audience and contain a variety of natural and man-made features.</p>
-<div id="htmlwidget-d795b00fd0362db11c82" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d795b00fd0362db11c82">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.52,-0.1],14,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a478c1e5c1847d566c79" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a478c1e5c1847d566c79">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.52,-0.1],14,[]]},"evals":[],"jsHooks":[]}</script>
 <center>
 Reference map
 </center>
@@ -320,8 +320,8 @@ Hexmap and gridmap of London boroughs
 <div id="topographic-maps" class="section level3 unnumbered">
 <h3>Topographic maps</h3>
 <p>Maps that show a topographic description of an area with the use of contour lines or shades to show elevation.</p>
-<div id="htmlwidget-e9a46e970bde536e0aee" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e9a46e970bde536e0aee">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[30,0.1],2,[]],"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["OpenTopoMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b3a4c8369aa5ced5d368" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b3a4c8369aa5ced5d368">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[30,0.1],2,[]],"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["OpenTopoMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}]},"evals":[],"jsHooks":[]}</script>
 <center>
 Topographic map
 </center>
@@ -355,15 +355,14 @@ Nautical map of Provincetown, Massachusetts
 <p>When it comes to designing a map there is no one formula for a good design, however, key things needs to be considered. These include projection, symbology, scale, labelling and layout.</p>
 <div id="projection" class="section level3 unnumbered">
 <h3>Projection</h3>
-<p>Before we talk about how map projections work, let’s imagine a globe made out paper with an evenly spaced network of lines that run on the surface. These lines are called graticules and they represent the latitudes and longitudes.</p>
+<p>Before we talk about how map projections work, let’s imagine the earth (3D) flattened out (2D). You will notice that the shape of the continents will be different.</p>
 <center>
-<img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure6.jpg" width = "250" height = "auto">
+<img src="https://mangomap.com/assets/images/projection.gif" width = "400" height = "auto">
 </center>
 <center>
-Graticule globe
+Earth flattened out (Source: Mango)
 </center>
-<p><br>
-Now imagine unwrapping the globe. You will notice that the shape of the graticules will be different when the globe is flattened out.</p>
+<p><br></p>
 <p><strong>Distortion</strong> occurs because the curved surface becomes flat subsequently affecting shape, area and distance. The different types of projections will preserve and/or distort different attributes.</p>
 <div class="note">
 <p><strong><i class="fa fa-exclamation"></i> Note</strong>: Tissot’s indicatrix is a method developed to illustrate and quantify distortion across a map. The small circles placed on the surface of a reference globe will be distorted depending on the type of projection. The map below shows how the circles become bigger away from the Equator.</p>
@@ -598,8 +597,8 @@ Decimal binary and hexadecimal (Source: Medium)
 <p>See the interactive colour picker widget below for more HEX colour options. <em>Click into the rectangle.</em>
 <br>
 <style>.colourpicker-input-container{ display:inline-block; }</style>
-<input id="htmlwidget-7f443184998a30b4a60a" class="colourWidget html-widget form-control" style="width:300px;height:50px;" type="text"/>
-<script type="application/json" data-for="htmlwidget-7f443184998a30b4a60a">{"x":{"value":"#FF0000","showColour":"both","palette":"square","returnName":true,"allowAlpha":true,"closeOnClick":true},"evals":[],"jsHooks":[]}</script></p>
+<input id="htmlwidget-e14a17cbb784f2defae6" class="colourWidget html-widget form-control" style="width:300px;height:50px;" type="text"/>
+<script type="application/json" data-for="htmlwidget-e14a17cbb784f2defae6">{"x":{"value":"#FF0000","showColour":"both","palette":"square","returnName":true,"allowAlpha":true,"closeOnClick":true},"evals":[],"jsHooks":[]}</script></p>
 <center>
 Colour picker widget (Source: <a href="https://cran.rstudio.com/web/packages/colourpicker/vignettes/colourpicker.html#colourinput">Dean Attali</a>)
 </center>

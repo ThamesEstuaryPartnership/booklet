@@ -53,6 +53,24 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
+<link href="libs/colourpicker-lib-1.4/css/colourpicker.min.css" rel="stylesheet" />
+<script src="libs/colourpicker-lib-1.4/js/colourpicker.min.js"></script>
+<script src="libs/colourWidget-binding-1.1.0/colourWidget.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 
 
 
@@ -138,7 +156,7 @@
 <div id="introduction-to-gis" class="section level1 unnumbered">
 <h1>Introduction to GIS</h1>
 <p>GIS is the abbreviation for geographic information systems. It is a computer system used to create, manage, visualise, analyse and interpret spatially referenced data.</p>
-<p>GIS helps answer questions such as <em>What is on top of what?</em>, <em>What is next to what?</em>, <em>What is connected to what?</em>, <em>How has it changed over time and space?</em> and make decisions.</p>
+<p>GIS helps answer questions such as <em>What is on top of what?</em>, <em>What is next to what?</em>, <em>What is connected to what?</em> and make decisions.</p>
 <div id="geographic-information" class="section level2 unnumbered">
 <h2>Geographic information</h2>
 <p>Geographic information is made up of spatial location data and attribute data.</p>
@@ -146,8 +164,8 @@
 <li><p>Spatial location data answers the question <em>where something is</em>.</p></li>
 <li><p>Attribute data answers the question <em>what something is</em>.</p></li>
 </ul>
-<p>The database that contains these geographic information is called an <strong>attribute table</strong> and it can be used to symbolise features, make queries and to analyse.</p>
-<p>The examples below show the world map of Internet users (per 100 people) in 2016 and its associated attribute table.</p>
+<p>The database that contains these geographic information is called an <strong>attribute table</strong> and it can be used to symbolise features, make queries and to analyse the data.</p>
+<p>The example belows show a choropleth map of Internet users (per 100 people) in 2016 and its associated attribute table.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure1.jpg" width = "800" height = "auto">
 </center>
@@ -212,30 +230,57 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 </center>
 <p><br></p>
 <p><strong>Metadata</strong></p>
-<p>Here, it also worth mentioning metadata which is essentially data about data. It provides additional information about the data, who created it, its usage constraints and so on. The more detailed the metadata is, the easier for the user to interpret it.</p>
+<p>Here it also worth mentioning metadata which is essentially data about data. It provides additional information about the data, who created it, its usage constraints and so on. The more detailed the metadata is, the easier for the user to interpret it.</p>
 </div>
 <div id="capture" class="section level3 unnumbered">
 <h3>Capture</h3>
 </div>
 <div id="format" class="section level3 unnumbered">
 <h3>Format</h3>
+<p>Vector and raster data can be stored and distributed in different formats.</p>
 <p><strong>Shapefile</strong></p>
+<p>Shapefile was first developed by Esri and it is the most widely known format for distributing geospatial vector data. A shapefile will always come in a .zip format containing the following files:</p>
 <ul>
 <li><p>.shp: Contains the geometry of each feature.</p></li>
 <li><p>.dbf: Contains the attribute data for all of the features in the dataset.</p></li>
 <li><p>.shx: Spatial index, it allows GIS systems to find features within the .shp file.</p></li>
 <li><p>.prj: Contains information about the “projection” and “coordinate system” the data uses.</p></li>
+<li><p>.cpg: This is an optional plain text file that describes the encoding applied to create the shapefile.</p></li>
+<li><p>.sbn and .sbx: These are also optional files that store the spatial index of the features.</p></li>
 </ul>
-<p><strong>GeoJson</strong></p>
-<p><strong>csv</strong></p>
-<p><strong>File GeoDatabase</strong></p>
-<p><strong>KML/KMZ</strong></p>
+<p><strong>GeoJSON</strong></p>
+<p>GeoJSON is a JavaScript format used to store geospatial vector data. It consists from the following different parts:</p>
+<ul>
+<li><p>Geometry object: This is either the point, line, or polygon described earlier.</p></li>
+<li><p>Feature object: This is the geometry object and the associated random data.</p></li>
+<li><p>FeatureCollection: A list of feature objects.</p></li>
+</ul>
+<p>GeoJSON is widely used in web based mapping as this format is easy to handle and also “lighter” than a shapefile.</p>
+<p><strong>TopoJSON</strong></p>
+<p>TopoJSON is simply an extension of the GeoJSON format that encodes topology.</p>
+<p><strong>CSV, TXT, and GPX files</strong></p>
+<p>Spreadsheet data can be stored and used in different GIS software in a comma-separated values text file (.csv), a delimited text file (.txt) or GPS Exchange Format file (.gpx) format.</p>
+<p><strong>KML</strong></p>
+<p>Keyhole markup language is a file format used to display geographic data in an Earth browser such as Google Earth or ArcGIS Earth.</p>
 <p><strong>GeoTiff</strong></p>
+<p>GeoTiff is a public domain metadata standard which has the georeferenced information embedded within an image file.</p>
+<p><strong>netCDF</strong></p>
+<p>Network Common Data Form (NetCDF) files are a standard for the exchange of scientific data in binary format. This is used for storing raster data in GIS.</p>
+<div class="note">
+<p><strong><i class="fa fa-exclamation"></i> Note</strong>:</p>
+<p>Useful sites:</p>
+<ul>
+<li><p><a href="https://geojson.io/#map=2/20.0/0.0" target="_blank">geojson.io</a> is a quick, simple tool for creating and viewing vector data.</p></li>
+<li><p><a href="https://mapshaper.org/" target="_blank">Mapshaper</a> can be used to edit Shapefile, GeoJSON, TopoJSON, CSV and several other data formats, written in JavaScript.</p></li>
+<li><p><a href="https://mygeodata.cloud/converter/" target="_blank">MyGeodata Converter</a> is an online GIS data conversion and transformation tool.</p></li>
+<li><p><a href="https://ogre.adc4gis.com/" target="_blank">Ogre</a> translates spatial files into GeoJSON.</p></li>
+</ul>
+</div>
 </div>
 <div id="quality" class="section level3 unnumbered">
 <h3>Quality</h3>
 <p>There is no such thing as perfect geospatial data so When data is collected and used, errors are inevitable.</p>
-<p>Precision refers to the fineness and exactness of the measurements, whilst accuracy the difference is between the recorded value and the true value.</p>
+<p>Precision refers to the fineness and exactness of the measurements, whilst accuracy is the difference between the recorded value and the true value.</p>
 <p>To understand the difference between precision and accuracy, consider the illustration below.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure6.jpg" width = "500" height = "auto">
@@ -247,7 +292,7 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 <li><p>Temporal consistency (is it up-to-date?).</p></li>
 <li><p>Spatial accuracy (is the position of the feature correct?)</p></li>
 </ul>
-<p>Unfortunately, the more accurate and precise the data is, the higher cost to obtain it and store it. This is because of the time and equipment used to collect the data. Larger data will also always require constant maintenance.</p>
+<p>Unfortunately, the more accurate and precise a geospatial data is, the higher cost to obtain it and store it. This is because of the time and equipment used to collect the data. Larger data will also always require constant maintenance.</p>
 </div>
 <div id="finding-data" class="section level3 unnumbered">
 <h3>Finding data</h3>
@@ -260,17 +305,21 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 <li><p><a href="https://terra.ipums.org/" target="_blank">Terra Populus</a>: Terra Populus holds population and environmental data.</p></li>
 <li><p><a href="https://www.openstreetmap.org/#map=5/54.910/-3.432" target="_blank">OpenStreetMap</a>: OSM has some of the most detailed information on our planet.</p></li>
 </ul>
+<p>Apart from these there are many governmental and non-profit platforms that offer free access to geospatial data.</p>
 </div>
 </div>
 <div id="gis-mapping-software" class="section level2 unnumbered">
 <h2>GIS mapping software</h2>
+<p>There are a number of open source and commercial GIS software available. Here are some of the most well-known.</p>
 <ul>
 <li><p><a href="https://carto.com/" target="_blank">Carto</a></p></li>
 <li><p><a href="https://www.esri.com/en-us/arcgis/products/index" target="_blank">Esri Products</a></p></li>
-<li><p><a href="https://leafletjs.com/" target="_blank">Leaflet</a></p></li>
+<li><p><a href="https://earth.google.com/web/" target="_blank">GoogleEarth</a></p></li>
+<li><p><a href="https://leafletjs.com/" target="_blank">Leafletjs</a></p></li>
 <li><p><a href="https://mangomap.com/" target="_blank">Mango</a></p></li>
 <li><p><a href="https://www.mapbox.com/" target="_blank">Mapbox</a></p></li>
 <li><p><a href="https://www.precisely.com/product/precisely-mapinfo/mapinfo-pro" target="_blank">MapInfo Pro</a></p></li>
+<li><p><a href="https://mapnik.org/" target="_blank">Mapnik</a></p></li>
 <li><p><a href="https://www.qgis.org/en/site/" target="_blank">QGIS</a></p></li>
 <li><p><a href="https://rstudio.com/" target="_blank">R Studio</a></p></li>
 <li><p><a href="https://www.tableau.com/en-gb" target="_blank">Tableau</a></p></li>
@@ -307,6 +356,7 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 <h3>Other</h3>
 <ul>
 <li><a href="https://support.esri.com/en/other-resources/gis-dictionary" target="_blank">GIS Dictionary</a></li>
+<li><a href="https://developer.here.com/blog/an-introduction-to-geojson" target="_blank">An Introduction to GeoJSON</a></li>
 </ul>
 
 </div>
