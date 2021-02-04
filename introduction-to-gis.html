@@ -24,7 +24,7 @@
 <meta name="author" content="Thames Estuary Partnership" />
 
 
-<meta name="date" content="2021-02-03" />
+<meta name="date" content="2021-02-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,24 +53,6 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
-<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
-<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
-<link href="libs/colourpicker-lib-1.4/css/colourpicker.min.css" rel="stylesheet" />
-<script src="libs/colourpicker-lib-1.4/js/colourpicker.min.js"></script>
-<script src="libs/colourWidget-binding-1.1.0/colourWidget.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 
 
 
@@ -156,7 +138,8 @@
 <div id="introduction-to-gis" class="section level1 unnumbered">
 <h1>Introduction to GIS</h1>
 <p>GIS is the abbreviation for geographic information systems. It is a computer system used to create, manage, visualise, analyse and interpret spatially referenced data.</p>
-<p>GIS helps answer questions such as <em>What is on top of what?</em>, <em>What is next to what?</em>, <em>What is connected to what?</em> and make decisions.</p>
+<p>GIS helps answer geographic questions and make decisions.</p>
+<p>For example, GIS can be used by climatologists to understand the causes and consequences of climate change, by epidemiologists to locate ground zero of a disease outbreak and by political consultants to develop campaign strategies for elections.</p>
 <div id="geographic-information" class="section level2 unnumbered">
 <h2>Geographic information</h2>
 <p>Geographic information is made up of spatial location data and attribute data.</p>
@@ -186,9 +169,9 @@ Screenshot of the associated attribute table
 <p>GIS has many capabilities. These are:</p>
 <ul>
 <li><p>Spatial analysis: Different tools are used to identify trends, patterns and relationships in data. For example spatial analysis can be creating buffers, clipping features, network analysis, performing spatial statistics and so on.</p></li>
-<li><p>Map making: To spatially represent data from multiple sources (e.g. spreadsheets). This is the most common use of GIS.</p></li>
-<li><p>Imagery and remote sensing: To extract information from imagery and remotely sensed data (e.g. satellites).</p></li>
-<li><p>Data collection and management: To access, use, integrate and store data in a GIS.</p></li>
+<li><p>Map making: Map making helps spatially represent data from multiple sources (e.g. spreadsheets). This is the most common use of GIS.</p></li>
+<li><p>Imagery and remote sensing: This is used to extract information from imagery and remotely sensed data (e.g. satellites).</p></li>
+<li><p>Data collection and management: This can help to access, use, integrate and store data in a GIS.</p></li>
 </ul>
 </div>
 <div id="gis-data" class="section level2 unnumbered">
@@ -197,7 +180,7 @@ Screenshot of the associated attribute table
 <h3>Types</h3>
 <p>Geographic information can be stored either as a vector data or a raster data.</p>
 <p><strong>Vector data</strong></p>
-<p>Spatial data that are stored as geometrical shapes:</p>
+<p>Vector data is spatial data that are stored as geometrical shapes such as:</p>
 <ul>
 <li><p>Points: Points are single x,y coordinate locations.</p></li>
 <li><p>Lines: Lines are defined by two or more points that are connected with lines.</p></li>
@@ -212,7 +195,7 @@ Vector types and vector data drawn on a map
 </center>
 <p><br></p>
 <p><strong>Raster data</strong></p>
-<p>Raster data is made up of a matrix of pixels, called cells, with each being the same size and containing a value that represents the conditions for the area covered by that cell.</p>
+<p>Raster data is made up of a matrix of pixels, called cells, with each being the same size and containing a value that represents the conditions for the area covered by that cell. Raster data formats include JPEG (Joint Photographic Experts Group), BMP (Bitmap Image), PNG (Portable Network Graphics) and TIFF (Tagged Image File Format) files.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure4.jpg" width = "700" height = "auto">
 </center>
@@ -234,6 +217,9 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 </div>
 <div id="capture" class="section level3 unnumbered">
 <h3>Capture</h3>
+<p>Primary data capture is a direct data acquisition methodology, for example field surveys. Directly captured data can come from a global positioning system (GPS) or other types of surveying equipment.</p>
+<p>Secondary data capture is an indirect data acquisition methodology, for example the use of existing geospatial data available in both digital and hardcopy formats.</p>
+<p>A third way of data capture is digitization. This is used to create digital files from the original paper copy.</p>
 </div>
 <div id="format" class="section level3 unnumbered">
 <h3>Format</h3>
@@ -261,9 +247,9 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 <p><strong>CSV, TXT, and GPX files</strong></p>
 <p>Spreadsheet data can be stored and used in different GIS software in a comma-separated values text file (.csv), a delimited text file (.txt) or GPS Exchange Format file (.gpx) format.</p>
 <p><strong>KML</strong></p>
-<p>Keyhole markup language is a file format used to display geographic data in an Earth browser such as Google Earth or ArcGIS Earth.</p>
+<p>KML (Keyhole Markup Language) is a file format used to display geographic data in an Earth browser such as Google Earth or ArcGIS Earth. KMZ files are the zipped versions KML files.</p>
 <p><strong>GeoTiff</strong></p>
-<p>GeoTiff is a public domain metadata standard which has the georeferenced information embedded within an image file.</p>
+<p>GeoTiff (Tiff: Tagged Image File Format) is a public domain metadata standard which has the georeferenced information embedded within an image file.</p>
 <p><strong>netCDF</strong></p>
 <p>Network Common Data Form (NetCDF) files are a standard for the exchange of scientific data in binary format. This is used for storing raster data in GIS.</p>
 <div class="note">
@@ -280,7 +266,7 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 <div id="quality" class="section level3 unnumbered">
 <h3>Quality</h3>
 <p>There is no such thing as perfect geospatial data so When data is collected and used, errors are inevitable.</p>
-<p>Precision refers to the fineness and exactness of the measurements, whilst accuracy is the difference between the recorded value and the true value.</p>
+<p>Two primary attributes characterize data quality. <strong>Precision</strong> refers to the fineness and exactness of the measurements, whilst <strong>accuracy</strong> is the difference between the recorded value and the true value.</p>
 <p>To understand the difference between precision and accuracy, consider the illustration below.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure6.jpg" width = "500" height = "auto">
@@ -288,9 +274,10 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 <p><br></p>
 <p>When it comes to data quality, here are some of the things look out for:</p>
 <ul>
-<li><p>The completeness of the attribute table (is there any data missing?).</p></li>
-<li><p>Temporal consistency (is it up-to-date?).</p></li>
-<li><p>Spatial accuracy (is the position of the feature correct?)</p></li>
+<li><p>The completeness of the attribute table (Is there any data missing?).</p></li>
+<li><p>Temporal consistency (Is it up-to-date?).</p></li>
+<li><p>Location accuracy (Is the position of the feature correct?)</p></li>
+<li><p>Logical consistency (Is the data topologically correct?).</p></li>
 </ul>
 <p>Unfortunately, the more accurate and precise a geospatial data is, the higher cost to obtain it and store it. This is because of the time and equipment used to collect the data. Larger data will also always require constant maintenance.</p>
 </div>
@@ -310,7 +297,7 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 </div>
 <div id="gis-mapping-software" class="section level2 unnumbered">
 <h2>GIS mapping software</h2>
-<p>There are a number of open source and commercial GIS software available. Here are some of the most well-known.</p>
+<p>There are a number of open source and commercial GIS software available. Here are some of the most well-known:</p>
 <ul>
 <li><p><a href="https://carto.com/" target="_blank">Carto</a></p></li>
 <li><p><a href="https://www.esri.com/en-us/arcgis/products/index" target="_blank">Esri Products</a></p></li>
