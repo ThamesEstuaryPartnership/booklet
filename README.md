@@ -1,6 +1,6 @@
 # [Fish Migration Roadmap](https://fishroadmap.london/)
 
-## Educational package
+## Educational booklet
 
 - Introduction to Cartography
 
