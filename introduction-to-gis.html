@@ -24,7 +24,7 @@
 <meta name="author" content="Thames Estuary Partnership" />
 
 
-<meta name="date" content="2021-02-08" />
+<meta name="date" content="2021-02-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="introduction-to-cartography.html"/>
-
+<link rel="next" href="introduction-to-coordinate-reference-systems-crs.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -75,6 +75,7 @@
 <li class="chapter" data-level="" data-path="the-tidal-thames.html"><a href="the-tidal-thames.html#the-living-thames---documentary"><i class="fa fa-check"></i>The Living Thames - Documentary</a></li>
 <li class="chapter" data-level="" data-path="the-tidal-thames.html"><a href="the-tidal-thames.html#talk-of-the-thames---podcast"><i class="fa fa-check"></i>Talk of the Thames - Podcast</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="the-fish-migration-roadmap.html"><a href="the-fish-migration-roadmap.html"><i class="fa fa-check"></i>The Fish Migration Roadmap</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html"><i class="fa fa-check"></i>Introduction to Cartography</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#history"><i class="fa fa-check"></i>History</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#map-types"><i class="fa fa-check"></i>Map types</a><ul>
@@ -112,11 +113,19 @@
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#finding-data"><i class="fa fa-check"></i>Finding data</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#gis-mapping-software"><i class="fa fa-check"></i>GIS mapping software</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#summary-1"><i class="fa fa-check"></i>Summary</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#resources-1"><i class="fa fa-check"></i>Resources</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#books-1"><i class="fa fa-check"></i>Books</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#free-courses-and-tutorials-1"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#paid-courses-and-tutorials"><i class="fa fa-check"></i>Paid courses and tutorials</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#other-1"><i class="fa fa-check"></i>Other</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html"><i class="fa fa-check"></i>Introduction to Coordinate Reference Systems (CRS)</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html#geographic-coordinate-system-gcs"><i class="fa fa-check"></i>Geographic coordinate system (GCS)</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html#resources-2"><i class="fa fa-check"></i>Resources</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html#free-courses-and-tutorials-2"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html#other-2"><i class="fa fa-check"></i>Other</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -187,7 +196,8 @@ Screenshot of the associated attribute table
 <h2>GIS capabilities</h2>
 <p>GIS has many capabilities. These are:</p>
 <ul>
-<li><p>Spatial analysis: Different tools are used to identify trends, patterns and relationships in data. For example spatial analysis can be creating buffers, clipping features, network analysis, performing spatial statistics and so on.</p></li>
+<li><p>Data processing: GIS can be used to view, create, edit, transform and display geospatial data.</p></li>
+<li><p>Spatial analysis: Different tools are used within GIS to identify trends, patterns and relationships in data. For example spatial analysis can be creating buffers, clipping features, network analysis, performing spatial statistics and so on.</p></li>
 <li><p>Map making: Map making helps spatially represent data from multiple sources (e.g. spreadsheets). This is the most common use of GIS.</p></li>
 <li><p>Imagery and remote sensing: This is used to extract information from imagery and remotely sensed data (e.g. satellites).</p></li>
 <li><p>Data collection and management: This can help to access, use, integrate and store data in a GIS.</p></li>
@@ -199,13 +209,13 @@ Screenshot of the associated attribute table
 <h3>Types</h3>
 <p>Geographic information can be stored either as a vector data or a raster data.</p>
 <p><strong>Vector data</strong></p>
-<p>Vector data is spatial data that are stored as geometrical shapes such as:</p>
+<p>Vector (or feature) data is categorical data stored as geometrical shapes such as:</p>
 <ul>
 <li><p>Points: Points are single x,y coordinate locations.</p></li>
 <li><p>Lines: Lines are defined by two or more points that are connected with lines.</p></li>
 <li><p>Polygons: Polygons are defined by multiple points that are connected with lines and are closed.</p></li>
 </ul>
-<p>Vector data represents discrete data for example buildings, rivers or ponds.</p>
+<p>For example, geospatial data that show the location of buildings, rivers or ponds.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure3.jpg" width = "350" height = "auto"><img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/figure3a.jpg" width = "350" height = "auto">
 </center>
@@ -232,7 +242,7 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 </center>
 <p><br></p>
 <p><strong>Metadata</strong></p>
-<p>Here it also worth mentioning metadata which is essentially data about data. It provides additional information about the data, who created it, its usage constraints and so on. The more detailed the metadata is, the easier for the user to interpret it.</p>
+<p>Here it also worth mentioning metadata which is essentially data about data. It provides additional information about the (geographic) data such purpose, who created it, scale, projection, attributes, its usage constraints and so on. The more detailed the metadata is, the easier for the user to interpret it and implement it.</p>
 </div>
 <div id="capture" class="section level3 unnumbered">
 <h3>Capture</h3>
@@ -333,6 +343,18 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 <li><p><a href="https://rstudio.com/" target="_blank">R Studio</a></p></li>
 <li><p><a href="https://www.tableau.com/en-gb" target="_blank">Tableau</a></p></li>
 </ul>
+</div>
+<div id="summary-1" class="section level2 unnumbered">
+<h2>Summary</h2>
+<ul>
+<li><p>GIS is the abbreviation for geographic information systems. It is a computer system used to create, manage, visualise, analyse and interpret spatially referenced data.</p></li>
+<li><p>GIS is used to answer geographic questions and make decisions based on geospatial data.</p></li>
+<li><p>Geographic information is made up of spatial location data <em>(where something is)</em> and attribute data <em>(what something is)</em>.</p></li>
+<li><p>GIS can be used for geospatial data processing, spatial analysis, map making, imagery and remote sensing, and data collection and management.</p></li>
+<li><p>GIS data can either be vector or raster data.</p></li>
+<li><p>The quality of geospatial data will depend on the time spent and the equipment used to collect it.</p></li>
+<li><p>Nowadays there are many Internet platforms that offer open-access geospatial data.</p></li>
+</ul>
 <hr>
 </div>
 <div id="resources-1" class="section level2 unnumbered">
@@ -341,6 +363,7 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
 <h3>Books</h3>
 <ul>
 <li><a href="https://resources.saylor.org/wwwresources/archived/site/textbooks/Essentials%20of%20Geographic%20Information%20Systems.pdf" target="_blank">Essentials of Geographic Information Systems</a></li>
+<li><a href="https://books.google.co.uk/books/about/Geographic_Information_Systems_Demystifi.html?id=TPgsAQAAMAAJ&amp;redir_esc=y" target="_blank">Geographic Information Systems Demystified</a></li>
 <li><a href="https://webapps.itc.utwente.nl/librarywww/papers_2009/general/principlesgis.pdf" target="_blank">Principles of Geographic Information Systems</a></li>
 </ul>
 </div>
@@ -377,8 +400,8 @@ Sea surface temperature on 01/04/2008 (Source: Naval Oceanographic Office)
           </div>
         </div>
       </div>
-<a href="introduction-to-cartography.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="introduction-to-cartography.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introduction-to-coordinate-reference-systems-crs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

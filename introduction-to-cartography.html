@@ -24,14 +24,14 @@
 <meta name="author" content="Thames Estuary Partnership" />
 
 
-<meta name="date" content="2021-02-08" />
+<meta name="date" content="2021-02-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-tidal-thames.html"/>
+<link rel="prev" href="the-fish-migration-roadmap.html"/>
 <link rel="next" href="introduction-to-gis.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -93,6 +93,7 @@
 <li class="chapter" data-level="" data-path="the-tidal-thames.html"><a href="the-tidal-thames.html#the-living-thames---documentary"><i class="fa fa-check"></i>The Living Thames - Documentary</a></li>
 <li class="chapter" data-level="" data-path="the-tidal-thames.html"><a href="the-tidal-thames.html#talk-of-the-thames---podcast"><i class="fa fa-check"></i>Talk of the Thames - Podcast</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="the-fish-migration-roadmap.html"><a href="the-fish-migration-roadmap.html"><i class="fa fa-check"></i>The Fish Migration Roadmap</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html"><i class="fa fa-check"></i>Introduction to Cartography</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#history"><i class="fa fa-check"></i>History</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#map-types"><i class="fa fa-check"></i>Map types</a><ul>
@@ -130,11 +131,19 @@
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#finding-data"><i class="fa fa-check"></i>Finding data</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#gis-mapping-software"><i class="fa fa-check"></i>GIS mapping software</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#summary-1"><i class="fa fa-check"></i>Summary</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#resources-1"><i class="fa fa-check"></i>Resources</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#books-1"><i class="fa fa-check"></i>Books</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#free-courses-and-tutorials-1"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#paid-courses-and-tutorials"><i class="fa fa-check"></i>Paid courses and tutorials</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#other-1"><i class="fa fa-check"></i>Other</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html"><i class="fa fa-check"></i>Introduction to Coordinate Reference Systems (CRS)</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html#geographic-coordinate-system-gcs"><i class="fa fa-check"></i>Geographic coordinate system (GCS)</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html#resources-2"><i class="fa fa-check"></i>Resources</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html#free-courses-and-tutorials-2"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems-crs.html"><a href="introduction-to-coordinate-reference-systems-crs.html#other-2"><i class="fa fa-check"></i>Other</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -248,7 +257,7 @@ Mercator map (Source: Wikipedia)
 <img src="https://media.nationalgeographic.org/assets/photos/000/276/27636.jpg" width = "800" height = "auto">
 </center>
 <center>
-John Snow’s map (Source: NG)
+John Snow’s cholera map - the black circles stacked show the the number of cases (Source: NG)
 </center>
 <p><br></p>
 <p><strong>Hurricane map</strong></p>
@@ -292,8 +301,8 @@ How the Virus Got Out (Source: The New York Times)
 <div id="general-or-reference-maps" class="section level3 unnumbered">
 <h3>General or reference maps</h3>
 <p>Reference maps are those that are constructed for a general audience and contain a variety of natural and man-made features.</p>
-<div id="htmlwidget-b26332b7621f31fcb44c" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b26332b7621f31fcb44c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.52,-0.1],14,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c2e077bc489b9f137edd" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c2e077bc489b9f137edd">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":10,"maxZoom":18,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.52,-0.1],14,[]]},"evals":[],"jsHooks":[]}</script>
 <center>
 Reference map
 </center>
@@ -306,28 +315,28 @@ Reference map
 <li><p>Qualitative maps show the spatial distribution or location of single theme of nominal data (e.g. rivers and lakes).</p></li>
 <li><p>Quantitative maps display the spatial aspects of numerical data. These can be choropleth maps (showing continuous data), dot density and proportional/graduated symbol maps (showing discrete data) (e.g. population distribution).</p></li>
 </ul>
-<img src="Figures/2unnamed-chunk-3-1.png" width="100%" height="50%" />
+<img src="Figures/3unnamed-chunk-3-1.png" width="100%" height="50%" />
 <center>
 Mainland US population per state - choropleth map
 </center>
 <p><br></p>
-<img src="Figures/2unnamed-chunk-4-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-4-1.png" width="100%" />
 <center>
 Location of volcanoes - dot density map
 </center>
 <p><br></p>
-<img src="Figures/2unnamed-chunk-5-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-5-1.png" width="100%" />
 <center>
 The 1000 biggest cities in mainland US - proportional/graduated symbol map
 </center>
 <p><br></p>
 <p><strong>Cartogram</strong> is a type of thematic map (a variant of the proportional/graduated symbol maps) where data is mapped by altering the shape and size of an area based on the data associated with the area. Cartogram types include <em>hexmap</em>, <em>gridmap</em> and <em>tilegram</em>.</p>
-<img src="Figures/2unnamed-chunk-6-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-6-1.png" width="100%" />
 <center>
 Population per state - hexmap
 </center>
 <p><br></p>
-<img src="Figures/2unnamed-chunk-7-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-7-1.png" width="100%" />
 <center>
 US Election 2020 - gridmap
 </center>
@@ -353,8 +362,8 @@ Trans-Atlantic Slave Trade - flow map
 <div id="topographic-maps" class="section level3 unnumbered">
 <h3>Topographic maps</h3>
 <p>Maps that show a topographic description of an area with the use of contour lines or shades to show elevation.</p>
-<div id="htmlwidget-70b3bc491691c5e8a0a3" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-70b3bc491691c5e8a0a3">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[30,0.1],2,[]],"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["OpenTopoMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ce1f2e72c293196bdc56" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ce1f2e72c293196bdc56">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[30,0.1],2,[]],"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":2,"maxZoom":2,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["OpenTopoMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}]},"evals":[],"jsHooks":[]}</script>
 <center>
 Topographic map
 </center>
@@ -415,25 +424,23 @@ The polar projection has three different perspectives.</p>
 <li><p>Stereographic: Projection point from the opposite side of the globe.</p></li>
 <li><p>Orthographic: It shows a hemisphere of the globe as it appears from outer space.</p></li>
 </ul>
+<img src="Figures/3unnamed-chunk-9-1.png" width="100%" />
 <center>
-<img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure8.jpg" width = "700" height = "auto">
+Polar projection: orthographic perspective
 </center>
-<center>
-Polar projection types
-</center>
-<p><br>
-2, Conical: A cone is placed over the globe. Conic projection can be either tangent or secant.</p>
+<p><br></p>
+<p>2, Conical: A cone is placed over the globe. Conic projection can be either tangent or secant.</p>
 <p>During <em>conic tangent</em> projection, the cone is only touching the surface along a latitude line, while during <em>conic secant</em> projection, the cone is cutting into the surface along two latitude lines, which will produce a more accurate projection.</p>
 <center>
 <img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure9.jpg" width = "600" height = "auto">
 </center>
 <center>
-Conical projection types
+Conic tangent and conic secant
 </center>
 <p><br></p>
-<img src="Figures/2unnamed-chunk-9-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-10-1.png" width="100%" />
 <center>
-Conical projection of the world
+Conical projection: conic secant perspective
 </center>
 <p><br></p>
 <p>3, Cylindrical: A cylinder is placed over the globe that can touch either along a latitude line (normal), a longitude line (transverse) or another line (oblique).</p>
@@ -441,12 +448,12 @@ Conical projection of the world
 <img src="https://raw.githubusercontent.com/wandabodnar/spatialviz/main/figures/figure10.jpg" width = "700" height = "auto">
 </center>
 <center>
-Cylindrical projection types
+Cylindrical projection: normal, transverse and oblique
 </center>
 <p><br></p>
-<img src="Figures/2unnamed-chunk-10-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-11-1.png" width="100%" />
 <center>
-Cylindrical projection of the world
+Cylindrical projection: normal perspective
 </center>
 <p><br></p>
 <p><strong>Projections by preservation of metric property</strong></p>
@@ -458,7 +465,8 @@ Cylindrical projection of the world
 <li><p>Compromise projections do not entirely preserve any property but instead provide a balance of distortion between the various properties.</p></li>
 </ul>
 <div class="note">
-<p><strong><i class="fa fa-exclamation"></i> Note</strong>: <a href="https://www.esri.com/arcgis-blog/products/product/mapping/tissots-indicatrix-helps-illustrate-map-projection-distortion/" target="_blank">Tissot’s indicatrix</a> is a method developed to illustrate and quantify distortion across a map.
+<p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
+<p><a href="https://www.esri.com/arcgis-blog/products/product/mapping/tissots-indicatrix-helps-illustrate-map-projection-distortion/" target="_blank">Tissot’s indicatrix</a> is a method developed to illustrate and quantify distortion across a map.
 The small ellipses placed on the surface of a reference globe will be distorted depending on the type of projection. The example maps below show how the ellipses vary in size, shape and orientation because of the projection used.</p>
 <center>
 <img src="https://map-projections.net/img/figs/mercator-tissot-big.jpg" width = "450" height = "auto">
@@ -471,53 +479,53 @@ Mercator and Wagner IV projections (Source: Map projections)
 <p><br></p>
 <p>The more enlarged the ellipses, the more exaggerated the areas of the land masses, or the more distorted the ellipses, the more distorted the shapes of the land masses.</p>
 </div>
-<div id="some-projection-examples" class="section level4 unnumbered">
-<h4>Some projection examples:</h4>
-<p><strong>Equal Area Cylindrical</strong></p>
+<div id="projection-examples" class="section level4 unnumbered">
+<h4>Projection examples</h4>
+<p><strong>Equal area cylindrical</strong></p>
 <p>This type of projection is undistorted along the Equator but distortion occurs towards the Poles.</p>
-<img src="Figures/2unnamed-chunk-11-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-12-1.png" width="100%" />
 <center>
-Equal Area Cylindrical projection
+Equal area cylindrical projection
 </center>
 <p><br></p>
-<p><strong>Lambert Equal Area Conic</strong></p>
+<p><strong>Lambert equal area conic</strong></p>
 <p>Scale and shape are not preserved in this type of projection but distortion is minimal between the two standard parallels 20°N and 50°N.</p>
-<img src="Figures/2unnamed-chunk-12-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-13-1.png" width="100%" />
 <center>
-Lambert Equal Area Conic projection
+Lambert equal area conic projection
 </center>
 <p><br></p>
-<p><strong>Lambert Azimuthal Equal Area</strong></p>
+<p><strong>Lambert azimuthal equal area</strong></p>
 <p>This type of projection shows all areas but angles are not represented accurately.</p>
-<img src="Figures/2unnamed-chunk-13-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-14-1.png" width="100%" />
 <center>
-Lambert Azimuthal Equal Area projection
+Lambert azimuthal equal area projection
 </center>
 <p><br></p>
 <p><strong>Mercator</strong></p>
 <p>The Mercator projection has been widely used for nautical purposes. It preserves angles and shapes, but distorts the size of the objects from the Equator to the Poles.</p>
-<img src="Figures/2unnamed-chunk-14-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-15-1.png" width="100%" />
 <center>
 Mercator projection
 </center>
 <p><br></p>
 <p><strong>Universal Transverse Mercator</strong></p>
 <p>With this type of projection distortion becomes worse as you move away from the central meridian.</p>
-<img src="Figures/2unnamed-chunk-15-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-16-1.png" width="100%" />
 <center>
 Universal Transverse Mercator projection
 </center>
 <p><br></p>
 <p><strong>Robinson</strong></p>
 <p>The Robinson projection was created to show the whole globe on a flat image.</p>
-<img src="Figures/2unnamed-chunk-16-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-17-1.png" width="100%" />
 <center>
 Robinson projection
 </center>
 <p><br></p>
 <p><strong>Van der Grinten</strong></p>
 <p>This projection is neither equal area (preserves the area of displayed features) nor conformal (preserves the local shape of small areas); it shows the globe on a circle with distorted polar regions.</p>
-<img src="Figures/2unnamed-chunk-17-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-18-1.png" width="100%" />
 <center>
 Van der Grinten projection
 </center>
@@ -531,10 +539,10 @@ Van der Grinten projection
 Spilhaus projection (Source: Esri)
 </center>
 <p><br></p>
-<p>When making a map, projection should be considered based on the data type and how the final map will be used.</p>
+<p>It is important to keep in mind that when a map is made distortion will always occur as it is either area or shape that can be preserved, not both. Thus the projection type used should be considered based on the data type and how the final map will be presented.</p>
 <div class="note">
 <p><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip</strong></p>
-<p>External links to visit:</p>
+<p>External links to visit and a video to watch:</p>
 <ul>
 <li><p><a href="https://www.antipodesmap.com/" target="_blank">Antipodes map</a></p></li>
 <li><p><a href="http://andywoodruff.com/blog/beyond-the-sea/" target="_blank">Beyond the Sea</a></p></li>
@@ -543,6 +551,8 @@ Spilhaus projection (Source: Esri)
 <li><p><a href="https://projectionwizard.org/" target="_blank">Projection wizard</a></p></li>
 <li><p><a href="https://thetruesize.com/" target="_blank">The true size of</a></p></li>
 </ul>
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/KUF_Ckv8HbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 </div>
 </div>
 </div>
@@ -594,7 +604,7 @@ HSV and HSL representations (Source: Haifa et al. 2011)
 <p><br></p>
 <p>Hue is the shade or tint of a colour and it is used to identify qualitative differences. For example blue hues are used to illustrate ocean depth.</p>
 <p>Saturation refers to the intensity of colour. As the saturation increases, the colours appear to be more pure, while as the saturation decreases, the colours appear to be more pale.</p>
-<p>Value/light is used to represent numerical difference on a quantitative scale (e.g. ranking). For example a choropleth map that shows population density across states or countries.</p>
+<p>Value (light) gives how light or dark the colour us. It is used to represent numerical difference on a quantitative scale (e.g. ranking). For example a choropleth map that shows population density across states or countries.</p>
 <center>
 <img src="https://purple11.com/static/fed42130c194b0c240a4ec10408adf97/8282f/hsl-cover-2.png" width = "600" height = "auto">
 </center>
@@ -611,6 +621,10 @@ Hue, saturation and light (Source: Purple 11)
 Subtractive colours (Source: Wikipedia)
 </center>
 <p><br></p>
+<div class="note">
+<p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
+<p>Maps designed for screen use the RGB/HSL/HSV colour space while maps designed for printing use CMYK.</p>
+</div>
 </div>
 <div id="selecting-colours" class="section level4 unnumbered">
 <h4>Selecting colours</h4>
@@ -636,47 +650,58 @@ Decimal binary and hexadecimal (Source: Medium)
 <p>See the interactive colour picker widget below for more HEX colour options. <em>Click into the rectangle.</em>
 <br>
 <style>.colourpicker-input-container{ display:inline-block; }</style>
-<input id="htmlwidget-0c373a53056ce28c597f" class="colourWidget html-widget form-control" style="width:300px;height:50px;" type="text"/>
-<script type="application/json" data-for="htmlwidget-0c373a53056ce28c597f">{"x":{"value":"#FF0000","showColour":"both","palette":"square","returnName":true,"allowAlpha":true,"closeOnClick":true},"evals":[],"jsHooks":[]}</script></p>
+<input id="htmlwidget-072fb2380b63fd9744fe" class="colourWidget html-widget form-control" style="width:300px;height:50px;" type="text"/>
+<script type="application/json" data-for="htmlwidget-072fb2380b63fd9744fe">{"x":{"value":"#FF0000","showColour":"both","palette":"square","returnName":true,"allowAlpha":true,"closeOnClick":true},"evals":[],"jsHooks":[]}</script></p>
 <center>
 Colour picker widget (Source: <a href="https://cran.rstudio.com/web/packages/colourpicker/vignettes/colourpicker.html#colourinput">Dean Attali</a>)
 </center>
 <p><br></p>
+</div>
+<div id="colour-schemes" class="section level4 unnumbered">
+<h4>Colour schemes</h4>
 <p>When selecting colours, it is also important to consider colour combinations so that the final map is aesthetically pleasing. The examples below are based on colours arranged on the colour wheel according to their chromatic relationships.</p>
 <ul>
-<li><p>Complementary colours are opposite from each other.</p></li>
-<li><p>Analogous colours are directly adjacent to the base colour.</p></li>
-<li><p>Triadic colours are three, equidistant colours.</p></li>
-<li><p>Split complementary colours use two adjacent colours from the base complementary.</p></li>
+<li><p>Monochromatic colour scheme is made up from one colour with lighter and darker variations of that colour.</p></li>
+<li><p>Analogous colour scheme is made up of colours directly adjacent to the base colour.</p></li>
+<li><p>Complementary colour scheme is made up of colours opposite from each other.</p></li>
+<li><p>Split complementary colour scheme use two adjacent colours from the base complementary.</p></li>
+<li><p>Triadic colour scheme is made up from three, equidistant colours.</p></li>
+<li><p>Tetradic colour scheme is made up from two sets of complementary colours spaced out in a shape of a triangle.</p></li>
+<li><p>Square colour scheme is similar to the tetradic scheme but it is composed of four colours.</p></li>
 </ul>
 <center>
-<img src="https://user-images.githubusercontent.com/1566273/37525139-94c46934-28f1-11e8-9286-c97ff878bf68.png" width = "800" height = "auto">
+<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/colours.jpg" width = "800" height = "auto">
 </center>
 <center>
-Colour harmonies (Source: Carto)
+Colour schemes
 </center>
 <p><br></p>
 <div class="note">
-<p><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip</strong>: The website <a href="https://www.color-hex.com/" target="_blank">color-hex</a> is an excellent resource to find the right colours for a map.</p>
+<p><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip</strong></p>
+<p>The list of websites below can help find the right colours for a map.</p>
+<ul>
+<li><p><a href="https://www.color-hex.com/" target="_blank">color-hex</a></p></li>
+<li><p><a href="https://colorhunt.co/" target="_blank">Color hunt</a></p></li>
+<li><p><a href="https://coolors.co//" target="_blank">Coolors</a></p></li>
+<li><p><a href="https://paletton.com/#uid=1000u0k6vcn4tnV5Gifag71hU75" target="_blank">Paletton</a></p></li>
+</ul>
+<p><strong>60-30-10 rule:</strong>
+When selecting colours it is best to choose them in a 60% (dominant hue) + 30% (secondary colour) + 10% (accent colour) proportion. This will give balance and will also be more comfortable for the map viewers’ brains.</p>
 </div>
-<p><strong>Colour schemes</strong></p>
-<p>When a map is made, the colours used can be structured in different ways to reflect the quantitative and qualitative character of the data.</p>
+<p>When a map is made, the colours can be structured in different ways to reflect the quantitative and qualitative character of the data.</p>
 <ul>
 <li>Sequential: Vary lightness to show ordered or numeric data (less &gt; more).</li>
 </ul>
-<p><img src="Figures/2unnamed-chunk-19-1.png" width="672" /></p>
+<p><img src="Figures/3unnamed-chunk-20-1.png" width="672" /></p>
 <ul>
 <li>Diverging: Used when the data have different extremes with a mid-point (above / below).</li>
 </ul>
-<p><img src="Figures/2unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="Figures/3unnamed-chunk-21-1.png" width="672" /></p>
 <ul>
 <li>Qualitative: Used to represent differences between map features (categories).</li>
 </ul>
-<p><img src="Figures/2unnamed-chunk-21-1.png" width="672" /></p>
+<p><img src="Figures/3unnamed-chunk-22-1.png" width="672" /></p>
 <p><br></p>
-<div class="note">
-<p><strong><i class="fa fa-exclamation"></i> Note</strong>: Maps designed for screen use the RGB/HSL/HSV colours while maps designed for printing use CMYK.</p>
-</div>
 </div>
 </div>
 <div id="scale" class="section level3 unnumbered">
@@ -727,7 +752,7 @@ Large and small scale map
 <li><p>Colours have an important role in emphasising qualitative and quantitative data presented on a map.</p></li>
 <li><p>Scale refers to the spatial extent of the area on a map.</p></li>
 <li><p>Labelling helps recognise map features and provides clarity.</p></li>
-<li><p>The final map output should be balanced, clear, logical, with the map elements aligned (title, subtitle, legend, scale, north arrow, additional text, credit, copyright) in the right order.</p></li>
+<li><p>The final map output should be balanced, clear, logical, with the map elements aligned (title, subtitle, legend, scale, north arrow, additional text, credit) in the right order.</p></li>
 </ul>
 <hr>
 </div>
@@ -768,7 +793,7 @@ Large and small scale map
           </div>
         </div>
       </div>
-<a href="the-tidal-thames.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-fish-migration-roadmap.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="introduction-to-gis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

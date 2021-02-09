@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>The Tidal Thames | Educational booklet</title>
+  <title>Introduction to Coordinate Reference Systems (CRS) | Educational booklet</title>
   <meta name="description" content="This online booklet forms part of the educational package of the Greater Thames Estuary Fish Migration Roadmap project and it is written to provide the basics of cartography, GIS and GIS software use." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="The Tidal Thames | Educational booklet" />
+  <meta property="og:title" content="Introduction to Coordinate Reference Systems (CRS) | Educational booklet" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="The Tidal Thames | Educational booklet" />
+  <meta name="twitter:title" content="Introduction to Coordinate Reference Systems (CRS) | Educational booklet" />
   
   <meta name="twitter:description" content="This online booklet forms part of the educational package of the Greater Thames Estuary Fish Migration Roadmap project and it is written to provide the basics of cartography, GIS and GIS software use." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="the-fish-migration-roadmap.html"/>
+<link rel="prev" href="introduction-to-gis.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -163,40 +163,58 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="the-tidal-thames" class="section level1 unnumbered">
-<h1>The Tidal Thames</h1>
-<div id="a-virtual-journey-down-the-tidal-thames---storymap" class="section level2 unnumbered">
-<h2>A virtual journey down the tidal Thames - StoryMap</h2>
-<p>The Tidal Thames StoryMap was developed to explore the River Thames from Teddington down to the North Sea, through 48 well-known and lesser-known locations.</p>
+<div id="introduction-to-coordinate-reference-systems-crs" class="section level1 unnumbered">
+<h1>Introduction to Coordinate Reference Systems (CRS)</h1>
+<p>A coordinate reference system refers to the way in which spatial data that represent the earth’s surface is flattened on a 2-dimensional surface. It is used to define the real-world locations of geographic features, imagery or observations.</p>
+<p>The two common types of coordinate reference systems in GIS are:</p>
+<div id="geographic-coordinate-system-gcs" class="section level2 unnumbered">
+<h2>Geographic coordinate system (GCS)</h2>
+<p>Geographic coordinate system is most commonly used to define locations on the three-dimensional earth, based on a sphere or spheroid. It shows <em>where</em> the data is located on the earth’s surface.</p>
+<p>GCS use degrees of latitude and longitude to describe a location measured from the earth’s center to a point on the earth’s surface.</p>
 <center>
-<a target="_blank" href="https://www.thamesestuarypartnership.org/the-tidal-thames"><img alt="" src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/thames-learn/main/Figures/storymap.gif" width = "100%" height = "auto"></a>
+<img src="https://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/GUID-1F041965-BBA5-4E59-9005-36ABD3908252-web.gif" width = "70%" height = "70%">
 </center>
 <center>
-The Tidal Thames - A virtual tour <i>(Click on the image to visit the website)</i>
+Latitude and longitude on an elipsoid (Source: Esri)
 </center>
+<p><br></p>
+<p>Latitude lines run parallel to the equator and divide the earth into 180 equally spaced sections from north to south.</p>
+<img src="Figures/5unnamed-chunk-2-1.png" width="100%" />
+<center>
+Latitude lines
+</center>
+<p><br></p>
+<p>Longitude lines run perpendicular to the equator and converge at the poles. Longitudes are measured from zero to 180 degrees east or west of the prime meridian (Greenwich, UK).</p>
+<img src="Figures/5unnamed-chunk-3-1.png" width="100%" />
+<center>
+Longitude lines
+</center>
+<p><br></p>
+<div class="note">
+<p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
+<p>Latitude and longitude can be expressed in degrees-minutes-seconds (DMS) or in decimal degrees (DD).</p>
+<p>When using decimal degrees, latitudes above the equator and longitudes east of the prime meridian are positive, and latitudes below the equator and longitudes west of the prime meridian are negative.</p>
 </div>
-<div id="the-living-thames---documentary" class="section level2 unnumbered">
-<h2>The Living Thames - Documentary</h2>
-<p>Presented by the President of <a href="https://www.thamesestuarypartnership.org/" target="_blank">Thames Estuary Partnership</a>, <a href="https://en.wikipedia.org/wiki/Chris_Baines" target="_blank">Chris Baines</a>, and introduced by the great naturalist and presenter <a href="https://en.wikipedia.org/wiki/David_Attenborough" target="_blank">Sir David Attenborough</a>, <a href="https://www.thamesestuarypartnership.org/the-living-thames" target="_blank">The Living Thames</a> is an odyssey exploring the ever-changing ecology of the River Thames.</p>
-<center>
-<iframe src="https://player.vimeo.com/video/420615717" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-</iframe>
-</center>
-<center>
-The Living Thames Documentary <i>(Press play to watch the trailer)</i>
-</center>
+<hr>
 </div>
-<div id="talk-of-the-thames---podcast" class="section level2 unnumbered">
-<h2>Talk of the Thames - Podcast</h2>
-<p>The <a href="https://www.thamesestuarypartnership.org/talk-of-the-thames-podcast" target="_blank">Talk of the Thames</a> podcast series provides insightful conversations about the tidal Thames, including history, riverside development, environmental issues and wildlife.</p>
-<center>
-<iframe src="https://open.spotify.com/embed-podcast/episode/4qB9V6cgFeQ9grQduUvgzo" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">
-</iframe>
-</center>
-<center>
-Talk of the Thames Podcast <i>(Press play to listen to the latest episode)</i>
-</center>
+<div id="resources-2" class="section level2 unnumbered">
+<h2>Resources</h2>
+<div id="free-courses-and-tutorials-2" class="section level3 unnumbered">
+<h3>Free courses and tutorials</h3>
+<ul>
+<li><a href="https://www.earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-to-coordinate-reference-systems/" target="_blank">Coordinate Reference System and Spatial Projection</a></li>
+</ul>
+</div>
+<div id="other-2" class="section level3 unnumbered">
+<h3>Other</h3>
+<ul>
+<li><p><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/coordinate-systems-difference/" target="_blank">Coordinate Systems: What’s the Difference?</a></p></li>
+<li><p><a href="https://desktop.arcgis.com/en/arcmap/latest/map/projections/pdf/geographic_coordinate_systems.pdf" target="_blank">Geographic coordinate systems</a></p></li>
+<li><p><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/gcs_vs_pcs/" target="_blank">Geographic vs Projected Coordinate Systems</a></p></li>
+<li><p><a href="https://www.geos.ed.ac.uk/~gisteac/gis_book_abridged/files/ch30.pdf" target="_blank">Spatial referencing and coordinate systems</a></p></li>
+</ul>
 
+</div>
 </div>
 </div>
             </section>
@@ -204,8 +222,8 @@ Talk of the Thames Podcast <i>(Press play to listen to the latest episode)</i>
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="the-fish-migration-roadmap.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction-to-gis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
