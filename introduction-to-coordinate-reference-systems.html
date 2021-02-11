@@ -24,7 +24,7 @@
 <meta name="author" content="Thames Estuary Partnership" />
 
 
-<meta name="date" content="2021-02-10" />
+<meta name="date" content="2021-02-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -107,7 +107,7 @@
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#layout"><i class="fa fa-check"></i>Layout</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#summary"><i class="fa fa-check"></i>Summary</a></li>
-<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#resources"><i class="fa fa-check"></i>Resources</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#reference-resources"><i class="fa fa-check"></i>Reference resources</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#books"><i class="fa fa-check"></i>Books</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#free-courses-and-tutorials"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-cartography.html"><a href="introduction-to-cartography.html#other"><i class="fa fa-check"></i>Other</a></li>
@@ -125,7 +125,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#gis-mapping-software"><i class="fa fa-check"></i>GIS mapping software</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#summary-1"><i class="fa fa-check"></i>Summary</a></li>
-<li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#resources-1"><i class="fa fa-check"></i>Resources</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#reference-resources-1"><i class="fa fa-check"></i>Reference resources</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#books-1"><i class="fa fa-check"></i>Books</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#free-courses-and-tutorials-1"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-gis.html"><a href="introduction-to-gis.html#paid-courses-and-tutorials"><i class="fa fa-check"></i>Paid courses and tutorials</a></li>
@@ -134,12 +134,14 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html"><i class="fa fa-check"></i>Introduction to Coordinate Reference Systems</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#geographic-coordinate-system"><i class="fa fa-check"></i>Geographic coordinate system</a><ul>
-<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#datum"><i class="fa fa-check"></i>Datum</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#geodesy"><i class="fa fa-check"></i>Geodesy</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#latitude-and-longitude"><i class="fa fa-check"></i>Latitude and longitude</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#projected-coordinate-system"><i class="fa fa-check"></i>Projected coordinate system</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#projected-coordinate-system"><i class="fa fa-check"></i>Projected coordinate system</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#universal-transverse-mercator-utm"><i class="fa fa-check"></i>Universal Transverse Mercator (UTM)</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#summary-2"><i class="fa fa-check"></i>Summary</a></li>
-<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#resources-2"><i class="fa fa-check"></i>Resources</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#reference-resources-2"><i class="fa fa-check"></i>Reference resources</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#free-courses-and-tutorials-2"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#other-2"><i class="fa fa-check"></i>Other</a></li>
 </ul></li>
@@ -185,17 +187,19 @@
 <p>There are two types of coordinate reference systems in GIS.</p>
 <div id="geographic-coordinate-system" class="section level2 unnumbered">
 <h2>Geographic coordinate system</h2>
-<p>Geographic coordinate system (GCS) is used to define locations on the three-dimensional Earth. GCS shows <em>where</em> the data is located on the surface of the Earth.</p>
+<p>Geographic coordinate system (GCS) is used to define locations on the three-dimensional Earth (sphere). GCS shows <em>where</em> the data is located on the surface of the Earth.</p>
 <p>Geographic coordinate systems consist of:</p>
 <ul>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#datum" target="_blank">Datum</a></p></li>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#latitude-and-longitude" target="_blank">Prime meridian</a></p></li>
 <li><p>Angular units <a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#latitude-and-longitude" target="_blank">(latitude and longitude)</a></p></li>
 </ul>
-<div id="datum" class="section level3 unnumbered">
-<h3>Datum</h3>
-<p>Geodesy is the science associated with the measurement and portrayal of the Earth. Geodesy is used to determine the size and shape of the Earth, as well as its elements (e.g. terrestrial gravity, magnetic field, tides, geologic movement and so on).</p>
-<p>Geodesists build simple mathematical models to capture the largest and most obvious features of the Earth. For this, they have adopted the <strong>ellipsoid</strong> as the most basic model.</p>
+<div id="geodesy" class="section level3 unnumbered">
+<h3>Geodesy</h3>
+<p>Geodesy is the science associated with the measurement and portrayal of the Earth. Geodesy is used to determine the size and shape of the Earth, as well its features (e.g. mountains) and elements (e.g. terrestrial gravity, magnetic field, tides, geologic movement and so on).</p>
+<div id="ellipsoid" class="section level4 unnumbered">
+<h4>Ellipsoid</h4>
+<p>Geodesists build simple mathematical models to be able to capture the shape of the Earth and its features. For this, they have adopted the <strong>ellipsoid</strong> (or spheroid) as the most basic model.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/ellipsoid.png" width = "50%" height = "50%">
 </center>
@@ -203,10 +207,16 @@
 Ellipsoid
 </center>
 <p><br></p>
+<p>The ellipsoid is an idealised representation of the physical Earth, with a completely smooth, uninterrupted surface.</p>
 <div class="note">
 <p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
-<p>Since the Earth is spinning around its axis, there is a slight flattening at the Poles and a slight bulging at the Equator.</p>
-<p>The ellipsoid has a longer semi-major axis (a) and a shorter semi-minor axis (b). These axes allow to quantify and standardise the amount of flattening (<em>f = (a-b)/a</em>) that occurs due the Earth spinning around its axis.</p>
+<p>Since the Earth is spinning around its axis, there is a slight flattening at the Poles and a slight bulging at the Equator, hence the ellipsoid is used as a model.</p>
+<center>
+<iframe src="https://giphy.com/embed/1zlU57Bawc50fi3AwJ" width="480" height="270" frameBorder="0">
+</iframe>
+</center>
+<p><br></p>
+<p>The ellipsoid has a longer semi-major axis (a) and a shorter semi-minor axis (b). These axes allow to quantify and standardise the amount of flattening (<em>f = (a-b)/a</em>) that occurs due to Earth’s rotation.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/ellipsoid2.png" width = "50%" height = "50%">
 </center>
@@ -215,8 +225,7 @@ Ellipsoid with the semi-major (a) and semi-minor axis (b)
 </center>
 <p><br></p>
 </div>
-<p>The ellipsoid is a mathematical model, an idealised representation of the physical Earth, which is completely smooth without any hills or valleys on the surface of the Earth.</p>
-<p>However, Earth is not perfectly round, it actually has an irregular shape.</p>
+<p>In addition to the flattening and bulging, the different topological features are also account for Earth’s irregular, lumpy shape.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/irregular.png" width = "50%" height = "50%">
 </center>
@@ -224,24 +233,39 @@ Ellipsoid with the semi-major (a) and semi-minor axis (b)
 Irregular shape of the Earth <em>(simplified illustration)</em>
 </center>
 <p><br></p>
-<p>This is why the ellipsoid can only be applied at one part of the Earth at the time to model the surface.</p>
+<p>So let’s imagine the modeling process using the ellipsoid.</p>
+<p>The ellipsoid placed on top of this lumpy shape won’t be able to perfectly model the surface all around. It will only “fit” to the surface at a particular area. This is why the ellipsoid can only be applied at one part of the Earth at the time.</p>
 <center>
-<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/datum.png" width = "60%" height = "60%">
+<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/fit.png" width = "60%" height = "60%">
 </center>
 <center>
 Ellipsoid used to model the Earth <em>(simplified illustration)</em>
 </center>
 <p><br></p>
 <p>To be able to specify at which part of the planet the ellipsoid is applied to, <strong>datums</strong> are used.</p>
-<p>Datums identify the ellipsoid used and its reference surface location on the Earth. These reference locations are called <em>markers</em> or <em>benchmarks</em>.</p>
+</div>
+<div id="datum" class="section level4 unnumbered">
+<h4>Datum</h4>
+<p><em>Horizontal datums</em> model positions on the surface of the Earth using latitude (y) and longitude (x), while <em>vertical datums</em> are used to model elevations (z) accounting for terrain, bathymetry, water level, and man-made structures.</p>
+<div id="horizontal-datum" class="section level5 unnumbered">
+<h5>Horizontal datum</h5>
+<p>A horizontal datum uses a reference ellipsoid that is “pinned” to the Earth at a fixed surface location. This reference location is called <em>marker</em> or <em>benchmark</em>.</p>
 <center>
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/North_America_geodetic_center_-_replica_plaque_1.JPG" width = "100%" height = "auto">
+<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/marker.png" width = "47%" height = "47%"><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/North_America_geodetic_center_-_replica_plaque_1.JPG" width = "53%" height = "53%">
 </center>
 <center>
-Marker in Kansas, UK (Source: Wikipedia)
+Ellipsoid with a marker <em>(simplified illustration)</em> <br> and a marker location in Kansas, USA (Source: Wikipedia)
 </center>
 <p><br></p>
-<p>There are different datums designed for different parts of the world. In fact almost every country has its own datum (<em>local datum</em>). For example, the datum NAD83 (North American Datum 1983) is used to model the North American continent and the NZGD2000 (New Zealand Geodetic Datum 2000) is used for New Zealand and its offshore islands.</p>
+<p>This marker is then used to assign angular units of longitude and latitude to locations at that particular area of the Earth.</p>
+<center>
+<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/datum2.png" width = "60%" height = "60%">
+</center>
+<center>
+Datum <em>(simplified illustration)</em>
+</center>
+<p><br></p>
+<p>There are different datums designed for different parts of the world. In fact, almost every country has its own datum (<em>local datum</em>). For example, the datum NAD83 (North American Datum 1983) is used to model the North American continent and the NZGD2000 (New Zealand Geodetic Datum 2000) is used for New Zealand and its offshore islands.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/NAD83.png" width = "40%" height = "40%"><img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/NZ.png" width = "40%" height = "40%">
 </center>
@@ -249,7 +273,7 @@ Marker in Kansas, UK (Source: Wikipedia)
 NAD83 and NZGD2000 <em>(simplified illustration)</em>
 </center>
 <p><br></p>
-<p>The most widely used and well-known datum is called WGS 84 or World Geodetic System 84. WGS 84 is <em>global datum</em> format as it provides a generalised model for the whole of the planet. It uses the centre of the Earth to connect the ellipsoid.</p>
+<p>The most widely used and well-known datum is called WGS84 or World Geodetic System 84. WGS84 is <em>global datum</em> format. It uses the centre of the Earth to connect the ellipsoid and provides a generalised model for the whole of the planet.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/datums.png" width = "70%" height = "70%">
 </center>
@@ -257,12 +281,11 @@ NAD83 and NZGD2000 <em>(simplified illustration)</em>
 Local and global datum (WGS 84) <em>(simplified illustration)</em>
 </center>
 <p><br></p>
-<p>It is important to highlight that there is difference between horizontal and vertical datum. <em>Horizontal datums</em> measure positions on the surface of the Earth using latitude (y) and longitude (x), while <em>vertical datums</em> are used to measure elevations (z).</p>
-<div id="vertical-datum" class="section level4 unnumbered">
-<h4>Vertical datum</h4>
-<p>As previously discussed, the shape of the Earth is not perfectly round and its surface is quite uneven: there are different topographic features (e.g. hills, valleys, trenches). This uneven surface has an effect on Earth’s gravity.</p>
-<p>For example, higher density rocks will pull water creating a bulge, while water is drawn away from lower density rocks. Thus, gravity is different at different parts of the Earth.</p>
-<p>To overcome this gravitational difference, geodesists use the <strong>geoid</strong> to measure surface elevation.</p>
+</div>
+<div id="vertical-datum" class="section level5 unnumbered">
+<h5>Vertical datum</h5>
+<p>As previously discussed, the shape of the Earth is not perfectly round and its surface is quite uneven: there are different topographic features (e.g. mountains, valleys, trenches). This uneven surface has an effect on Earth’s gravity: higher density rocks will pull water creating a bulge, while water is drawn away from lower density rocks. Thus, gravity is different at different parts of the Earth.</p>
+<p>To overcome these gravitational differences, geodesists use the <strong>geoid</strong> to measure surface elevation.</p>
 <center>
 <embed src="https://www.g-red.eu/geoid/geoidViewer.html" style="width:100%; height: 600px;">
 </center>
@@ -270,20 +293,26 @@ Local and global datum (WGS 84) <em>(simplified illustration)</em>
 The geoid shows the variations in Earth’s gravity <em>(Use to tools on the left to interact with the geoid)</em> <br>(Source: <a href="https://www.g-red.eu/geoid/geoidViewer.html" target="_blank">Geoid viewer</a>)
 </center>
 <p><br></p>
-<p>Removing the effects of the winds and tides, and in fact land masses, the geoid takes the global mean sea level as a base (as if the sea would uniformly cover the planet) to measure precise surface elevations across the entire Earth. This removes the effect of the gravitational differences (i.e. water is not drawn towards high density rocks).</p>
+<p>Removing the effects of the winds and tides, and in fact land masses that cause gravitational differences, the geoid takes the global mean sea level as a base (as if the sea would uniformly cover the planet) to measure surface elevations.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/geoid.png" width = "100%" height = "100%">
 </center>
 <center>
-Contrast of the geoid model with an ellipsoid. (Source: USGS)
+Contrast of the geoid model with an ellipsoid <em>(modified)</em> (Source: USGS)
 </center>
 <p><br></p>
-<p>At a certain location, the height of the feature will be given in reference to the geoid.</p>
+<p>At a certain location, vertical height will be given in reference to the geoid.</p>
+<p>The above mentioned WGS84 is used by Global Positioning System (GPS) satellites and can be used globally to obtain latitude, longitude and elevation coordinates at any location. However, at specific areas local datums can still provide better coverage than WGS84. For example, OSGB36 (Ordnance Survey National Grid reference system) is a better approximation to the geoid covering the British Isles than the global WGS84.</p>
+<div class="note">
+<p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
+<p>Maps made using different datums will give different coordinates for the same position. This is called ‘datum shift’.</p>
+</div>
+</div>
 </div>
 </div>
 <div id="latitude-and-longitude" class="section level3 unnumbered">
 <h3>Latitude and longitude</h3>
-<p>GCS use latitude (y) and longitude (x) to describe a location measured from the Earth’s center to a point on the Earth’s surface. Latitudes and longitudes are measured in <strong>angular units</strong> (degrees).</p>
+<p>GCS use latitude (y) and longitude (x) to describe a location on the Earth’s surface. Latitudes and longitudes are measured in <strong>angular units</strong> (degrees).</p>
 <center>
 <img src="https://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/GUID-1F041965-BBA5-4E59-9005-36ABD3908252-web.gif" width = "70%" height = "70%">
 </center>
@@ -303,16 +332,16 @@ Latitude lines running from east to west
 Longitude or meridian lines running from north to south
 </center>
 <p><br></p>
-<p>This network of lines (latitude and longitude) representing meridians and parallels on map are also know as <em>graticules</em>.</p>
+<p>This network of lines (latitude and longitude) representing meridians and parallels on map are also known as <em>graticules</em>.</p>
 <img src="Figures/5unnamed-chunk-4-1.png" width="100%" />
 <center>
 Graticular network
 </center>
 <p><br></p>
-<p>Latitude and longitude can be expressed in degrees-minutes-seconds (DMS) or in decimal degrees (DD). The latter is predominantly used in GIS software.</p>
+<p>Latitude and longitude can be expressed in two formats: degrees-minutes-seconds (DMS) or decimal degrees (DD). The latter is predominantly used in GIS software.</p>
 <p>The example below shows London on the map with the coordinates displayed in DMS.</p>
-<div id="htmlwidget-51450b2856725f41ffc7" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-51450b2856725f41ffc7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":5,"maxZoom":6,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"London: 51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]}],"setView":[[51.509865,0.11809],5,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c02bc09fc5e3dceee829" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c02bc09fc5e3dceee829">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":5,"maxZoom":6,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]}],"setView":[[51.509865,0.11809],5,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
 <center>
 London
 </center>
@@ -385,25 +414,74 @@ London
 <ul>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#geographic-coordinate-system" target="_blank">Geographic coordinate system</a></p></li>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-cartography.html#projection" target="_blank">Projection method</a></p></li>
-<li><p>Projection parameters</p></li>
-<li><p>Units</p></li>
+<li><p>Projection parameters (latitude and longitude or easting and northing)</p></li>
+<li><p>Units (meters, feet, nautical miles)</p></li>
 </ul>
+<p>The most common projected coordinate systems are:</p>
+<ul>
+<li>Universal Transverse Mercator (UTM)</li>
+<li>Lambert Conformal Conic</li>
+<li>Albers Equal Area</li>
+</ul>
+<div class="note">
+<p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
+<p>In ArcGIS and QGIS the <strong>.prj</strong> file will contain the details on the projected coordinate system.</p>
+</div>
+<div id="universal-transverse-mercator-utm" class="section level3 unnumbered">
+<h3>Universal Transverse Mercator (UTM)</h3>
+<p>UTM divides the world into 60 zones that are all 6 degrees wide in longitude. Each zone is segmented into 20 latitude bands that are 8 degrees high, and lettered starting from “C” at 80°S, increasing until “X” (English alphabet), omitting the letters “I” and “O”. The last latitude band, “X” is extended an extra 4 degrees ending at 84°N latitude, thus covering the northernmost land on Earth. Latitude bands “A” and “B”, and “Y” and “Z” bands cover the western and eastern sides of the Antarctic and Arctic regions respectively.</p>
+<p>Each zone is also divided into north (N) and south (S) depending on its location from the equator.</p>
+<center>
+<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/utmworld.gif" width = "100%" height = "auto">
+</center>
+<center>
+UTM zones (Source: modified after <a href="http://www.dmap.co.uk/utmworld.htm" target="_blank">dmap.co.uk</a>)
+</center>
+<p><br></p>
+<p>Using the UTM coordinate system, a certain point of interest will be defined by the following parameters:</p>
+<ul>
+<li><p>UTM zone number and letter</p></li>
+<li><p>Northing (Y) value which is the distance of the point from the equator, given in metres.</p></li>
+<li><p>Easting (X) value which is the distance from the central meridian (longitude) of the used UTM zone, given in metres.</p></li>
+</ul>
+<p>Using again London as an example, the UTM will be given as:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Location</th>
+<th align="center">UTM Zone 30U</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">London, UK</td>
+<td align="center">699,978.99 mE / 5,710,464.32 mN</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
 </div>
 <div id="summary-2" class="section level2 unnumbered">
 <h2>Summary</h2>
 <div class="note">
+<p><strong><i class="fa fa-edit fa-2x"></i></strong></p>
 <ul>
 <li><p>Geographic coordinate system consists of a datum, a prime meridian and angular units.</p></li>
 <li><p>Ellipsoid is a simplified mathematical model used to model the surface of the Earth and can only be applied at one place at the time.</p></li>
-<li><p>Datums are reference locations where the certain ellipsoid meets the surface of the Earth. There are different datums available for different parts of the Earth and they provide a frame of reference for the coordinate system (latitude and longitude) used.</p></li>
+<li><p>Datums are fixed locations where a reference ellipsoid was “pinned” to the Earth. There are different datums available for different parts of the Earth and they provide a frame of reference for the coordinate system (latitude and longitude) used.</p></li>
+<li><p>Horizontal datums are used to measure surface location (x,y).</p></li>
+<li><p>Vertical datums are used measure surface elevation (z) at a given location.</p></li>
 <li><p>Latitude (y) and longitude (x) describe a location measured from the Earth’s center to a point on the Earth’s surface in angles. When data is mapped using latitudes and longitudes, it must be done in the same datum that was used to measure them.</p></li>
-<li><p>The geoid accounts for the irregular shape of the Earth and it is used to measure elevation.</p></li>
+<li><p>UTM divides the world into 60 zones that are all 6 degrees wide in longitude. Each zone is segmented into 20 latitude bands that are 8 degrees high with a letter assigned to it.</p></li>
+<li><p>Northing (Y): the distance of the point from the equator, given in metres.</p></li>
+<li><p>Easting (X): the distance from the central meridian (longitude) of the used UTM zone, given in metres.</p></li>
 </ul>
 </div>
 <hr>
 </div>
-<div id="resources-2" class="section level2 unnumbered">
-<h2>Resources</h2>
+<div id="reference-resources-2" class="section level2 unnumbered">
+<h2>Reference resources</h2>
 <div id="free-courses-and-tutorials-2" class="section level3 unnumbered">
 <h3>Free courses and tutorials</h3>
 <ul>
@@ -413,15 +491,16 @@ London
 <div id="other-2" class="section level3 unnumbered">
 <h3>Other</h3>
 <ul>
-<li><p><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/coordinate-systems-difference/" target="_blank">Coordinate Systems: What’s the Difference?</a></p></li>
-<li><p><a href="https://desktop.arcgis.com/en/arcmap/latest/map/projections/pdf/geographic_coordinate_systems.pdf" target="_blank">Geographic coordinate systems</a></p></li>
-<li><p><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/gcs_vs_pcs/" target="_blank">Geographic vs Projected Coordinate Systems</a></p></li>
-<li><p><a href="https://www.latlong.net/" target="_blank">Latitude and Longitude Finder</a></p></li>
-<li><p><a href="https://www.ngs.noaa.gov/NGSDataExplorer/" target="_blank">National Geodetic Survey Data Explorer</a></p></li>
-<li><p><a href="https://spatialreference.org/" target="_blank">Spatial reference</a></p></li>
-<li><p><a href="https://www.geos.ed.ac.uk/~gisteac/gis_book_abridged/files/ch30.pdf" target="_blank">Spatial referencing and coordinate systems</a></p></li>
-<li><p><a href="https://oceanservice.noaa.gov/facts/geoid.html" target="_blank">What is the geoid?</a></p></li>
-<li><p><a href="https://www.rmg.co.uk/discover/explore/prime-meridian-greenwich" target="_blank">What is the Prime Meridian and why is it in Greenwich?</a></p></li>
+<li><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/coordinate-systems-difference/" target="_blank">Coordinate Systems: What’s the Difference?</a></li>
+<li><a href="https://desktop.arcgis.com/en/arcmap/latest/map/projections/pdf/geographic_coordinate_systems.pdf" target="_blank">Geographic coordinate systems</a></li>
+<li><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/gcs_vs_pcs/" target="_blank">Geographic vs Projected Coordinate Systems</a></li>
+<li><a href="https://www.latlong.net/" target="_blank">Latitude and Longitude Finder</a></li>
+<li><a href="https://www.ngs.noaa.gov/NGSDataExplorer/" target="_blank">National Geodetic Survey Data Explorer</a></li>
+<li><a href="https://spatialreference.org/" target="_blank">Spatial reference</a></li>
+<li><a href="https://www.geos.ed.ac.uk/~gisteac/gis_book_abridged/files/ch30.pdf" target="_blank">Spatial referencing and coordinate systems</a></li>
+<li><a href="http://www.dmap.co.uk/utmworld.htm" target="_blank">UTM Grid Zones of the World</a></li>
+<li><a href="https://oceanservice.noaa.gov/facts/geoid.html" target="_blank">What is the geoid?</a></li>
+<li><a href="https://www.rmg.co.uk/discover/explore/prime-meridian-greenwich" target="_blank">What is the Prime Meridian and why is it in Greenwich?</a></li>
 </ul>
 
 </div>
