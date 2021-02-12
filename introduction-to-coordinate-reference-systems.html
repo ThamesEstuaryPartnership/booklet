@@ -24,7 +24,7 @@
 <meta name="author" content="Thames Estuary Partnership" />
 
 
-<meta name="date" content="2021-02-11" />
+<meta name="date" content="2021-02-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -199,7 +199,7 @@ Geographic coordinate system
 <ul>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#datum" target="_blank">Datum</a></p></li>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#latitude-and-longitude" target="_blank">Prime meridian</a></p></li>
-<li><p>Angular units <a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#latitude-and-longitude" target="_blank">(latitude and longitude)</a></p></li>
+<li><p>Angular units - unit of measurement on a sphere (in degrees <em>(<a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#latitude-and-longitude" target="_blank">latitude and longitude</a>)</em> or radians)</p></li>
 </ul>
 <div id="geodesy" class="section level3 unnumbered">
 <h3>Geodesy</h3>
@@ -319,7 +319,7 @@ Contrast of the geoid model with an ellipsoid <em>(modified)</em> (Source: USGS)
 </div>
 <div id="latitude-and-longitude" class="section level3 unnumbered">
 <h3>Latitude and longitude</h3>
-<p>GCS use latitude (y) and longitude (x) to describe a location on the Earth’s surface. Latitudes and longitudes are measured in <strong>angular units</strong> (degrees).</p>
+<p>GCS use latitude (y) and longitude (x) to describe a location on the Earth’s surface. Latitudes and longitudes are measured in degrees.</p>
 <center>
 <img src="https://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/GUID-1F041965-BBA5-4E59-9005-36ABD3908252-web.gif" width = "70%" height = "70%">
 </center>
@@ -347,8 +347,8 @@ Graticular network
 <p><br></p>
 <p>Latitude and longitude can be expressed in two formats: degrees-minutes-seconds (DMS) or decimal degrees (DD). The latter is predominantly used in GIS software.</p>
 <p>The example below shows London on the map with the coordinates displayed in DMS.</p>
-<div id="htmlwidget-3f1eb8066a11c8790c01" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3f1eb8066a11c8790c01">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":5,"maxZoom":6,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]}],"setView":[[51.509865,0.11809],5,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cb28d705ab4a6b3ee1c4" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cb28d705ab4a6b3ee1c4">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":5,"maxZoom":6,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]}],"setView":[[51.509865,0.11809],5,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
 <center>
 London
 </center>
@@ -416,7 +416,7 @@ London
 </div>
 <div id="projected-coordinate-system" class="section level2 unnumbered">
 <h2>Projected coordinate system</h2>
-<p>Whilst GCS shows where a certain location is on the Earth’s surface, a projected coordinate system (PCS) shows <em>how the three-dimensional Earth should be drawn on a two-dimensional a flat surface (map)</em> to accurately display that same location.</p>
+<p>Whilst GCS shows where a certain location is on the Earth’s surface, a projected coordinate system (PCS) shows <em>how the three-dimensional Earth should be drawn on a two-dimensional flat surface (map)</em> to accurately display that same location.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/pcs.png" width = "100%" height = "auto">
 </center>
@@ -424,26 +424,26 @@ London
 Projected coordinate system
 </center>
 <p><br></p>
-<p>Projected coordinate systems use rectangular or Cartesian coordinates and consist of:</p>
+<p>Projected coordinate systems use rectangular or Cartesian coordinates and are consist of:</p>
 <ul>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#geographic-coordinate-system" target="_blank">Geographic coordinate system</a></p></li>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-cartography.html#projection" target="_blank">Projection method</a></p></li>
 <li><p>Projection parameters (<a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#latitude-and-longitude" target="_blank">latitude and longitude</a> or <a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#universal-transverse-mercator-utm" target="_blank">easting and northing</a>)</p></li>
-<li><p>Units (meters, feet, nautical miles)</p></li>
-</ul>
-<p>The most common projected coordinate systems are:</p>
-<ul>
-<li><p>Universal Transverse Mercator (UTM)</p></li>
-<li><p>Lambert Conformal Conic</p></li>
-<li><p>Albers Equal Area</p></li>
+<li><p>Linear units (meters, feet, nautical miles)</p></li>
 </ul>
 <div class="note">
 <p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
-<p>In ArcGIS and QGIS the <strong>.prj</strong> file will contain the details on the projected coordinate system.</p>
+<p>In ArcGIS and QGIS the <strong><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-gis.html#format" target="_blank">.prj</a></strong> file will contain the details on the projected coordinate system.</p>
 </div>
+<p>The most common projected coordinate systems are:</p>
+<ul>
+<li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#universal-transverse-mercator-utm" target="_blank">Universal Transverse Mercator (UTM)</a>)</p></li>
+<li><p>Lambert Conformal Conic</p></li>
+<li><p>Albers Equal Area</p></li>
+</ul>
 <div id="universal-transverse-mercator-utm" class="section level3 unnumbered">
 <h3>Universal Transverse Mercator (UTM)</h3>
-<p>UTM divides the world into 60 zones that are all 6 degrees wide in longitude. Each zone is segmented into 20 latitude bands that are 8 degrees high, and lettered starting from “C” at 80°S, increasing until “X” (English alphabet), omitting the letters “I” and “O”. The last latitude band, “X” is extended an extra 4 degrees ending at 84°N latitude, thus covering the northernmost land on Earth. Latitude bands “A” and “B”, and “Y” and “Z” bands cover the western and eastern sides of the Antarctic and Arctic regions respectively.</p>
+<p>UTM divides the world into 60 zones that are all 6 degrees wide in longitude. Each zone is segmented into 20 latitude bands that are 8 degrees high, and lettered starting from <em>C</em> at 80°S, increasing until <em>X</em> (English alphabet), omitting the letters <em>I</em> and <em>O</em>. The last latitude band, <em>X</em> is extended an extra 4 degrees ending at 84°N latitude, thus covering the northernmost land on Earth. Latitude bands <em>A</em> and <em>B</em>, and <em>Y</em> and <em>Z</em> bands cover the western and eastern sides of the Antarctic and Arctic regions respectively.</p>
 <p>Each zone is also divided into north (N) and south (S) depending on its location from the equator.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/utmworld.gif" width = "100%" height = "auto">
@@ -452,7 +452,7 @@ Projected coordinate system
 UTM zones (Source: modified after <a href="http://www.dmap.co.uk/utmworld.htm" target="_blank">dmap.co.uk</a>)
 </center>
 <p><br></p>
-<p>Using the UTM coordinate system, a certain point of interest will be defined by the following parameters:</p>
+<p>Using the UTM coordinate system, a location will be defined by the following parameters:</p>
 <ul>
 <li><p>UTM zone number and letter</p></li>
 <li><p>Northing (Y) value which is the distance of the point from the equator, given in metres.</p></li>
