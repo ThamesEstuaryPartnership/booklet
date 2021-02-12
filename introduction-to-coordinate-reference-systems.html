@@ -349,16 +349,15 @@ Longitude or meridian lines running from north to south
 Graticular network
 </center>
 <p><br></p>
-<p>Latitude and longitude can be expressed in two formats: degrees-minutes-seconds (DMS) or decimal degrees (DD). The decimal degrees format is predominantly used in GIS, web-mapping (e.g. Google Maps) and GPS.</p>
+<p>Latitude and longitude can be expressed in two formats: degrees-minutes-seconds (DMS) or decimal degrees (DD).</p>
 <p>The example below shows London on the map with the coordinates displayed in DMS.</p>
-<div id="htmlwidget-72f9eb6ea01fd6fcc81c" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-72f9eb6ea01fd6fcc81c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":5,"maxZoom":6,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]}],"setView":[[51.509865,0.11809],5,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ecabd8327daeca9c564f" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ecabd8327daeca9c564f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":5,"maxZoom":6,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]}],"setView":[[51.509865,0.11809],5,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
 <center>
 London
 </center>
 <p><br></p>
-<div id="converting-dmsdd" class="section level4 unnumbered">
-<h4>Converting DMS/DD</h4>
+<p>Since the decimal degrees format is predominantly used in GIS, web-mapping (e.g. Google Maps) and GPS, it is good to understand how to convert DMS to DD.</p>
 <p><strong>DMS to DD</strong></p>
 <table>
 <thead>
@@ -376,7 +375,7 @@ London
 </tr>
 </tbody>
 </table>
-<p>To convert DMS to DD, let’s take the latitude and latitude values separately from the above example.</p>
+<p>Let’s take the latitude and latitude values separately from the above example.</p>
 <p>Leaving the degrees value untouched, divide the minutes with 60 and the seconds with 3600. Then, add up the degrees + minutes + seconds. The final value will be the decimal degrees format.</p>
 <p>Latitude: 51 degrees <span style="color:red;">30</span> minutes <span style="color:green;">35.5140</span> seconds</p>
 <p>D (51 degrees) + M (<span style="color:red;">30</span>/60) + S (<span style="color:green;">35.5140</span>/3600) = 51.509865</p>
@@ -399,6 +398,7 @@ London
 </tbody>
 </table>
 <p><br></p>
+<p>Conversion can also happen from DD to DMS.</p>
 <p><strong>DD to DMS</strong></p>
 <p>Here, let’s take the latitude example only.</p>
 <p>Latitude: 51.<span style="color:blue;">509865</span></p>
@@ -414,7 +414,6 @@ London
 <div class="note">
 <p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
 <p>When using decimal degrees, latitudes above the equator and longitudes east of the prime meridian are positive, and latitudes below the equator and longitudes west of the prime meridian are negative.</p>
-</div>
 </div>
 </div>
 </div>
@@ -463,8 +462,10 @@ State Plane Coordinate System
 </div>
 <div id="universal-transverse-mercator-utm" class="section level3 unnumbered">
 <h3>Universal Transverse Mercator (UTM)</h3>
-<p>UTM divides the world into 60 zones that are all 6 degrees wide in longitude. Each zone is segmented into 20 latitude bands that are 8 degrees high, and lettered starting from <em>C</em> at 80°S, increasing until <em>X</em> (English alphabet), omitting the letters <em>I</em> and <em>O</em>. The last latitude band, <em>X</em> is extended an extra 4 degrees ending at 84°N latitude, thus covering the northernmost land on Earth. Latitude bands <em>A</em> and <em>B</em>, and <em>Y</em> and <em>Z</em> bands cover the western and eastern sides of the Antarctic and Arctic regions respectively.</p>
-<p>Each zone is also divided into north (N) and south (S) depending on its location from the equator.</p>
+<p>UTM divides the world into 60 grids that are all 6 degrees wide in longitude.</p>
+<p>Each grid has a central meridian of 500,000m and each is segmented into 20 latitude bands that are 8 degrees high.</p>
+<p>Along the latitude lines, each grid lettered starting from <em>C</em> at 80°S, increasing until <em>X</em> (English alphabet), omitting the letters <em>I</em> and <em>O</em>. The last latitude band, <em>X</em> is extended an extra 4 degrees ending at 84°N latitude, thus covering the northernmost land on Earth. Latitude bands <em>A</em> and <em>B</em>, and <em>Y</em> and <em>Z</em> bands cover the western and eastern sides of the Antarctic and Arctic regions respectively.</p>
+<p>Each grid is also divided into north (N) and south (S) depending on its location from the equator.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/utmworld.gif" width = "100%" height = "auto">
 </center>
@@ -483,13 +484,13 @@ UTM zones (Source: modified after <a href="http://www.dmap.co.uk/utmworld.htm" t
 <thead>
 <tr class="header">
 <th align="center">Location</th>
-<th align="center">UTM Zone 30U</th>
+<th align="center">UTM</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="center">London, UK</td>
-<td align="center">699,978.99 mE / 5,710,464.32 mN</td>
+<td align="center">30U 699,978.99 mE / 5,710,464.32 mN</td>
 </tr>
 </tbody>
 </table>
