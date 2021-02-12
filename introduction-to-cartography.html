@@ -153,6 +153,7 @@
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#summary-2"><i class="fa fa-check"></i>Summary</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#reference-resources-2"><i class="fa fa-check"></i>Reference resources</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#free-courses-and-tutorials-2"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#videos"><i class="fa fa-check"></i>Videos</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#other-2"><i class="fa fa-check"></i>Other</a></li>
 </ul></li>
 </ul></li>
@@ -311,8 +312,8 @@ How the Virus Got Out (Source: The New York Times)
 <div id="general-or-reference-maps" class="section level3 unnumbered">
 <h3>General or reference maps</h3>
 <p>Reference maps are those that are constructed for a general audience and contain a variety of natural and man-made features.</p>
-<div id="htmlwidget-25cc027e6c562652dc39" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-25cc027e6c562652dc39">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":10,"maxZoom":18,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.52,-0.1],14,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-66b11cbecf8dad1df1c7" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-66b11cbecf8dad1df1c7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":10,"maxZoom":18,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[51.52,-0.1],14,[]]},"evals":[],"jsHooks":[]}</script>
 <center>
 Reference map
 </center>
@@ -372,8 +373,8 @@ Trans-Atlantic Slave Trade - flow map
 <div id="topographic-maps" class="section level3 unnumbered">
 <h3>Topographic maps</h3>
 <p>Maps that show a topographic description of an area with the use of contour lines or shades to show elevation.</p>
-<div id="htmlwidget-55b292dfd0f4c89a03f9" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-55b292dfd0f4c89a03f9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[30,0.1],2,[]],"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":2,"maxZoom":2,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["OpenTopoMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3de98c8027b600ff9768" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3de98c8027b600ff9768">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[30,0.1],2,[]],"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":2,"maxZoom":2,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["OpenTopoMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}]},"evals":[],"jsHooks":[]}</script>
 <center>
 Topographic map
 </center>
@@ -520,29 +521,36 @@ Lambert Azimuthal Equal Area projection
 </center>
 <p><br></p>
 <p><strong>Mercator</strong></p>
-<p>The Mercator projection has been widely used for nautical purposes. It preserves angles and shapes, but distorts the size of the objects from the equator to the poles.</p>
+<p>The Mercator projection has been widely used for nautical purposes. It preserves angles and shapes, but distorts the size of the continents from the equator to the poles.</p>
 <img src="Figures/3unnamed-chunk-15-1.png" width="100%" />
 <center>
 Mercator projection
 </center>
 <p><br></p>
 <p><strong>Universal Transverse Mercator</strong></p>
-<p>With this type of projection distortion becomes worse as you move away from the central meridian.</p>
+<p>With this type of projection distortion becomes worse away from the central meridian.</p>
 <img src="Figures/3unnamed-chunk-16-1.png" width="100%" />
 <center>
 Universal Transverse Mercator projection
 </center>
 <p><br></p>
+<p><strong>Gall-Peters</strong></p>
+<p>This projection maps all areas in their correct sizes relative to each other, however, it distorts their shapes.</p>
+<img src="Figures/3unnamed-chunk-17-1.png" width="100%" />
+<center>
+Gall-Peters projection
+</center>
+<p><br></p>
 <p><strong>Robinson</strong></p>
 <p>The Robinson projection was created to show the whole globe on a flat image.</p>
-<img src="Figures/3unnamed-chunk-17-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-18-1.png" width="100%" />
 <center>
 Robinson projection
 </center>
 <p><br></p>
 <p><strong>Van der Grinten</strong></p>
 <p>This projection is neither equal area (preserves the area of displayed features) nor conformal (preserves the local shape of small areas); it shows the globe on a circle with distorted polar regions.</p>
-<img src="Figures/3unnamed-chunk-18-1.png" width="100%" />
+<img src="Figures/3unnamed-chunk-19-1.png" width="100%" />
 <center>
 Van der Grinten projection
 </center>
@@ -560,7 +568,7 @@ Spilhaus projection (Source: Esri)
 <p>It is important to keep in mind that when a map is made distortion will always occur. It is either area or shape that can be preserved, not both. Thus the projection type used should be considered based on the data type and how the final map will be presented.</p>
 <div class="note">
 <p><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip</strong></p>
-<p>External links to visit and a video to watch:</p>
+<p>External links to visit and a videos to watch:</p>
 <ul>
 <li><p><a href="https://www.antipodesmap.com/" target="_blank">Antipodes map</a></p></li>
 <li><p><a href="http://andywoodruff.com/blog/beyond-the-sea/" target="_blank">Beyond the Sea</a></p></li>
@@ -569,6 +577,9 @@ Spilhaus projection (Source: Esri)
 <li><p><a href="https://projectionwizard.org/" target="_blank">Projection wizard</a></p></li>
 <li><p><a href="https://thetruesize.com/" target="_blank">The true size of</a></p></li>
 </ul>
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/kIID5FDi2JQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p><br></p>
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/KUF_Ckv8HbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </div>
@@ -668,8 +679,8 @@ Decimal binary and hexadecimal (Source: Medium)
 <p>See the interactive colour picker widget below for more HEX colour options. <em>Click into the rectangle.</em>
 <br>
 <style>.colourpicker-input-container{ display:inline-block; }</style>
-<input id="htmlwidget-9260a41c8310059b4076" class="colourWidget html-widget form-control" style="width:300px;height:50px;" type="text"/>
-<script type="application/json" data-for="htmlwidget-9260a41c8310059b4076">{"x":{"value":"#FF0000","showColour":"both","palette":"square","returnName":true,"allowAlpha":true,"closeOnClick":true},"evals":[],"jsHooks":[]}</script></p>
+<input id="htmlwidget-4a787b87c58322ccf591" class="colourWidget html-widget form-control" style="width:300px;height:50px;" type="text"/>
+<script type="application/json" data-for="htmlwidget-4a787b87c58322ccf591">{"x":{"value":"#FF0000","showColour":"both","palette":"square","returnName":true,"allowAlpha":true,"closeOnClick":true},"evals":[],"jsHooks":[]}</script></p>
 <center>
 Colour picker widget (Source: <a href="https://cran.rstudio.com/web/packages/colourpicker/vignettes/colourpicker.html#colourinput">Dean Attali</a>)
 </center>
@@ -711,15 +722,15 @@ When selecting colours it is best to choose them in a 60% (dominant hue) + 30% (
 <ul>
 <li>Sequential: Vary lightness to show ordered or numeric data (less &gt; more).</li>
 </ul>
-<p><img src="Figures/3unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="Figures/3unnamed-chunk-21-1.png" width="672" /></p>
 <ul>
 <li>Diverging: Used when the data have different extremes with a mid-point (above / below).</li>
 </ul>
-<p><img src="Figures/3unnamed-chunk-21-1.png" width="672" /></p>
+<p><img src="Figures/3unnamed-chunk-22-1.png" width="672" /></p>
 <ul>
 <li>Qualitative: Used to represent differences between map features (categories).</li>
 </ul>
-<p><img src="Figures/3unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="Figures/3unnamed-chunk-23-1.png" width="672" /></p>
 <p><br></p>
 </div>
 </div>
