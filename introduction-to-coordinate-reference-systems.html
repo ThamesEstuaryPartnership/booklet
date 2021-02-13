@@ -370,8 +370,8 @@ Graticular network
 <p><br></p>
 <p>The classic representation of latitude and longitude coordinates is in degrees, minutes and seconds (DMS).</p>
 <p>The example below shows London on the map with the coordinates displayed in degrees, minutes and seconds.</p>
-<div id="htmlwidget-4096348730c1760bd0e0" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4096348730c1760bd0e0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":3,"maxZoom":3,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]},{"method":"addGraticule","args":[20,false,{"color":"#333","weight":1},null,null,{"interactive":false,"pointerEvents":"none","className":""}]}],"setView":[[51.509865,0.11809],3,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9fd447053b1033dadee5" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9fd447053b1033dadee5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":3,"maxZoom":3,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]},{"method":"addGraticule","args":[20,false,{"color":"#333","weight":1},null,null,{"interactive":false,"pointerEvents":"none","className":""}]}],"setView":[[51.509865,0.11809],3,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
 <center>
 London
 </center>
@@ -397,9 +397,9 @@ London
 <p>Leaving the degree value untouched, divide the minute with 60 and the second with 3600. Then, add them up (degree + minute + second). The final value will be the decimal degrees format.</p>
 <p>Let’s take the latitude and latitude values separately from the above example.</p>
 <p>Latitude: 51 degrees <span style="color:red;">30</span> minutes <span style="color:green;">35.5140</span> seconds</p>
-<p>D (51 degrees) + M (<span style="color:red;">30</span>/60) + S (<span style="color:green;">35.5140</span>/3600) = 51.509865</p>
+<p>D (51 degrees) + M (<span style="color:red;">30</span>/60) + S (<span style="color:green;">35.5140</span>/3600) = 51.509865°</p>
 <p>Longitude: 0 degrees <span style="color:red;">7</span> minutes <span style="color:green;">5.1312</span> seconds</p>
-<p>D (0 degrees) + M (<span style="color:red;">7</span>/60) + S (<span style="color:green;">5.1312</span>/3600) = 0.118092</p>
+<p>D (0 degrees) + M (<span style="color:red;">7</span>/60) + S (<span style="color:green;">5.1312</span>/3600) = 0.118092°</p>
 <table>
 <thead>
 <tr class="header">
@@ -412,7 +412,7 @@ London
 <tr class="odd">
 <td align="center">London, UK</td>
 <td align="center">51° 30’ 35.5140’’ N, 0° 7’ 5.1312’’ W</td>
-<td align="center">51.509865, 0.11809</td>
+<td align="center">51.509865°, 0.11809°</td>
 </tr>
 </tbody>
 </table>
@@ -462,7 +462,7 @@ London
 <tr class="odd">
 <td align="center">London, UK</td>
 <td align="center">51° 30’ 35.5140’’ N, 0° 7’ 5.1312’’ W</td>
-<td align="center">51.509865, 0.11809</td>
+<td align="center">51.509865°, 0.11809°</td>
 <td align="center">51°30.5919’, 0°7.08552’</td>
 </tr>
 </tbody>
@@ -533,8 +533,8 @@ Cartesian coordinate system
 <p><br></p>
 <p>The Cartesian coordinate system uses two axes:</p>
 <ul>
-<li><p>Horizontal (x, Eastings): runs from east to west</p></li>
-<li><p>Vertical (y, Northings) runs from north to south.</p></li>
+<li><p>Horizontal (X): runs from east to west, ranging from +180° to -180°.</p></li>
+<li><p>Vertical (y) runs from north to south, ranging from +90° to -90°.</p></li>
 </ul>
 <p>The point at which the axes intersect is called the origin (0,0). Locations are defined relative to the origin, using the notation (x,y).</p>
 <div class="note">
@@ -569,6 +569,7 @@ Great Britain</a></li>
 <li><a href="https://desktop.arcgis.com/en/arcmap/latest/map/projections/pdf/geographic_coordinate_systems.pdf" target="_blank">Geographic coordinate systems</a></li>
 <li><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/gcs_vs_pcs/" target="_blank">Geographic vs Projected Coordinate Systems</a></li>
 <li><a href="https://www.latlong.net/" target="_blank">Latitude and Longitude Finder</a></li>
+<li><a href="https://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/list-of-supported-map-projections.htm" target="_blank">List of supported map projections in ArcMap</a></li>
 <li><a href="https://giscourses.cfans.umn.edu/sites/giscourses.cfans.umn.edu/files/5480chapter3_projections_excerpt.pdf" target="_blank">Map Projections and Coordinate Systems</a></li>
 <li><a href="https://www.fs.fed.us/r6/icbemp/spatial/fgdc/spatial_reference/map_Projection_Parameters.html" target="_blank">Map Projection Parameters</a></li>
 <li><a href="https://www.ngs.noaa.gov/NGSDataExplorer/" target="_blank">National Geodetic Survey Data Explorer</a></li>
