@@ -24,7 +24,7 @@
 <meta name="author" content="Thames Estuary Partnership" />
 
 
-<meta name="date" content="2021-02-13" />
+<meta name="date" content="2021-02-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -135,7 +135,7 @@
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html"><i class="fa fa-check"></i>Introduction to Coordinate Reference Systems</a><ul>
-<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#geographic-coordinate-system"><i class="fa fa-check"></i>Geographic coordinate system</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#geographic-coordinate-systems"><i class="fa fa-check"></i>Geographic coordinate systems</a><ul>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#geodesy"><i class="fa fa-check"></i>Geodesy</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#angular-units"><i class="fa fa-check"></i>Angular units</a></li>
 </ul></li>
@@ -185,13 +185,13 @@
             <section class="normal" id="section-">
 <div id="introduction-to-coordinate-reference-systems" class="section level1 unnumbered">
 <h1>Introduction to Coordinate Reference Systems</h1>
-<p>A coordinate reference system (CRS) is a coordinate-based local, regional or global system used to locate geographical features that occupy a position in space. (Coordinate reference system and spatial reference system (SRS) are synonyms and are commonly interchanged.)</p>
+<p>A coordinate reference system (CRS) is a coordinate-based local, regional or global system used to locate geographical features that occupy a position in space. (Coordinate reference systems and spatial reference systems (SRS) are synonyms and are commonly interchanged.)</p>
 <p>The two types of coordinate reference systems in GIS are:</p>
 <ul>
-<li><p>Geographic coordinate system (GCS)</p></li>
-<li><p>Projected coordinate system (PCS)</p></li>
+<li><p>Geographic coordinate systems (GCS)</p></li>
+<li><p>Projected coordinate systems (PCS)</p></li>
 </ul>
-<p>For example in ArcMap, when a spatial data is created or added, the spatial reference properties may need to be set.</p>
+<p>For example in ArcMap, when a spatial data is created or added, the coordinate or spatial references may need to be set.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/crs1.png" width = "100%" height = "auto">
 </center>
@@ -199,7 +199,7 @@
 Spatial reference properties window in ArcMap
 </center>
 <p><br></p>
-<p>Both geographic coordinate system and projected coordinate system will come with many options.</p>
+<p>Both geographic coordinate and projected coordinate systems will come with many options.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/crs2.gif" width = "100%" height = "auto">
 </center>
@@ -207,29 +207,29 @@ Spatial reference properties window in ArcMap
 Coordinate reference systems in ArcMap
 </center>
 <p><br></p>
-<p>So let’s go discuss them separately.</p>
-<div id="geographic-coordinate-system" class="section level2 unnumbered">
-<h2>Geographic coordinate system</h2>
-<p>Geographic coordinate system is used to define locations on the three-dimensional Earth. GCS shows <em>where</em> a certain location is on the surface of the Earth.</p>
+<p>So let’s discuss what these are separately.</p>
+<div id="geographic-coordinate-systems" class="section level2 unnumbered">
+<h2>Geographic coordinate systems</h2>
+<p>Geographic coordinate systems are used to define locations on the three-dimensional Earth. GCS shows <em>where</em> a certain location is on the surface of the Earth.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/gcs.png" width = "70%" height = "70%">
 </center>
 <center>
-Geographic coordinate system
+Geographic coordinate systems define locations on the three-dimensional Earth
 </center>
 <p><br></p>
 <p>Geographic coordinate systems consist of:</p>
 <ul>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#datum" target="_blank">Datum</a></p></li>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#latitude-and-longitude" target="_blank">Prime meridian</a></p></li>
-<li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#angular-units" target="_blank">Angular units</a> (degrees or radians)</p></li>
+<li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#angular-units" target="_blank">Angular units</a> (degrees)</p></li>
 </ul>
 <div id="geodesy" class="section level3 unnumbered">
 <h3>Geodesy</h3>
-<p>Geodesy is the science associated with the measurement and portrayal of the Earth. Geodesy is used to determine the size and shape of the Earth, as well its features (e.g. mountains) and elements (e.g. terrestrial gravity, magnetic field, tides, geologic movement and so on).</p>
+<p>Geodesy is the science associated with the measurement and portrayal of the Earth. Geodesy is used to determine the size and shape of the Earth, as well its features (e.g. mountains) and elements (e.g. terrestrial gravity and tides).</p>
 <div id="ellipsoid" class="section level4 unnumbered">
 <h4>Ellipsoid</h4>
-<p>Geodesists build simple mathematical models to be able to capture the shape of the Earth and its features. For this, they have adopted the <strong>ellipsoid</strong> (or spheroid) as the most basic model. This is also called as geometric model.</p>
+<p>Geodesists build simple mathematical models to be able to capture the shape of the Earth and its features. For this, they have adopted the <strong>ellipsoid</strong> (or spheroid) as the most basic model. This is also referred to as <em>geometric model</em>.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/ellipsoid.png" width = "50%" height = "50%">
 </center>
@@ -276,7 +276,7 @@ Ellipsoid used to model the Earth <em>(simplified illustration)</em>
 </div>
 <div id="datum" class="section level4 unnumbered">
 <h4>Datum</h4>
-<p><em>Horizontal datums</em> model positions on the surface of the Earth using latitude (y) and longitude (x), while <em>vertical datums</em> are used to model elevations (z) accounting for terrain, bathymetry, water level, and man-made structures.</p>
+<p><em>Horizontal datums</em> model positions on the surface of the Earth using latitude (y) and longitude (x), while <em>vertical datums</em> are used to model elevations (z) accounting for terrain, bathymetry, water level and man-made structures.</p>
 <div id="horizontal-datum" class="section level5 unnumbered">
 <h5>Horizontal datum</h5>
 <p>A horizontal datum uses a reference ellipsoid that is “pinned” to the Earth at a fixed surface location. This reference location is called <em>marker</em> or <em>benchmark</em>.</p>
@@ -303,7 +303,8 @@ Datum <em>(simplified illustration)</em>
 NAD83 and NZGD2000 <em>(simplified illustration)</em>
 </center>
 <p><br></p>
-<p>The most widely used and well-known datum is called WGS84 or World Geodetic System 84. WGS84 is <em>global datum</em> format. It uses the centre of the Earth to connect the ellipsoid and provides a generalised model for the whole of the planet.</p>
+<p>The most widely used and well-known datum is called WGS84 or World Geodetic System 84.</p>
+<p>WGS84 is <em>global datum</em> format. It uses the centre of the Earth to connect the ellipsoid and provides a generalised model for the whole of the planet.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/datums.png" width = "70%" height = "70%">
 </center>
@@ -315,12 +316,12 @@ Local and global datum (WGS 84) <em>(simplified illustration)</em>
 <div id="vertical-datum" class="section level5 unnumbered">
 <h5>Vertical datum</h5>
 <p>As previously discussed, the shape of the Earth is not perfectly round and its surface is quite uneven: there are different topographic features (e.g. mountains, valleys, trenches). This uneven surface has an effect on Earth’s gravity: higher density rocks will pull water creating a bulge, while water is drawn away from lower density rocks. Thus, gravity is different at different parts of the Earth.</p>
-<p>To overcome these gravitational differences, geodesists use the <strong>geoid</strong> to measure surface elevation. The geoid is also known as gravity-related model.</p>
+<p>To overcome these gravitational differences, geodesists use the <strong>geoid</strong> to measure surface elevation. The geoid is also known as <em>gravity-related model</em>.</p>
 <center>
 <embed src="https://www.g-red.eu/geoid/geoidViewer.html" style="width:100%; height: 600px;">
 </center>
 <center>
-This 3D model shows the variations in Earth’s gravity and the elevation differences <em>(Use to tools on the left to interact with the model)</em> <br>(Source: <a href="https://www.g-red.eu/geoid/geoidViewer.html" target="_blank">Geoid viewer</a>)
+This 3D model shows the variations in Earth’s gravity and the elevation differences <br> <em>(Use to tools on the left to interact with the model)</em> <br>(Source: <a href="https://www.g-red.eu/geoid/geoidViewer.html" target="_blank">Geoid viewer</a>)
 </center>
 <p><br></p>
 <p>Removing the effects of the winds and tides, and in fact land masses that cause gravitational differences, the geoid takes the global mean sea level as a base (as if the sea would uniformly cover the planet) to measure surface elevations.</p>
@@ -342,7 +343,7 @@ Contrast of the geoid model with an ellipsoid <em>(modified)</em> (Source: USGS)
 </div>
 <div id="angular-units" class="section level3 unnumbered">
 <h3>Angular units</h3>
-<p>GCS use angular units to describe a location on the Earth’s surface. These are the latitude (φ) and longitude (λ) (displayed on a spherical coordinate system) and are measured in degrees.</p>
+<p>GCS use angular units to describe a location on the Earth’s surface. (Remember, this is based on the ellipsoid and the geoid.) These are the latitude (φ) and longitude (λ) displayed on a spherical coordinate system and are measured in degrees.</p>
 <center>
 <img src="https://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/GUID-1F041965-BBA5-4E59-9005-36ABD3908252-web.gif" width = "70%" height = "70%">
 </center>
@@ -370,13 +371,13 @@ Graticular network
 <p><br></p>
 <p>The classic representation of latitude and longitude coordinates is in degrees, minutes and seconds (DMS).</p>
 <p>The example below shows London on the map with the coordinates displayed in degrees, minutes and seconds.</p>
-<div id="htmlwidget-9fd447053b1033dadee5" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9fd447053b1033dadee5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":3,"maxZoom":3,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]},{"method":"addGraticule","args":[20,false,{"color":"#333","weight":1},null,null,{"interactive":false,"pointerEvents":"none","className":""}]}],"setView":[[51.509865,0.11809],3,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-eb84ced1e1171667a69f" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eb84ced1e1171667a69f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":3,"maxZoom":3,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]},{"method":"addGraticule","args":[20,false,{"color":"#333","weight":1},null,null,{"interactive":false,"pointerEvents":"none","className":""}]}],"setView":[[51.509865,0.11809],3,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
 <center>
 London
 </center>
 <p><br></p>
-<p>Because the degrees, minutes and seconds format uses the sexagesimal (base 60) system, it is difficult to use it in the digital world. Instead, decimal degrees (base 10 system) are used. So it is good to understand how to convert degrees, minutes and seconds to decimal degrees, and decimal degrees to degrees, minutes and seconds.</p>
+<p>The degrees, minutes and seconds format uses the sexagesimal (base 60) system which is difficult to use in the digital world. Instead, the decimal degrees format (base 10 system) is used. So let’s see how to convert degrees, minutes and seconds to decimal degrees, and decimal degrees to degrees, minutes and seconds.</p>
 <p><strong>DMS to DD</strong></p>
 <table>
 <thead>
@@ -471,13 +472,91 @@ London
 <div class="note">
 <p><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip</strong></p>
 <p>The website <a href="" target="_blank">PGC Coordinate Converter</a> is useful to convert all three formats.</p>
-<p><a href="https://www.google.co.uk/earth/download/gep/agree.html" target="_blank">Google Earth Pro</a> also gives the option to display and convert all three formats (Tools –&gt; Options).</p>
+<p>Various GPS phone apps will also display location in all three formats as well as in UTM.</p>
+<p><a href="https://www.google.co.uk/earth/download/gep/agree.html" target="_blank">Google Earth Pro</a> also gives the option to display and convert all formats (Tools –&gt; Options).</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/google.png" width = "100%" height = "auto">
 </center>
 <center>
 Screenshot of Google Earth Pro
 </center>
+</div>
+<div id="distances" class="section level4 unnumbered">
+<h4>Distances</h4>
+<p>As mentioned before, latitude and longitude are applied to the three-dimensional Earth to describe location. However, they are not very useful to measure linear distances. This is because of the oblate spheroid shape of the Earth.</p>
+<p><span style="color:green;">Latitude</span> lines are concentric circles that become smaller near the poles while the distance between them remains roughly the same. (The distance between two degrees is slightly bigger at the poles than at the equator because of the flattening. The average distance between two latitude degrees is 111.4km.)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Latitude</th>
+<th align="center">Poles</th>
+<th align="center">80° N/S</th>
+<th align="center">40° N/S</th>
+<th align="center">Equator</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Distance between two degrees</td>
+<td align="center">111.69km</td>
+<td align="center">111.66km</td>
+<td align="center">111.03km</td>
+<td align="center">110.57km</td>
+</tr>
+</tbody>
+</table>
+<center>
+<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/lat.png" width = "100%" height = "auto">
+</center>
+<center>
+Latitude lines
+</center>
+<p><br></p>
+<p><span style="color:black;">Longitude</span> lines converge at the poles and thus the distance between two meridians is different at every parallel.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Longitude</th>
+<th align="center">Poles</th>
+<th align="center">80° N/S</th>
+<th align="center">40° N/S</th>
+<th align="center">Equator</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Distance between two degrees</td>
+<td align="center">-</td>
+<td align="center">19.39km</td>
+<td align="center">85.39km</td>
+<td align="center">111.32km</td>
+</tr>
+</tbody>
+</table>
+<center>
+<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/long.png" width = "100%" height = "auto">
+</center>
+<center>
+Longitude lines
+</center>
+<p><br></p>
+<p>The equator is the only place where the linear distance corresponding to one degree latitude is approximately equal the distance corresponding to one degree longitude. <em>(Note that the illustration below shows the latitude and longitude lines at every 10° for easier visualisation.)</em></p>
+<center>
+<img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/distances.png" width = "100%" height = "auto">
+</center>
+<center>
+Latitudes and longitudes
+</center>
+<p><br></p>
+<div class="note">
+<p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
+<p>Formula to calculate distances at one minute latitude and at one second latitude at the equator:</p>
+<p>1°= 110.57km</p>
+<p>1’ = 110.57/60 = 1.84283km</p>
+<p>1’’ = 1.84283/60 = 30.7138m</p>
+<p>The same formula applies at one degree/minute/second at all latitude and longitude lines, except at the poles where the longitude lines converge.</p>
+</div>
+<p>This issue of different linear distances at different latitudes and longitudes is bridged and accounted for by most GIS software and discussed in the projected coordinate system section below.</p>
 </div>
 </div>
 </div>
@@ -495,7 +574,7 @@ Projected coordinate system
 <ul>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#geographic-coordinate-system" target="_blank">Geographic coordinate system</a></p></li>
 <li><p><a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#projection-methods" target="_blank">Projection method</a> (e.g. Mercator or Robinson)</p></li>
-<li><p>Projection parameters (angular and linear, used for the projection method)</p></li>
+<li><p>Projection settings (angular and linear, used for the projection method)</p></li>
 <li><p>Linear units on a flat surface (meters, feet or nautical miles)</p></li>
 </ul>
 <p>The geographic coordinate system was covered above so let’s start with the projection methods.</p>
@@ -525,7 +604,7 @@ Projection types (Source: Wikipedia)
 <p>Within these projection types, there are different projection methods (e.g. Lambert Equal Area Conic, Mercator, Robinson or Gall-Peter) that can be used to depending on the area and the data displayed. <em>(Some examples were discussed in detail in the <a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-cartography.html#projection-method-examples" target="_blank">Introduction to Cartography</a> chapter.)</em></p>
 <div id="cartesian-coordinate-system" class="section level4 unnumbered">
 <h4>Cartesian coordinate system</h4>
-<p>Whilst, the angular units (degrees) are useful to pinpoint a location on the surface of the three-dimensional Earth, they cannot be used on a flat surface. So GIS uses mathematical equations to convert angular units and project them on a flat surface, called the Cartesian coordinate system.</p>
+<p>Whilst, the angular units (degrees) are useful to pinpoint a location on the surface of the three-dimensional Earth, they cannot be used on a flat surface. So GIS uses mathematical equations to convert angular units <em>(see the section above on linear <a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-cartography.html#distances" target="_blank">distances</a>)</em> and project them on a flat surface, called the Cartesian coordinate system.</p>
 <img src="Figures/5unnamed-chunk-6-1.png" width="100%" />
 <center>
 Cartesian coordinate system
@@ -568,6 +647,7 @@ Great Britain</a></li>
 <li><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/coordinate-systems-difference/" target="_blank">Coordinate Systems: What’s the Difference?</a></li>
 <li><a href="https://desktop.arcgis.com/en/arcmap/latest/map/projections/pdf/geographic_coordinate_systems.pdf" target="_blank">Geographic coordinate systems</a></li>
 <li><a href="https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/gcs_vs_pcs/" target="_blank">Geographic vs Projected Coordinate Systems</a></li>
+<li><a href="https://www.longitudestore.com/how-big-is-one-gps-degree.html" target="_blank">How to measure Latitude &amp; Longitude</a></li>
 <li><a href="https://www.latlong.net/" target="_blank">Latitude and Longitude Finder</a></li>
 <li><a href="https://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/list-of-supported-map-projections.htm" target="_blank">List of supported map projections in ArcMap</a></li>
 <li><a href="https://giscourses.cfans.umn.edu/sites/giscourses.cfans.umn.edu/files/5480chapter3_projections_excerpt.pdf" target="_blank">Map Projections and Coordinate Systems</a></li>
