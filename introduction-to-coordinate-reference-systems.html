@@ -24,7 +24,7 @@
 <meta name="author" content="Thames Estuary Partnership" />
 
 
-<meta name="date" content="2021-02-14" />
+<meta name="date" content="2021-02-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -139,10 +139,10 @@
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#geodesy"><i class="fa fa-check"></i>Geodesy</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#angular-units"><i class="fa fa-check"></i>Angular units</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#projected-coordinate-system"><i class="fa fa-check"></i>Projected coordinate system</a><ul>
-<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#projection-methods"><i class="fa fa-check"></i>Projection methods</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#projected-coordinate-system"><i class="fa fa-check"></i>Projected coordinate system</a></li>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#summary-2"><i class="fa fa-check"></i>Summary</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#reference-resources-2"><i class="fa fa-check"></i>Reference resources</a><ul>
+<li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#books-2"><i class="fa fa-check"></i>Books</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#free-courses-and-tutorials-2"><i class="fa fa-check"></i>Free courses and tutorials</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#videos"><i class="fa fa-check"></i>Videos</a></li>
 <li class="chapter" data-level="" data-path="introduction-to-coordinate-reference-systems.html"><a href="introduction-to-coordinate-reference-systems.html#other-2"><i class="fa fa-check"></i>Other</a></li>
@@ -246,7 +246,8 @@ Ellipsoid
 </iframe>
 </center>
 <p><br></p>
-<p>The ellipsoid has a longer semi-major axis (a) and a shorter semi-minor axis (b). These axes allow to quantify and standardise the amount of flattening (<em>f = (a-b)/a</em>) that occurs due to Earth’s rotation.</p>
+<p>The <strong>ellipsoid</strong> has a longer semi-major axis (a) and a shorter semi-minor axis (b). The difference between the ellipsoid and the sphere is measured by its flattening (<em>f = (a-b)/a</em>), or the reduction in the minor axis relative to the major axis.</p>
+<p>The circumference of the earth is about 1/300th smaller around the poles.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/ellipsoid2.png" width = "50%" height = "50%">
 </center>
@@ -263,7 +264,7 @@ Ellipsoid with the semi-major (a) and semi-minor axis (b)
 Irregular shape of the Earth <em>(simplified illustration)</em>
 </center>
 <p><br></p>
-<p>So let’s imagine the modelling process using the ellipsoid.</p>
+<p>So let’s imagine the modeling process using the ellipsoid.</p>
 <p>The ellipsoid placed on top of this lumpy shape won’t be able to perfectly model the surface all around. It will only “fit” with the surface at a particular area. This is why the ellipsoid can only be applied at one part of the Earth at the time.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/fit.png" width = "60%" height = "60%">
@@ -303,7 +304,7 @@ Datum <em>(simplified illustration)</em>
 NAD83 and NZGD2000 <em>(simplified illustration)</em>
 </center>
 <p><br></p>
-<p>The most widely used and well-known datum is called WGS84 or World Geodetic System 84.</p>
+<p>The ellipsoid known as WGS84 or World Geodetic System 84 is the most widely used and well-known datum.</p>
 <p>WGS84 is <em>global datum</em> format. It uses the centre of the Earth to connect the ellipsoid and provides a generalised model for the whole of the planet.</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/datums.png" width = "70%" height = "70%">
@@ -321,7 +322,7 @@ Local and global datum (WGS 84) <em>(simplified illustration)</em>
 <embed src="https://www.g-red.eu/geoid/geoidViewer.html" style="width:100%; height: 600px;">
 </center>
 <center>
-This 3D model shows the variations in Earth’s gravity and the elevation differences <br> <em>(Use to tools on the left to interact with the model)</em> <br>(Source: <a href="https://www.g-red.eu/geoid/geoidViewer.html" target="_blank">Geoid viewer</a>)
+This 3D model shows the variations in Earth’s gravity and the elevation differences <br> <em>(Use the tools on the left to interact with the model)</em> <br>(Source: <a href="https://www.g-red.eu/geoid/geoidViewer.html" target="_blank">Geoid viewer</a>)
 </center>
 <p><br></p>
 <p>Removing the effects of the winds and tides, and in fact land masses that cause gravitational differences, the geoid takes the global mean sea level as a base (as if the sea would uniformly cover the planet) to measure surface elevations.</p>
@@ -336,14 +337,25 @@ Contrast of the geoid model with an ellipsoid <em>(modified)</em> (Source: USGS)
 <p>The above mentioned WGS84 is used by Global Positioning System (GPS) satellites and can be used globally to obtain latitude, longitude and elevation coordinates at any location. However, at specific areas local datums can still provide better coverage than WGS84. For example, <a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#datum" target="_blank">OSGB36</a> (Ordnance Survey National Grid reference system) is a better approximation to the geoid covering the British Isles than the global WGS84.</p>
 <div class="note">
 <p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
-<p>Maps made using different datums will give different coordinates for the same position. This is called ‘datum shift’.</p>
+<p>Maps made using different datums will give different coordinates for the same position. This is called <strong>‘datum shift’</strong>.</p>
+<p>The <strong>GPS</strong> consists of a system of 24 satellites, each orbiting the Earth every 12 hours on distinct orbits at a height of 20,200km and transmitting radio pulses at precisely timed intervals. To determine position, a receiver must make exact calculations from the signals, the known positions of the satellites and the velocity of light. Positioning in three dimensions (y,x,z) requires that at least four satellites are above the horizon and accuracy depends on the number of such satellites and their positions.</p>
+<p>GPS is very useful for locating objects that move and for direct capture of the locations of fixed
+objects.</p>
+<center>
+<iframe src="https://maps.esri.com/rc/sat2/index.html" width="100%" height="500" frameBorder="0">
+</iframe>
+</center>
+<center>
+Satellite map <br> <em>(Zoom in and use the tools on the left to interact with the map)</em> <br> (Source: Esri)
+</center>
+<p><br></p>
 </div>
 </div>
 </div>
 </div>
 <div id="angular-units" class="section level3 unnumbered">
 <h3>Angular units</h3>
-<p>GCS use angular units to describe a location on the Earth’s surface. (Remember, this is based on the ellipsoid and the geoid.) These are the latitude (φ) and longitude (λ) displayed on a spherical coordinate system and are measured in degrees.</p>
+<p>GCS use angular units to describe locations on the Earth’s surface. <em>(Remember, this is based on the ellipsoid and the geoid.)</em> These are the latitude (φ) and longitude (λ) displayed on a spherical coordinate system and are measured in degrees.</p>
 <center>
 <img src="https://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/GUID-1F041965-BBA5-4E59-9005-36ABD3908252-web.gif" width = "70%" height = "70%">
 </center>
@@ -371,8 +383,8 @@ Graticular network
 <p><br></p>
 <p>The classic representation of latitude and longitude coordinates is in degrees, minutes and seconds (DMS).</p>
 <p>The example below shows London on the map with the coordinates displayed in degrees, minutes and seconds.</p>
-<div id="htmlwidget-5e1cfd2affe39a9ec3c9" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5e1cfd2affe39a9ec3c9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":3,"maxZoom":3,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]},{"method":"addGraticule","args":[20,false,{"color":"#333","weight":1},null,null,{"interactive":false,"pointerEvents":"none","className":""}]}],"setView":[[51.509865,0.11809],3,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-65a56cd15b3684430121" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-65a56cd15b3684430121">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":3,"maxZoom":3,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]},{"method":"addGraticule","args":[20,false,{"color":"#333","weight":1},null,null,{"interactive":false,"pointerEvents":"none","className":""}]}],"setView":[[51.509865,0.11809],3,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script>
 <center>
 London
 </center>
@@ -472,7 +484,7 @@ London
 <div class="note">
 <p><strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tip</strong></p>
 <p>The website <a href="" target="_blank">PGC Coordinate Converter</a> is useful to convert all three formats.</p>
-<p>Various GPS phone apps will also display location in all three formats as well as in UTM.</p>
+<p><a href="https://gridreferencefinder.com/batchConvert/batchConvert.php" target="_blank">Batch Convert Tool</a> allows to convert UK Grid Reference, easting and northing, and decimal degrees formats.</p>
 <p><a href="https://www.google.co.uk/earth/download/gep/agree.html" target="_blank">Google Earth Pro</a> also gives the option to display and convert all formats (Tools –&gt; Options).</p>
 <center>
 <img src="https://raw.githubusercontent.com/ThamesEstuaryPartnership/booklet/main/Figures/google.png" width = "100%" height = "auto">
@@ -484,7 +496,7 @@ Screenshot of Google Earth Pro
 <div id="distances" class="section level4 unnumbered">
 <h4>Distances</h4>
 <p>As mentioned before, latitude and longitude are applied to the three-dimensional Earth to describe location. However, they are not very useful to measure linear distances. This is because of the oblate spheroid shape of the Earth.</p>
-<p><span style="color:green;">Latitude</span> lines are concentric circles that become smaller near the poles while the distance between them remains roughly the same. (The distance between two degrees is slightly bigger at the poles than at the equator because of the flattening. The average distance between two latitude degrees is 111.4km.)</p>
+<p><span style="color:green;">Latitude</span> lines are concentric circles that become smaller near the poles while the distance between them remains roughly the same. (The distance between two degrees is slightly bigger at the poles than at the equator because of the flattening. The average distance between two latitude degrees is 111km. One minute of latitude is 1.86km which equals one nautical mile.)</p>
 <table>
 <thead>
 <tr class="header">
@@ -572,54 +584,21 @@ Projected coordinate system
 <li><p>Linear units on a flat surface (meters, feet or nautical miles)</p></li>
 </ul>
 <p>The geographic coordinate system was covered above so let’s start with the projection methods.</p>
-<div id="projection-methods" class="section level3 unnumbered">
-<h3>Projection methods</h3>
-<p>As it was discussed in the <a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-cartography.html#projection" target="_blank">Introduction to Cartography</a> chapter, when the three-dimensional spherical Earth is projected onto a two-dimensional flat surface, distortion occurs affecting shape, area, distance, direction and scale. The projection method used will preserve and/or distort different attributes.</p>
-<p>Generally, the three types of projections used are:</p>
-<ul>
-<li>Cylindrical (normal, transverse, oblique)</li>
-</ul>
-<p>These projections are used for the entire earth and for ares at the equator.</p>
-<ul>
-<li>Conical (secant, tangent)</li>
-</ul>
-<p>These projections are used for the mid-latitudes.</p>
-<ul>
-<li>Planar/Azimuthal (Gnomonic, Stereographic, Orthographic)</li>
-</ul>
-<p>These projections are used for the poles.</p>
-<center>
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Kaardiprojektsiooni_klassid.gif" width = "80%" height = "auto">
-</center>
-<center>
-Projection types (Source: Wikipedia)
-</center>
-<p><br></p>
-<p>Within these projection types, there are different projection methods (e.g. Lambert Equal Area Conic, Mercator, Robinson or Gall-Peter) that can be used to depending on the area and the data displayed. <em>(Some examples were discussed in detail in the <a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-cartography.html#projection-method-examples" target="_blank">Introduction to Cartography</a> chapter.)</em></p>
-<div id="cartesian-coordinate-system" class="section level4 unnumbered">
-<h4>Cartesian coordinate system</h4>
-<p>Whilst, the angular units (degrees) are useful to pinpoint a location on the surface of the three-dimensional Earth, they cannot be used on a flat surface. So GIS uses mathematical equations to convert angular units <em>(see the section above on linear <a href="https://thamesestuarypartnership.github.io/booklet/introduction-to-coordinate-reference-systems.html#distances" target="_blank">distances</a>)</em> and project them on a flat surface, called the Cartesian coordinate system.</p>
-<img src="Figures/5unnamed-chunk-9-1.png" width="100%" />
-<center>
-Cartesian coordinate system
-</center>
-<p><br></p>
-<p>The Cartesian coordinate system uses two axes:</p>
-<ul>
-<li><p>Horizontal (X): runs from east to west, ranging from +180° to -180°.</p></li>
-<li><p>Vertical (y) runs from north to south, ranging from +90° to -90°.</p></li>
-</ul>
-<p>The point at which the axes intersect is called the origin (0,0). Locations are defined relative to the origin, using the notation (x,y).</p>
+</div>
+<div id="summary-2" class="section level2 unnumbered">
+<h2>Summary</h2>
 <div class="note">
-<p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
-<p>Drawing attention to the nomenclature differences:</p>
-<p><em>Latitude</em> and <em>longitude</em> are expressed in degrees and are used in GPS. Upon projection, however, the latitude and longitude are converted to and named as <em>Eastings/Northings</em> or <em>X/Y coordinates</em> and are measured in linear units (meters, feet or nautical miles).</p>
-</div>
-</div>
+<p><strong><i class="fa fa-edit fa-2x"></i></strong></p>
 </div>
 </div>
 <div id="reference-resources-2" class="section level2 unnumbered">
 <h2>Reference resources</h2>
+<div id="books-2" class="section level3 unnumbered">
+<h3>Books</h3>
+<ul>
+<li><a href="https://www.wiley.com/en-gb/Geographic+Information+Science+and+Systems%2C+4th+Edition-p-9781119031307" target="_blank">Geographic Information Science and Systems</a></li>
+</ul>
+</div>
 <div id="free-courses-and-tutorials-2" class="section level3 unnumbered">
 <h3>Free courses and tutorials</h3>
 <ul>
