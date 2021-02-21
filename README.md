@@ -1,6 +1,6 @@
 # [Fish Migration Roadmap](https://fishroadmap.london/)
 
-## Educational booklet
+## [An Introduction to Using GIS for the Fish Migration Roadmap](https://bookdown.org/tep/an_introduction_to_using_gis_for_the_fish_migration_roadmap/)
 
 - The Tidal Thames
 
