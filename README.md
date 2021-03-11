@@ -11,3 +11,9 @@
 - Introduction to GIS
 
 - Introduction to Coordinate Reference Systems
+
+- Introduction to QGIS
+
+- Appendix
+
+- Extra
