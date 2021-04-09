@@ -6,6 +6,8 @@
 
 - The Fish Migration Roadmap
 
+- Spatial Thinking
+
 - Introduction to Cartography
 
 - Introduction to GIS
