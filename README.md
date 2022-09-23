@@ -1,4 +1,4 @@
-# Introduction to Geographic Information Systems
+# Introduction to Geographic Information System
 
 - Spatial Thinking & Intelligence
 
