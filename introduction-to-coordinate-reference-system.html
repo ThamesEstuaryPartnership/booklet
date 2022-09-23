@@ -227,8 +227,7 @@ Contrast of the geoid model with an ellipsoid <em>(modified)</em> (Source: USGS)
 <p><strong><i class="fa fa-exclamation"></i> Note</strong></p>
 <p>Maps made using different datums will give different coordinates for the same position. This is called <strong>‘datum shift’</strong>.</p>
 <p>The <strong>GPS</strong> consists of a system of 24 satellites, each orbiting the Earth every 12 hours on distinct orbits at a height of 20,200km and transmitting radio pulses at precisely timed intervals. To determine position, a receiver must make exact calculations from the signals, the known positions of the satellites and the velocity of light. Positioning in three dimensions (y,x,z) requires that at least four satellites are above the horizon and accuracy depends on the number of such satellites and their positions.</p>
-<p>GPS is very useful for locating objects that move and for direct capture of the location of fixed
-objects.</p>
+<p>GPS is very useful for locating objects that move and for direct capture of the location of fixed objects. However, accuracy will depend on the amount of satellites contributing.</p>
 <center>
 <iframe src="https://maps.esri.com/rc/sat2/index.html" width="100%" height="500" frameborder="0">
 </iframe>
@@ -272,8 +271,8 @@ Graticular network
 <p><br></p>
 <p>The classic representation of latitude and longitude coordinates is in degrees, minutes and seconds (DMS).</p>
 <p>The example below shows London on the map with the coordinates displayed in degrees, minutes and seconds.</p>
-<div id="htmlwidget-ba0aeca84a9432e15628" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ba0aeca84a9432e15628">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":3,"maxZoom":3,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]},{"method":"addGraticule","args":[20,false,{"color":"#333","weight":1},null,null,{"interactive":false,"pointerEvents":"none","className":""}]}],"setView":[[51.509865,0.11809],3,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script><center>
+<div id="htmlwidget-59bd1b93703a67224293" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-59bd1b93703a67224293">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":3,"maxZoom":3,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]},{"method":"addGraticule","args":[20,false,{"color":"#333","weight":1},null,null,{"interactive":false,"pointerEvents":"none","className":""}]}],"setView":[[51.509865,0.11809],3,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script><center>
 London
 </center>
 <p><br></p>
@@ -816,6 +815,17 @@ Geographic Coordinate System in ArcGIS Pro
 </div>
 </div>
 </div>
+<div id="what3words" class="section level2 unnumbered">
+<h2>what3words<a class="anchor" aria-label="anchor" href="#what3words"><i class="fas fa-link"></i></a>
+</h2>
+<p><a href="https://what3words.com/" target="_blank">what3words</a> divided the world into 3 metre squares and gave each square a unique combination of three words. Unlike coordinates recorded using GPS devices, these three words will never change providing an accurate location at all times.</p>
+<center>
+<img src="https://corpassets.what3words.com/wp-content/uploads/2020/07/w3w_how-to-use_header-1.jpg" width="100%" height="auto">
+</center>
+<center>
+what3words
+</center>
+</div>
 <div id="summary-2" class="section level2 unnumbered">
 <h2>Summary<a class="anchor" aria-label="anchor" href="#summary-2"><i class="fas fa-link"></i></a>
 </h2>
@@ -928,6 +938,7 @@ Great Britain</a></li>
 <li>
 <a class="nav-link" href="#projected-coordinate-system">Projected coordinate system</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#map-projection">Map projection</a></li></ul>
 </li>
+<li><a class="nav-link" href="#what3words">what3words</a></li>
 <li><a class="nav-link" href="#summary-2">Summary</a></li>
 <li>
 <a class="nav-link" href="#reference-resources-3">Reference resources</a><ul class="nav navbar-nav">
@@ -954,7 +965,7 @@ Great Britain</a></li>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Introduction to Geographic Information System</strong>" was written by Wanda Bodnar (Thames Estuary Partnership). It was last built on 2022-09-19.</p>
+    <p>"<strong>Introduction to Geographic Information System</strong>" was written by Wanda Bodnar (Thames Estuary Partnership). It was last built on 2022-09-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
