@@ -23,8 +23,7 @@
 <script src="libs/leaflet-binding-2.1.1/leaflet.js"></script><script src="libs/plotly-binding-4.10.1/plotly.js"></script><script src="libs/typedarray-0.1/typedarray.min.js"></script><link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
 <script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script><link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
 <script src="libs/plotly-main-2.11.1/plotly-latest.min.js"></script><link href="libs/colourpicker-lib-1.4/css/colourpicker.min.css" rel="stylesheet">
-<script src="libs/colourpicker-lib-1.4/js/colourpicker.min.js"></script><script src="libs/colourWidget-binding-1.2.0/colourWidget.js"></script><link href="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet">
-<script src="libs/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script><script src="libs/leaflet-minimap-3.3.1/Minimap-binding.js"></script><script src="libs/leaflet-graticule-0.1.0/L.Graticule.js"></script><script src="libs/leaflet-graticule-0.1.0/Graticule-binding.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+<script src="libs/colourpicker-lib-1.4/js/colourpicker.min.js"></script><script src="libs/colourWidget-binding-1.2.0/colourWidget.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
@@ -207,10 +206,11 @@ Local and global datum (WGS 84) <em>(simplified illustration)</em>
 <p>As previously discussed, the shape of the Earth is not perfectly round and its surface is quite uneven: there are different topographic features (e.g. mountains, valleys, trenches). This uneven surface has an effect on Earth’s gravity: higher density rocks will pull water creating a bulge, while water is drawn away from lower density rocks. Thus, gravity is different at different parts of the Earth.</p>
 <p>To overcome these gravitational differences, geodesists use the <strong>geoid</strong> to measure surface elevation. The geoid is also known as <em>gravity-related model</em>.</p>
 <center>
-<embed src="https://www.g-red.eu/geoid/geoidViewer.html" style="width:100%; height: 600px;"></embed>
+<iframe src="https://www.esa.int/content/view/embedjw/464353" width="100%" height="300" frameborder="0">
+</iframe>
 </center>
 <center>
-This 3D model shows the variations in Earth’s gravity and the elevation differences <br> (Source: <a href="https://www.g-red.eu/geoid/geoidViewer.html" target="_blank">Geoid viewer</a>) <br><em>Use the tools on the left to interact with the model</em>
+This 3D model shows the variations in Earth’s gravity and the elevation differences
 </center>
 <p><br></p>
 <p>Removing the effects of the winds and tides, and in fact land masses that cause gravitational differences, the geoid takes the global mean sea level as a base (as if the sea would uniformly cover the planet) to measure surface elevations.</p>
@@ -271,8 +271,11 @@ Graticular network
 <p><br></p>
 <p>The classic representation of latitude and longitude coordinates is in degrees, minutes and seconds (DMS).</p>
 <p>The example below shows London on the map with the coordinates displayed in degrees, minutes and seconds.</p>
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-4840a1ce2c2a00159848" style="width:100%;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-4840a1ce2c2a00159848">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":3,"maxZoom":3,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.509865,0.11809,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"51° 30' 35.5140'' N, 0° 7' 5.1312'' W",{"interactive":false,"permanent":true,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"15px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"topright"}]},{"method":"addGraticule","args":[20,false,{"color":"#333","weight":1},null,null,{"interactive":false,"pointerEvents":"none","className":""}]}],"setView":[[51.509865,0.11809],3,[]],"limits":{"lat":[51.509865,51.509865],"lng":[0.11809,0.11809]}},"evals":[],"jsHooks":[]}</script><center>
+<center>
+<iframe src="https://thamesestuarypartnership.github.io/booklet/Figures/grat.html" frameborder="0" scrolling="no" style="width:100%;height:500px;" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation">
+</iframe>
+</center>
+<center>
 London
 </center>
 <p><br></p>
@@ -406,7 +409,7 @@ Screenshot of Google Earth Pro
 <td align="center">110.57km</td>
 </tr></tbody>
 </table></div>
-<div class="inline-figure"><img src="Figures/4unnamed-chunk-6-1.png" width="100%"></div>
+<div class="inline-figure"><img src="Figures/4unnamed-chunk-5-1.png" width="100%"></div>
 <center>
 Latitude lines, the thicker lines mark the degrees at 40° N/S and at the equator
 </center>
@@ -428,13 +431,13 @@ Latitude lines, the thicker lines mark the degrees at 40° N/S and at the equato
 <td align="center">111.32km</td>
 </tr></tbody>
 </table></div>
-<div class="inline-figure"><img src="Figures/4unnamed-chunk-7-1.png" width="100%"></div>
+<div class="inline-figure"><img src="Figures/4unnamed-chunk-6-1.png" width="100%"></div>
 <center>
 Longitude lines, green parallels mark the degrees at 40° N/S and at the equator
 </center>
 <p><br></p>
 <p>The equator is the only place where the linear distance corresponding to one degree latitude is approximately equal the distance corresponding to one degree longitude. <em>(Note that the illustration below shows the latitude and longitude lines at every 10° for easier visualisation.)</em></p>
-<div class="inline-figure"><img src="Figures/4unnamed-chunk-8-1.png" width="100%"></div>
+<div class="inline-figure"><img src="Figures/4unnamed-chunk-7-1.png" width="100%"></div>
 <center>
 Distances are almost equal between the latitudes and longitudes at the equator
 </center>
@@ -533,7 +536,7 @@ Projected coordinate system
 <div id="cartesian-coordinate-system" class="section level4 unnumbered">
 <h4>Cartesian coordinate system<a class="anchor" aria-label="anchor" href="#cartesian-coordinate-system"><i class="fas fa-link"></i></a>
 </h4>
-<div class="inline-figure"><img src="Figures/4unnamed-chunk-9-1.png" width="100%"></div>
+<div class="inline-figure"><img src="Figures/4unnamed-chunk-8-1.png" width="100%"></div>
 <center>
 Cartesian coordinate system
 </center>
@@ -590,7 +593,7 @@ Lambert Conformal Conic projection
 <h5>Azimuthal Equal Area<a class="anchor" aria-label="anchor" href="#azimuthal-equal-area"><i class="fas fa-link"></i></a>
 </h5>
 <p>This projection maintains land features at their true relative sizes while simultaneously maintaining a true sense of direction from the center. It is best suited for individual land masses that are symmetrically proportioned, either round or square.</p>
-<div class="inline-figure"><img src="Figures/4unnamed-chunk-10-1.png" width="100%"></div>
+<div class="inline-figure"><img src="Figures/4unnamed-chunk-9-1.png" width="100%"></div>
 <center>
 Azimuthal Equal Area
 </center>
@@ -599,7 +602,7 @@ Azimuthal Equal Area
 <h5>Equidistant Cylindrical (Plate Carrée)<a class="anchor" aria-label="anchor" href="#equidistant-cylindrical-plate-carr%C3%A9e"><i class="fas fa-link"></i></a>
 </h5>
 <p>This projection is neither equal-area nor conformal. One of the simplest of all map projections and one of the oldest.</p>
-<div class="inline-figure"><img src="Figures/4unnamed-chunk-11-1.png" width="100%"></div>
+<div class="inline-figure"><img src="Figures/4unnamed-chunk-10-1.png" width="100%"></div>
 <center>
 Equidistant Cylindrical projection
 </center>
@@ -964,7 +967,7 @@ Great Britain</a></li>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Introduction to Geographic Information System</strong>" was written by Wanda Bodnar (Thames Estuary Partnership). It was last built on 2023-01-13.</p>
+    <p>"<strong>Introduction to Geographic Information System</strong>" was written by Wanda Bodnar (Thames Estuary Partnership). It was last built on 2023-01-19.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
